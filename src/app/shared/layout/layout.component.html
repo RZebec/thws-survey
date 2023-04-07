@@ -1,0 +1,21 @@
+<app-main-header
+  (isShowSidebar)="sidenav.toggle($event)"
+  [isMenuOpened]="isShowSidebar"
+  [title]="title"
+></app-main-header>
+
+<mat-sidenav-container class="layout">
+  <mat-sidenav
+    #sidenav
+    mode="side"
+    [(opened)]="isShowSidebar"
+    class="layout-sidebar"
+    [mode]="getMode()"
+    [fixedInViewport]="false"
+  >
+    <app-sidebar></app-sidebar>
+  </mat-sidenav>
+  <mat-sidenav-content class="layout-content">
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>
