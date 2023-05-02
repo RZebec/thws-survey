@@ -1,0 +1,15 @@
+<h1 mat-dialog-title>Add new ToDo list!</h1>
+<div mat-dialog-content>
+  <app-todo-list-form
+  (toDoListChange)="onAddToDoListChange($event)"
+></app-todo-list-form>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-flat-button color="primary" (click)="addToDoList()">
+    Add <mat-icon>add</mat-icon>
+  </button>
+  <button mat-flat-button (click)="onNoClick()">
+    Close <mat-icon>close</mat-icon>
+  </button>
+</div>

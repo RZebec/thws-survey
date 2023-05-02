@@ -3,4 +3,5 @@ export enum routes {
   KANBAN = '/kanban',
   SIGNUP = '/signUp',
   SURVEY = '/survey',
+  TODO = '/todo',
 }

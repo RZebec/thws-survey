@@ -1,0 +1,32 @@
+<div
+  class="tasks-container"
+  cdkDropList
+  [cdkDropListData]="toDos"
+  (cdkDropListDropped)="drop($event)"
+>
+  <mat-card *ngFor="let toDo of toDos" [class.complete]="toDo.complete" cdkDrag>
+    <div>
+      <div>
+        <mat-checkbox
+          mat-card-avatar
+          [checked]="toDo.complete"
+          (change)="onCompleteChange(toDo, $event)"
+        ></mat-checkbox>
+      </div>
+
+      <div>
+        <h3>{{ toDo.task }}</h3>
+        <h4>July the 5th, 2023</h4>
+      </div>
+    </div>
+
+    <div>
+      <button (click)="openEditToDoDialog()" mat-icon-button>
+        <mat-icon>edit</mat-icon>
+      </button>
+      <button mat-icon-button>
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+  </mat-card>
+</div>

@@ -1,0 +1,49 @@
+.cards {
+  margin-top: 20px;
+
+  mat-card + mat-card {
+    margin-top: 20px;
+  }
+}
+
+.add-list-button {
+  width: 100vw;
+}
+
+.add-todo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.add-todo-button {
+  margin: 20px 2vw 10px;
+}
+
+.delete-list-button {
+  width: 100%;
+}
+
+// .tabs-group {
+//   ::ng-deep.mdc-tab:last-child {
+//     max-width: 20px !important;
+//     padding: 0px !important;
+//     margin: 0px !important;
+//     width: 20px !important;
+//     color: unset;
+//     opacity: unset;
+
+//     button {
+//       width: 20px !important;
+//       margin: 0;
+//       padding: 0;
+//     }
+//   }
+// }
+
+// .empty-tabs-group {
+//     ::ng-deep.mdc-tab:last-child {
+//     color: unset;
+//     opacity: unset;
+//   }
+// }

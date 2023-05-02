@@ -1,0 +1,80 @@
+<app-layout [title]="'ToDo'">
+  <button
+    (click)="openAddToDoListDialog()"
+    class="add-list-button"
+    mat-flat-button
+    color="primary"
+  >
+    Add ToDo List <mat-icon>add</mat-icon>
+  </button>
+  <mat-tab-group [(selectedIndex)]="tabIndex">
+    <mat-tab *ngFor="let toDoList of toDoLists" [label]="toDoList.name">
+      <div class="add-todo">
+        <app-todo-form (toDoChange)="onAddToDoChange($event)"></app-todo-form>
+
+        <button
+          class="add-todo-button"
+          mat-fab
+          color="primary"
+          (click)="addToDo(toDoList.id)"
+        >
+          <mat-icon>add</mat-icon>
+        </button>
+      </div>
+
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title><h2>ToDos</h2></mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <ng-container
+            *ngIf="toDoList.todos; let toDos"
+          >
+            <ng-container *ngIf="toDos.length > 0; else allDone">
+              <app-todo-list
+                [toDos]="toDos"
+                (toDoArrayChange)="updateToDosInList(toDoList.id, $event)"
+              ></app-todo-list>
+            </ng-container>
+            <ng-template #allDone>
+              <div fxLayout="row" fxLayoutAlign="center center">
+                <h4>All Done!! 🏖</h4>
+              </div>
+            </ng-template>
+          </ng-container>
+        </mat-card-content>
+      </mat-card>
+
+      <!-- <mat-card>
+        <mat-card-header>
+          <mat-card-title><h2>Completed 🎉</h2></mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <app-todo-list
+            [toDos]="getTodosByState(toDoList.todos, true)"
+          ></app-todo-list>
+        </mat-card-content>
+      </mat-card> -->
+
+      <mat-card>
+        <mat-card-content>
+          <button
+          class="delete-list-button"
+            mat-raised-button
+            color="warn"
+            (click)="removeToDoList(toDoList.id)"
+          >
+            Delete List
+          </button>
+        </mat-card-content>
+      </mat-card>
+    </mat-tab>
+    <!-- <mat-tab class="mat-label-button" disabled>
+      <ng-template mat-tab-label>
+        <button mat-flat-button (click)="openDialog()">
+          <mat-icon>add</mat-icon> List
+        </button>
+      </ng-template>
+    </mat-tab> -->
+  </mat-tab-group>
+</app-layout>

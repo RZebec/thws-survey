@@ -11,12 +11,12 @@ import { routes as constRoutes } from './consts/routes';
 const redirectUnauthorizedToLogin = () =>
   redirectUnauthorizedTo([constRoutes.LOGIN.replace('/', '')]);
 const redirectLoggedInToDashboard = () =>
-  redirectLoggedInTo([constRoutes.SURVEY.replace('/', '')]);
+  redirectLoggedInTo([constRoutes.TODO.replace('/', '')]);
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: constRoutes.SURVEY.replace('/', ''),
+    redirectTo: constRoutes.TODO.replace('/', ''),
     pathMatch: 'full',
   },
   {
@@ -34,6 +34,12 @@ const routes: Routes = [
     path: constRoutes.SURVEY.replace('/', ''),
     loadChildren: () =>
       import('./pages/survey/survey.module').then((m) => m.SurveyModule),
+    ...canActivate(redirectUnauthorizedToLogin),
+  },
+  {
+    path: constRoutes.TODO.replace('/', ''),
+    loadChildren: () =>
+      import('./pages/todo/todo.module').then((m) => m.TodoModule),
     ...canActivate(redirectUnauthorizedToLogin),
   },
 ];
