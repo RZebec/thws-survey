@@ -5,6 +5,7 @@ import { AddTodoListModalComponent } from '../../components/modals/add-todo-list
 import { MatDialog } from '@angular/material/dialog';
 import { debounceTime } from 'rxjs';
 import { FormControl } from '@angular/forms';
+import { TodoListEditModalComponent } from '../../components/modals/todo-list-edit-modal/todo-list-edit-modal.component';
 
 @Component({
   selector: 'app-todo-page',
@@ -43,6 +44,18 @@ export class TodoPageComponent {
 
     this.addTodoFormControl.valueChanges.subscribe((value) => {
       this._newToDoName = value;
+    });
+  }
+
+  openEditToDoListDialog(toDoList: ToDoList): void {
+    const dialogRef = this.dialog.open(TodoListEditModalComponent, {
+      data: toDoList,
+    });
+
+    dialogRef.afterClosed().subscribe((result) => {
+      if (!result) return;
+      if (result.id !== -1) this.todoService.updateTodoList(result);
+      this.getTodoLists();
     });
   }
 

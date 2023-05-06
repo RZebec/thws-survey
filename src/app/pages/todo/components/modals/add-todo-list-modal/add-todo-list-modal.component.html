@@ -1,8 +1,12 @@
 <h1 mat-dialog-title>Add new ToDo list!</h1>
 <div mat-dialog-content>
-  <app-todo-list-form
-  (toDoListChange)="onAddToDoListChange($event)"
-></app-todo-list-form>
+  <mat-form-field>
+    <input
+      matInput
+      [(ngModel)]="_newToDoListName"
+      (keydown.enter)="addToDoList()"
+    />
+  </mat-form-field>
 </div>
 
 <div mat-dialog-actions>

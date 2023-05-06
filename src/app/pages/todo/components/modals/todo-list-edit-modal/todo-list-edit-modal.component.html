@@ -1,0 +1,30 @@
+<h1 mat-dialog-title>Edit: {{ data.name }}</h1>
+
+<div class="toDo-edit">
+  <mat-form-field appearance="fill">
+    <mat-label>ToDo Task</mat-label>
+    <input
+      matInput
+      [(ngModel)]="toDoList.name"
+      (keydown.enter)="onSaveToDo()"
+    />
+  </mat-form-field>
+
+  <button
+    class="delete-list-button"
+    mat-raised-button
+    color="warn"
+    (click)="removeToDoList()"
+  >
+    Delete List
+  </button>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-flat-button color="primary" (click)="onSaveToDo()">
+    Save <mat-icon>save</mat-icon>
+  </button>
+  <button mat-flat-button (click)="onNoClick()">
+    Close <mat-icon>close</mat-icon>
+  </button>
+</div>

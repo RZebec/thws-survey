@@ -24,6 +24,7 @@ import { TodoEditModalComponent } from './components/modals/todo-edit-modal/todo
 import { MatNativeDateModule } from '@angular/material/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import { TodoListEditModalComponent } from './components/modals/todo-list-edit-modal/todo-list-edit-modal.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     TodoListFormComponent,
     AddTodoListModalComponent,
     TodoEditModalComponent,
+    TodoListEditModalComponent,
   ],
   imports: [
     CommonModule,

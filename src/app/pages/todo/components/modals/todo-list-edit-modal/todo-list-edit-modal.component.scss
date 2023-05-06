@@ -1,4 +1,4 @@
-.mat-dialog-content {
+.toDo-edit {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -16,4 +16,8 @@ mat-dialog-actions {
   display: flex;
   justify-content: center;
   flex: 1;
+}
+
+.delete-list-button {
+  margin: 0 10px 20px;
 }
