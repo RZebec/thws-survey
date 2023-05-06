@@ -8,7 +8,6 @@
     <div>
       <div>
         <mat-checkbox
-          mat-card-avatar
           [checked]="toDo.complete"
           (change)="onCompleteChange(toDo, $event)"
         ></mat-checkbox>
@@ -16,15 +15,15 @@
 
       <div>
         <h3>{{ toDo.task }}</h3>
-        <h4>July the 5th, 2023</h4>
+        <h3 *ngIf="toDo.date" [style.color]="getDateColor(toDo.date)">{{ toDo.date | date: 'mediumDate' }}</h3>
       </div>
     </div>
 
-    <div>
-      <button (click)="openEditToDoDialog()" mat-icon-button>
+    <div class="card-buttons">
+      <button (click)="openEditToDoDialog(toDo)" mat-icon-button>
         <mat-icon>edit</mat-icon>
       </button>
-      <button mat-icon-button>
+      <button mat-icon-button (click)="removeToDoFromList(toDo.id)">
         <mat-icon>delete</mat-icon>
       </button>
     </div>

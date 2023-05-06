@@ -8,9 +8,14 @@
     Add ToDo List <mat-icon>add</mat-icon>
   </button>
   <mat-tab-group [(selectedIndex)]="tabIndex">
-    <mat-tab *ngFor="let toDoList of toDoLists" [label]="toDoList.name">
+    <mat-tab *ngFor="let toDoList of toDoLists" [label]="toDoList.name" [id]="toDoList.id">
       <div class="add-todo">
-        <app-todo-form (toDoChange)="onAddToDoChange($event)"></app-todo-form>
+        <!-- <app-todo-form (toDoChange)="onAddToDoChange($event)"></app-todo-form> -->
+
+        <mat-form-field>
+          <mat-label>Add ToDo</mat-label>
+          <input matInput [formControl]="addTodoFormControl" (keydown.enter)="addToDo(toDoList.id)"/>
+        </mat-form-field>
 
         <button
           class="add-todo-button"
@@ -24,12 +29,10 @@
 
       <mat-card>
         <mat-card-header>
-          <mat-card-title><h2>ToDos</h2></mat-card-title>
+          <mat-card-title><h2>ToDos {{ toDoList.todos.length > 0 ? '(' + getCompleteCount(toDoList.todos) + '/' + toDoList.todos.length + ' Done)' : ''}}</h2></mat-card-title>
         </mat-card-header>
         <mat-card-content>
-          <ng-container
-            *ngIf="toDoList.todos; let toDos"
-          >
+          <ng-container *ngIf="toDoList.todos; let toDos">
             <ng-container *ngIf="toDos.length > 0; else allDone">
               <app-todo-list
                 [toDos]="toDos"
@@ -59,7 +62,7 @@
       <mat-card>
         <mat-card-content>
           <button
-          class="delete-list-button"
+            class="delete-list-button"
             mat-raised-button
             color="warn"
             (click)="removeToDoList(toDoList.id)"

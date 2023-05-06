@@ -4,7 +4,7 @@ import {
   MAT_DIALOG_DATA,
   MatDialogRef,
 } from '@angular/material/dialog';
-import { ToDoService } from '../../services/todo-service';
+import { ToDoService } from '../../../services/todo-service';
 
 @Component({
   selector: 'app-add-todo-list-modal',

@@ -18,16 +18,28 @@ mat-card {
   justify-content: space-between;
   padding: 10px;
 
+  h3 {
+    font-weight: 500;
+    padding: 0;
+    margin: 5px;
+  }
+
   div {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 
     div {
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
+  }
+
+  .card-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }
 

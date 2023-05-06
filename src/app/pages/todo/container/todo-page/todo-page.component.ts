@@ -1,11 +1,10 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 import { ToDo, ToDoList } from '../../models/todo-model';
 import { ToDoService } from '../../services/todo-service';
-import { AddTodoListModalComponent } from '../../components/add-todo-list-modal/add-todo-list-modal.component';
+import { AddTodoListModalComponent } from '../../components/modals/add-todo-list-modal/add-todo-list-modal.component';
 import { MatDialog } from '@angular/material/dialog';
-import { MatTabGroup } from '@angular/material/tabs';
 import { debounceTime } from 'rxjs';
-import { TodoEditModalComponent } from '../../components/todo-edit-modal/todo-edit-modal.component';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-todo-page',
@@ -20,6 +19,10 @@ export class TodoPageComponent {
   private _newToDoListName: string = '';
 
   tabIndex = 0;
+
+  completedToDosCount = 0;
+
+  addTodoFormControl: FormControl = new FormControl();
 
   constructor(private todoService: ToDoService, private dialog: MatDialog) {}
 
@@ -37,12 +40,23 @@ export class TodoPageComponent {
 
   ngOnInit() {
     this.getTodoLists();
+
+    this.addTodoFormControl.valueChanges.subscribe((value) => {
+      this._newToDoName = value;
+    });
+  }
+
+  getCompleteCount(toDos: ToDo[]): number {
+    return toDos.filter((t) => t.complete).length;
   }
 
   addToDoList() {
-    if (this._newToDoListName.trim() !== '')
-      this.todoService.createToDoList(this._newToDoListName);
+    if (this._newToDoListName.trim() === '') return;
+
+    this.todoService.createToDoList(this._newToDoListName);
     this.getTodoLists();
+
+    this.tabIndex = this.toDoLists.length - 1;
   }
 
   onAddToDoListChange(toDoListName: string) {
@@ -61,7 +75,10 @@ export class TodoPageComponent {
       task: this._newToDoName,
     };
     this.todoService.addTodoToListById(listId, newToDo);
-    this.getTodoLists();
+    this.toDoLists.find((tL) => tL.id === listId)!.todos.push(newToDo);
+    this._newToDoName = '';
+    this.addTodoFormControl.setValue('');
+    // this.getTodoLists();
   }
 
   getTodoLists() {
