@@ -57,12 +57,14 @@ export class TodoListComponent implements OnInit {
 
     if (change.checked) {
       toDos[toDoIndex].complete = true;
-      this.moveToDoInList(toDos, toDoIndex, toDos.length - 1);
-      this.getCompleteStartIndex();
+      // this.moveToDoInList(toDos, toDoIndex, toDos.length - 1);
+      // this.getCompleteStartIndex();
+      this.updateToDoInList(this.toDos[toDoIndex]);
     } else {
       toDos[toDoIndex].complete = false;
-      this.getCompleteStartIndex();
+      // this.getCompleteStartIndex();
       // this.moveToDoInList(toDos, toDoIndex, this.completeStartIndex);
+      this.updateToDoInList(this.toDos[toDoIndex]);
     }
   }
 
