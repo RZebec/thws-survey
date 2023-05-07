@@ -1,8 +1,6 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { ToDo } from '../../../models/todo-model';
-import { ToDoService } from '../../../services/todo-service';
-import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-todo-edit-modal',
@@ -18,7 +16,6 @@ export class TodoEditModalComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    console.log(this.data);
     this.toDo = {
       id: this.data.id,
       task: this.data.task,

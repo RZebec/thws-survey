@@ -6,6 +6,8 @@ import {
 } from '@angular/material/dialog';
 import { ToDoService } from '../../../services/todo-service';
 
+declare let gtag: Function;
+
 @Component({
   selector: 'app-add-todo-list-modal',
   templateUrl: './add-todo-list-modal.component.html',
@@ -20,13 +22,28 @@ export class AddTodoListModalComponent {
     @Inject(MAT_DIALOG_DATA) public data: string
   ) {}
 
+  ngOnInit() {
+    gtag('event', 'click', {
+      event_category: 'ToDo-List-Add',
+      event_label: 'Open',
+    });
+  }
+
   onNoClick(): void {
+    gtag('event', 'click', {
+      event_category: 'ToDo-List-Add',
+      event_label: 'Close',
+    });
     this.dialogRef.close();
   }
 
   addToDoList() {
     if (this._newToDoListName.trim() !== '')
       this.toDoService.createToDoList(this._newToDoListName);
+    gtag('event', 'click', {
+      event_category: 'ToDo-List-Add',
+      event_label: 'Save',
+    });
     this.dialogRef.close();
   }
 

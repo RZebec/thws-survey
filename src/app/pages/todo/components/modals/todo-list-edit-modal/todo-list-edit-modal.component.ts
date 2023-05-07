@@ -18,8 +18,6 @@ export class TodoListEditModalComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    console.log(this.data);
-
     this.toDoList = {
       id: this.data.id,
       name: this.data.name,

@@ -82,6 +82,8 @@ export class TodoPageComponent {
   }
 
   addToDo(listId: number) {
+    if (this._newToDoName.trim() === '') return;
+
     const newToDo: ToDo = {
       id: Math.random(),
       complete: false,
