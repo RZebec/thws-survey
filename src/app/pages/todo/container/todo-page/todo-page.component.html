@@ -14,7 +14,7 @@
 
         <mat-form-field>
           <mat-label>Add ToDo</mat-label>
-          <input matInput [formControl]="addTodoFormControl" (keydown.enter)="addToDo(toDoList.id)"/>
+          <input matInput [formControl]="addTodoFormControl" (click)="setMeasureTime()" (keydown.enter)="addToDo(toDoList.id)"/>
         </mat-form-field>
 
         <button

@@ -5,6 +5,8 @@ import {
   MatDialogRef,
 } from '@angular/material/dialog';
 import { ToDoService } from '../../../services/todo-service';
+import { DatabaseService } from 'src/app/services/database.service';
+import { AnalyticsEvent } from 'src/app/pages/todo/models/analyticsEvent';
 
 declare let gtag: Function;
 
@@ -19,31 +21,43 @@ export class AddTodoListModalComponent {
   constructor(
     private toDoService: ToDoService,
     public dialogRef: MatDialogRef<AddTodoListModalComponent>,
+    private databaseService: DatabaseService,
     @Inject(MAT_DIALOG_DATA) public data: string
   ) {}
 
+  measurementTime: number = 0;
+
   ngOnInit() {
-    gtag('event', 'click', {
+    this.measurementTime = Date.now();
+  }
+
+  logEvent(eventName: string) {
+    this.measurementTime = Date.now() - this.measurementTime;
+
+    const eventData: AnalyticsEvent = {
       event_category: 'ToDo-List-Add',
-      event_label: 'Open',
-    });
+      event_label: eventName,
+      event_measured_time: this.measurementTime,
+    };
+
+    gtag('event', eventData.event_category, eventData);
+
+    this.databaseService.addAnalyticsEvent(eventData);
+
+    console.log(
+      `'ToDo-List-Add' -> '${eventName}' = ${this.measurementTime / 1000} s`
+    );
   }
 
   onNoClick(): void {
-    gtag('event', 'click', {
-      event_category: 'ToDo-List-Add',
-      event_label: 'Close',
-    });
+    this.logEvent('close');
     this.dialogRef.close();
   }
 
   addToDoList() {
     if (this._newToDoListName.trim() !== '')
       this.toDoService.createToDoList(this._newToDoListName);
-    gtag('event', 'click', {
-      event_category: 'ToDo-List-Add',
-      event_label: 'Save',
-    });
+    this.logEvent('close');
     this.dialogRef.close();
   }
 

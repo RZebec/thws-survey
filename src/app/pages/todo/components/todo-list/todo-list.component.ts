@@ -4,6 +4,10 @@ import { ToDo } from '../../models/todo-model';
 import { CdkDragDrop } from '@angular/cdk/drag-drop';
 import { MatDialog } from '@angular/material/dialog';
 import { TodoEditModalComponent } from '../modals/todo-edit-modal/todo-edit-modal.component';
+import { AnalyticsEvent } from 'src/app/pages/todo/models/analyticsEvent';
+import { DatabaseService } from 'src/app/services/database.service';
+
+declare let gtag: Function;
 
 @Component({
   selector: 'app-todo-list',
@@ -17,7 +21,12 @@ export class TodoListComponent implements OnInit {
 
   completeStartIndex = 0;
 
-  constructor(private dialog: MatDialog) {}
+  dragMeasurementTime = 0;
+
+  constructor(
+    private dialog: MatDialog,
+    private databaseService: DatabaseService
+  ) {}
 
   ngOnInit() {
     this.getCompleteStartIndex();
@@ -38,6 +47,29 @@ export class TodoListComponent implements OnInit {
     this.completeStartIndex = this.toDos.findIndex((tL) => tL.complete);
     if (this.completeStartIndex === -1)
       this.completeStartIndex = this.toDos.length - 1;
+  }
+
+  setDragMeasurementTime() {
+    this.dragMeasurementTime = Date.now();
+    console.log(this.dragMeasurementTime);
+  }
+
+  logDragEvent(eventName: string) {
+    this.dragMeasurementTime = Date.now() - this.dragMeasurementTime;
+
+    const eventData: AnalyticsEvent = {
+      event_category: 'ToDo-List',
+      event_label: eventName,
+      event_measured_time: this.dragMeasurementTime,
+    };
+
+    gtag('event', eventData.event_category, eventData);
+
+    this.databaseService.addAnalyticsEvent(eventData);
+
+    console.log(
+      `'ToDo-List' -> '${eventName}' = ${this.dragMeasurementTime / 1000} s`
+    );
   }
 
   getDateColor(date: number): string {
@@ -70,6 +102,7 @@ export class TodoListComponent implements OnInit {
 
   drop(event: CdkDragDrop<ToDo[]>) {
     this.moveToDoInList(this.toDos, event.previousIndex, event.currentIndex);
+    this.logDragEvent('todo-dragged');
   }
 
   updateToDoInList(toDo: ToDo) {

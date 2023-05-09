@@ -42,6 +42,12 @@ const routes: Routes = [
       import('./pages/todo/todo.module').then((m) => m.TodoModule),
     ...canActivate(redirectUnauthorizedToLogin),
   },
+  {
+    path: constRoutes.TERMS.replace('/', ''),
+    loadChildren: () =>
+      import('./pages/terms/terms.module').then((m) => m.TermsModule),
+    ...canActivate(redirectUnauthorizedToLogin),
+  },
 ];
 
 @NgModule({

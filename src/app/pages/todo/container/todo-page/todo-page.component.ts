@@ -6,7 +6,10 @@ import { MatDialog } from '@angular/material/dialog';
 import { debounceTime } from 'rxjs';
 import { FormControl } from '@angular/forms';
 import { TodoListEditModalComponent } from '../../components/modals/todo-list-edit-modal/todo-list-edit-modal.component';
+import { DatabaseService } from 'src/app/services/database.service';
+import { AnalyticsEvent } from 'src/app/pages/todo/models/analyticsEvent';
 
+declare let gtag: Function;
 @Component({
   selector: 'app-todo-page',
   templateUrl: './todo-page.component.html',
@@ -23,9 +26,15 @@ export class TodoPageComponent {
 
   completedToDosCount = 0;
 
+  measurementTime: number = 0;
+
   addTodoFormControl: FormControl = new FormControl();
 
-  constructor(private todoService: ToDoService, private dialog: MatDialog) {}
+  constructor(
+    private todoService: ToDoService,
+    private dialog: MatDialog,
+    private databaseService: DatabaseService
+  ) {}
 
   openAddToDoListDialog(): void {
     const dialogRef = this.dialog.open(AddTodoListModalComponent, {
@@ -45,6 +54,29 @@ export class TodoPageComponent {
     this.addTodoFormControl.valueChanges.subscribe((value) => {
       this._newToDoName = value;
     });
+  }
+
+  setMeasureTime() {
+    this.measurementTime = Date.now();
+    console.log(this.measurementTime);
+  }
+
+  logEvent(eventName: string) {
+    this.measurementTime = Date.now() - this.measurementTime;
+
+    const eventData: AnalyticsEvent = {
+      event_category: 'ToDo-Add',
+      event_label: eventName,
+      event_measured_time: this.measurementTime,
+    };
+
+    gtag('event', eventData.event_category, eventData);
+
+    this.databaseService.addAnalyticsEvent(eventData);
+
+    console.log(
+      `'ToDo-Add' -> '${eventName}' = ${this.measurementTime / 1000} s`
+    );
   }
 
   openEditToDoListDialog(toDoList: ToDoList): void {
@@ -83,6 +115,10 @@ export class TodoPageComponent {
 
   addToDo(listId: number) {
     if (this._newToDoName.trim() === '') return;
+
+    this.logEvent('save');
+
+    this.setMeasureTime();
 
     const newToDo: ToDo = {
       id: Math.random(),

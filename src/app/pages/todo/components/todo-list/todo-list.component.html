@@ -4,7 +4,12 @@
   [cdkDropListData]="toDos"
   (cdkDropListDropped)="drop($event)"
 >
-  <mat-card *ngFor="let toDo of toDos" [class.complete]="toDo.complete" cdkDrag>
+  <mat-card
+    *ngFor="let toDo of toDos"
+    [class.complete]="toDo.complete"
+    (cdkDragStarted)="setDragMeasurementTime()"
+    cdkDrag
+  >
     <div>
       <div>
         <mat-checkbox
@@ -15,7 +20,9 @@
 
       <div>
         <h3>{{ toDo.task }}</h3>
-        <h3 *ngIf="toDo.date" [style.color]="getDateColor(toDo.date)">{{ toDo.date | date: 'mediumDate' }}</h3>
+        <h3 *ngIf="toDo.date" [style.color]="getDateColor(toDo.date)">
+          {{ toDo.date | date : "mediumDate" }}
+        </h3>
       </div>
     </div>
 

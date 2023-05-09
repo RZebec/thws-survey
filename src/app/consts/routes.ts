@@ -4,4 +4,5 @@ export enum routes {
   SIGNUP = '/signUp',
   SURVEY = '/survey',
   TODO = '/todo',
+  TERMS = '/terms',
 }

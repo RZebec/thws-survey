@@ -1,26 +1,17 @@
 import { Injectable } from '@angular/core';
-import { Auth, authState, User } from '@angular/fire/auth';
+import { Auth, User } from '@angular/fire/auth';
 import {
-  addDoc,
-  arrayRemove,
-  collection,
-  collectionData,
-  CollectionReference,
   deleteDoc,
   doc,
   Firestore,
   getDoc,
-  query,
   setDoc,
   updateDoc,
-  where,
 } from '@angular/fire/firestore';
 
-import { switchMap, map } from 'rxjs/operators';
-
-import { DocumentReference } from 'firebase/firestore';
-import { Observable } from 'rxjs';
 import { UserDetails } from '../models/userDetails';
+import { DocumentReference, addDoc, collection } from 'firebase/firestore';
+import { AnalyticsEvent } from '../pages/todo/models/analyticsEvent';
 
 @Injectable({
   providedIn: 'root',
@@ -33,6 +24,7 @@ export class DatabaseService {
     return setDoc(user, {
       email: email,
       step: 0,
+      acceptedTerms: false,
     });
   }
 
@@ -40,6 +32,19 @@ export class DatabaseService {
     const userId = this.afAuth.currentUser!.uid;
     const userDocRef = doc(this.db, `users/${userId}`);
     return updateDoc(userDocRef, { step });
+  }
+
+  updateUserAcceptedTerms(acceptedTerms: boolean) {
+    const userId = this.afAuth.currentUser!.uid;
+    const userDocRef = doc(this.db, `users/${userId}`);
+    return updateDoc(userDocRef, { acceptedTerms });
+  }
+
+  addAnalyticsEvent(eventData: AnalyticsEvent): Promise<DocumentReference> {
+    const userId = this.afAuth.currentUser!.uid;
+    const userName = this.afAuth.currentUser!.displayName;
+
+    return addDoc(collection(this.db, `users/${userId}/events`), eventData);
   }
 
   // createBoard(data: Board): Promise<DocumentReference> {
@@ -51,11 +56,11 @@ export class DatabaseService {
   //   });
   // }
 
-  deleteBoard(boardId: string): Promise<void> {
-    const userId = this.afAuth.currentUser!.uid;
-    const boardDocRef = doc(this.db, `users/${userId}/boards/${boardId}`);
-    return deleteDoc(boardDocRef);
-  }
+  // deleteBoard(boardId: string): Promise<void> {
+  //   const userId = this.afAuth.currentUser!.uid;
+  //   const boardDocRef = doc(this.db, `users/${userId}/boards/${boardId}`);
+  //   return deleteDoc(boardDocRef);
+  // }
 
   // updateTasks(boardId: string, tasks: Task[]): Promise<void> {
   //   const userId = this.afAuth.currentUser!.uid;
