@@ -7,14 +7,9 @@ import { Credentials } from 'src/app/models/credentials';
 import { AuthService } from 'src/app/services/auth.service';
 import { LoginService } from 'src/app/services/login.service';
 import {
-  doc,
   Firestore,
-  getDoc,
   DocumentReference,
   DocumentData,
-  setDoc,
-  collection,
-  addDoc,
 } from '@angular/fire/firestore';
 import { UserCredential } from 'firebase/auth';
 import { SignUpEmailModel } from '../../models/signUpEmailModel';
@@ -54,18 +49,32 @@ export class AuthPageComponent implements OnInit {
         console.log('Success', value);
         this.openSnackBarSuccess('Success');
         if (!(await this.databaseService.getUserDetails())) {
-          this.databaseService.setUserInformation(
-            value.user.uid,
-            value.user.email!
-          );
+          this.databaseService.setUserInformation(value.user.uid);
         }
-        this.router.navigateByUrl(this.routers.SURVEY);
+        this.router.navigateByUrl(this.routers.STEPNAVIGATOR);
       })
       .catch((error: any) => {
         console.log('Something went wrong: ', error);
         this.openSnackBarError(error);
       });
   }
+
+  public signInAnonymously() {
+    this.service
+      .loginSignInAnonymously()
+      .then(async (value: UserCredential) => {
+        console.log('Success', value);
+        if (!localStorage.getItem('userId')) {
+          await this.databaseService.setUserInformation(value.user.uid);
+        }
+        this.router.navigateByUrl(this.routers.STEPNAVIGATOR);
+      })
+      .catch((error: any) => {
+        console.log('Something went wrong: ', error);
+        this.openSnackBarError(error);
+      });
+  }
+
   public sendLoginForm(credentials: Credentials): void {
     this.service.loginSignInWithEMail(credentials.email);
   }
@@ -92,10 +101,7 @@ export class AuthPageComponent implements OnInit {
       .then((data) => {
         this.loginService.setUser(data.user);
         this.loginService.setUserId(data.user.uid);
-        this.databaseService.setUserInformation(
-          data.user.uid,
-          signUpForm.email
-        );
+        this.databaseService.setUserInformation(data.user.uid);
         this.openSnackBarSuccess('Success');
         this.onSuccessfulSignUp();
       })

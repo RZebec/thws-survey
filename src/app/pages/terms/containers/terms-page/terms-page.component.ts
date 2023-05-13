@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { getPrivacyText } from '../../models/privacy-text';
 import { MatDialog } from '@angular/material/dialog';
 import { TermsModalComponent } from '../../components/modals/terms-modal/terms-modal.component';
+import { DatabaseService } from 'src/app/services/database.service';
+import { Router } from '@angular/router';
+import { routes as constRoutes } from '../../../../consts/routes';
 
 @Component({
   selector: 'app-terms-page',
@@ -9,11 +12,21 @@ import { TermsModalComponent } from '../../components/modals/terms-modal/terms-m
   styleUrls: ['./terms-page.component.scss'],
 })
 export class TermsPageComponent {
-  constructor(public dialog: MatDialog) {}
+  constructor(
+    public dialog: MatDialog,
+    private databaseService: DatabaseService,
+    private router: Router
+  ) {}
 
   openDialog() {
     const dialogRef = this.dialog.open(TermsModalComponent);
 
     dialogRef.afterClosed().subscribe((result) => {});
+  }
+
+  acceptPolicy() {
+    this.databaseService.updateUserAcceptedTerms(true);
+    this.databaseService.updateUserStep(1);
+    this.router.navigateByUrl(constRoutes.STEPNAVIGATOR);
   }
 }

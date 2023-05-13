@@ -1,0 +1,128 @@
+.cards {
+  margin-top: 20px;
+
+  mat-card + mat-card {
+    margin-top: 20px;
+  }
+}
+
+.tutorial-hint {
+  border-radius: 8px;
+  padding: 12px;
+  background-color: #ff9a47;
+  margin-bottom: 8px;
+
+}
+
+mat-form-field {
+  width: 60vw;
+  margin: 20px 2vw 10px;
+}
+
+.add-list-button {
+  width: 100vw;
+}
+
+.add-todo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.add-todo-button {
+  margin: 20px 2vw 10px;
+}
+
+.delete-list-button {
+  width: 100%;
+}
+
+.tasks-container {
+  :host {
+    .complete {
+      text-decoration: line-through;
+    }
+  }
+
+  mat-card {
+    margin-bottom: 20px;
+  }
+
+  mat-checkbox {
+    margin-right: 10px;
+  }
+
+  mat-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+
+    h3 {
+      font-weight: 500;
+      padding: 0;
+      margin: 5px;
+    }
+
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+
+    .card-buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
+  .cdk-drag-preview {
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+      0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  }
+
+  .cdk-drag-placeholder {
+    opacity: 0;
+  }
+
+  .cdk-drag-animating {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+  }
+
+  .tasks-container.cdk-drop-list-dragging .task:not(.cdk-drag-placeholder) {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+// .tabs-group {
+//   ::ng-deep.mdc-tab:last-child {
+//     max-width: 20px !important;
+//     padding: 0px !important;
+//     margin: 0px !important;
+//     width: 20px !important;
+//     color: unset;
+//     opacity: unset;
+
+//     button {
+//       width: 20px !important;
+//       margin: 0;
+//       padding: 0;
+//     }
+//   }
+// }
+
+// .empty-tabs-group {
+//     ::ng-deep.mdc-tab:last-child {
+//     color: unset;
+//     opacity: unset;
+//   }
+// }

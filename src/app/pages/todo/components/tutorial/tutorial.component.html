@@ -1,0 +1,100 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title
+      ><h2>
+        ToDos
+        {{
+          toDoList.todos.length > 0
+            ? "(" +
+              getCompleteCount(toDoList.todos) +
+              "/" +
+              toDoList.todos.length +
+              " Done)"
+            : ""
+        }}
+      </h2></mat-card-title
+    >
+    <mat-card-subtitle>
+        <div class="tutorial-hint">
+         <strong>NOTE:</strong> The following list is just an example and will complete the steps automatically based on the actions you make in the app.
+        </div>
+    </mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="tasks-container">
+      <ng-container *ngIf="toDoList">
+        <ng-container *ngIf="toDoList.todos">
+          <div class="tasks-container">
+            <mat-card
+              *ngFor="let toDo of toDoList.todos"
+              [class.complete]="toDo.complete"
+            >
+              <div>
+                <div>
+                  <mat-checkbox
+                    [checked]="toDo.complete"
+                    disabled="true"
+                  ></mat-checkbox>
+                </div>
+
+                <div>
+                  <h3>{{ toDo.task }}</h3>
+                  <h3 *ngIf="toDo.date" [style.color]="getDateColor(toDo.date)">
+                    {{ toDo.date | date : "mediumDate" }}
+                  </h3>
+                </div>
+              </div>
+
+              <div class="card-buttons">
+                <button mat-icon-button [disabled]="toDo.id !== 30">
+                  <mat-icon>edit</mat-icon>
+                </button>
+                <button mat-icon-button disabled>
+                  <mat-icon>delete</mat-icon>
+                </button>
+              </div>
+            </mat-card>
+          </div>
+        </ng-container>
+      </ng-container>
+    </div>
+  </mat-card-content>
+</mat-card>
+
+<mat-card>
+  <mat-card-content>
+    <button
+      class="delete-list-button"
+      mat-raised-button
+      color="warn"
+      [disabled]="deleteButtonCondition()"
+      (click)="deleteTutorial()"
+    >
+      Delete List
+    </button>
+  </mat-card-content>
+</mat-card>
+
+<!-- <mat-card>
+        <mat-card-header>
+          <mat-card-title><h2>Completed 🎉</h2></mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <app-todo-list
+            [toDos]="getTodosByState(toDoList.todos, true)"
+          ></app-todo-list>
+        </mat-card-content>
+      </mat-card> -->
+
+<!-- <mat-card>
+        <mat-card-content>
+          <button
+            class="delete-list-button"
+            mat-raised-button
+            color="primary"
+            (click)="openEditToDoListDialog(toDoList)"
+          >
+            Edit List
+          </button>
+        </mat-card-content>
+      </mat-card> -->

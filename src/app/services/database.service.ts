@@ -12,39 +12,73 @@ import {
 import { UserDetails } from '../models/userDetails';
 import { DocumentReference, addDoc, collection } from 'firebase/firestore';
 import { AnalyticsEvent } from '../pages/todo/models/analyticsEvent';
+import { Router } from '@angular/router';
+import { Survey } from '../pages/survey/survey-page/survey-page.component';
 
 @Injectable({
   providedIn: 'root',
 })
 export class DatabaseService {
-  constructor(private afAuth: Auth, private db: Firestore) {}
+  constructor(
+    private afAuth: Auth,
+    private db: Firestore,
+    private router: Router
+  ) {}
 
-  setUserInformation(userId: string, email: string) {
+  getUserId(): string {
+    const userId = localStorage.getItem('userId');
+
+    if (!userId) {
+      this.router.navigateByUrl('/login');
+      return '';
+    }
+
+    return userId;
+  }
+
+  setUserInformation(userId: string) {
     const user = doc(this.db, `users/${userId}`);
-    return setDoc(user, {
-      email: email,
+
+    const userDetails: UserDetails = {
       step: 0,
       acceptedTerms: false,
-    });
+    };
+
+    localStorage.setItem('userId', userId);
+
+    return setDoc(user, userDetails);
   }
 
   updateUserStep(step: number) {
-    const userId = this.afAuth.currentUser!.uid;
+    const userId = this.getUserId();
     const userDocRef = doc(this.db, `users/${userId}`);
     return updateDoc(userDocRef, { step });
   }
 
   updateUserAcceptedTerms(acceptedTerms: boolean) {
-    const userId = this.afAuth.currentUser!.uid;
+    const userId = this.getUserId();
     const userDocRef = doc(this.db, `users/${userId}`);
     return updateDoc(userDocRef, { acceptedTerms });
   }
 
   addAnalyticsEvent(eventData: AnalyticsEvent): Promise<DocumentReference> {
-    const userId = this.afAuth.currentUser!.uid;
-    const userName = this.afAuth.currentUser!.displayName;
+    const userId = this.getUserId();
+    // const userName = this.afAuth.currentUser!.displayName;
 
     return addDoc(collection(this.db, `users/${userId}/events`), eventData);
+  }
+
+  submitToDoSurvey(survey: Survey[]) {
+    const userId = this.getUserId();
+    const userDocRef = collection(this.db, `users/${userId}/surveys`);
+
+    return addDoc(userDocRef, { name: 'appSurvey', survey });
+  }
+
+  submitDetailsSurvey(survey: Survey[]) {
+    const userId = this.getUserId();
+    const userDocRef = collection(this.db, `users/${userId}/surveys`);
+    return addDoc(userDocRef, { name: 'userDetailsSurvey', survey });
   }
 
   // createBoard(data: Board): Promise<DocumentReference> {
@@ -80,7 +114,7 @@ export class DatabaseService {
   }
 
   async getUserDetails(): Promise<UserDetails> {
-    const userId = this.afAuth.currentUser!.uid;
+    const userId = this.getUserId();
     const userDocRef = doc(this.db, 'users/' + userId);
     const userDocSnap = await getDoc(userDocRef);
     return userDocSnap.data() as UserDetails;

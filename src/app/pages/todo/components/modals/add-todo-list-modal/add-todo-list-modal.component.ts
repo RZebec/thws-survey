@@ -55,8 +55,10 @@ export class AddTodoListModalComponent {
   }
 
   addToDoList() {
-    if (this._newToDoListName.trim() !== '')
+    if (this._newToDoListName.trim() !== '') {
       this.toDoService.createToDoList(this._newToDoListName);
+      this.toDoService.setTutorialToDoTaskToComplete(10);
+    }
     this.logEvent('close');
     this.dialogRef.close();
   }

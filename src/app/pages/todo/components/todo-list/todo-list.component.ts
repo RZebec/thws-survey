@@ -6,6 +6,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { TodoEditModalComponent } from '../modals/todo-edit-modal/todo-edit-modal.component';
 import { AnalyticsEvent } from 'src/app/pages/todo/models/analyticsEvent';
 import { DatabaseService } from 'src/app/services/database.service';
+import { ToDoService } from '../../services/todo-service';
 
 declare let gtag: Function;
 
@@ -25,7 +26,8 @@ export class TodoListComponent implements OnInit {
 
   constructor(
     private dialog: MatDialog,
-    private databaseService: DatabaseService
+    private databaseService: DatabaseService,
+    private toDoService: ToDoService
   ) {}
 
   ngOnInit() {
@@ -91,6 +93,8 @@ export class TodoListComponent implements OnInit {
       toDos[toDoIndex].complete = true;
       // this.moveToDoInList(toDos, toDoIndex, toDos.length - 1);
       // this.getCompleteStartIndex();
+      if (toDos.filter((t) => t.complete).length >= 2)
+        this.toDoService.setTutorialToDoTaskToComplete(50);
       this.updateToDoInList(this.toDos[toDoIndex]);
     } else {
       toDos[toDoIndex].complete = false;
@@ -127,7 +131,7 @@ export class TodoListComponent implements OnInit {
 
   moveToDoInList(toDoList: ToDo[], oldIndex: number, newIndex: number) {
     toDoList.splice(newIndex, 0, toDoList.splice(oldIndex, 1)[0]);
-
+    this.toDoService.setTutorialToDoTaskToComplete(40);
     this.toDoArrayChange.emit(toDoList);
   }
 }

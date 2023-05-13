@@ -8,6 +8,9 @@
     Add ToDo List <mat-icon>add</mat-icon>
   </button>
   <mat-tab-group [(selectedIndex)]="tabIndex">
+    <mat-tab [label]="'Tutorial'" [id]="-2">
+    <app-tutorial [toDoList]="tutorialToDoList"></app-tutorial>
+    </mat-tab>
     <mat-tab *ngFor="let toDoList of toDoLists" [label]="toDoList.name" [id]="toDoList.id">
       <div class="add-todo">
         <!-- <app-todo-form (toDoChange)="onAddToDoChange($event)"></app-todo-form> -->

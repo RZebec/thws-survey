@@ -20,9 +20,9 @@
             (sendLoginForm)="sendLoginForm($event)"
           ></app-login-form>
         </mat-tab>  -->
-        <mat-tab label="New User">
+        <mat-tab label="THWS Survey">
           <h4 class="auth-page__group-title">Welcome</h4>
-          <p class="auth-page__group-sub-title">Create you account</p>
+          <!-- <p class="auth-page__group-sub-title">Create you account</p> -->
 
           <!-- <app-sign-emailink-form
             (sendSignForm)="sendSignEmailLinkForm($event)"
@@ -37,12 +37,22 @@
           <app-sign-form (sendSignForm)="sendSignForm($event)"></app-sign-form>
 
             -->
-<!--
-          <div class="auth-page__border-wrapper">
+
+          <div class="auth-page__google-button-wrapper">
+            <button
+              mat-raised-button
+              class="auth-page__google-button"
+              (click)="signInAnonymously()"
+            >
+              Start Survey
+            </button>
+          </div>
+
+          <!-- <div class="auth-page__border-wrapper">
             <div class="auth-page__border-line"></div>
             <p class="auth-page__border-title">or</p>
             <div class="auth-page__border-line"></div>
-          </div> -->
+          </div>
 
           <div class="auth-page__google-button-wrapper">
             <button
@@ -56,7 +66,7 @@
                 alt="google"
               />Sign in with Google
             </button>
-          </div>
+          </div> -->
         </mat-tab>
       </mat-tab-group>
 

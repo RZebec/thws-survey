@@ -3,6 +3,7 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { ToDo } from '../../../models/todo-model';
 import { AnalyticsEvent } from 'src/app/pages/todo/models/analyticsEvent';
 import { DatabaseService } from 'src/app/services/database.service';
+import { ToDoService } from '../../../services/todo-service';
 
 declare let gtag: Function;
 
@@ -21,7 +22,8 @@ export class TodoEditModalComponent implements OnInit {
   constructor(
     public dialogRef: MatDialogRef<TodoEditModalComponent>,
     @Inject(MAT_DIALOG_DATA) public data: ToDo,
-    private databaseService: DatabaseService
+    private databaseService: DatabaseService,
+    private toDoService: ToDoService
   ) {}
 
   ngOnInit(): void {
@@ -88,6 +90,7 @@ export class TodoEditModalComponent implements OnInit {
   }
 
   onSaveToDo() {
+    if (this.toDo.date) this.toDoService.setTutorialToDoTaskToComplete(30);
     this.logEvent('save');
     this.dialogRef.close(this.toDo);
   }

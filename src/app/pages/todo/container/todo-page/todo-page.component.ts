@@ -22,6 +22,8 @@ export class TodoPageComponent {
 
   private _newToDoListName: string = '';
 
+  newToDoCounter = 0;
+
   tabIndex = 0;
 
   completedToDosCount = 0;
@@ -30,11 +32,15 @@ export class TodoPageComponent {
 
   addTodoFormControl: FormControl = new FormControl();
 
+  tutorialToDoList: ToDoList;
+
   constructor(
     private todoService: ToDoService,
     private dialog: MatDialog,
     private databaseService: DatabaseService
-  ) {}
+  ) {
+    this.tutorialToDoList = this.todoService.getTutorialToDoList();
+  }
 
   openAddToDoListDialog(): void {
     const dialogRef = this.dialog.open(AddTodoListModalComponent, {
@@ -43,6 +49,7 @@ export class TodoPageComponent {
 
     dialogRef.afterClosed().subscribe((result: string) => {
       this.getTodoLists();
+      this.tutorialToDoList = this.todoService.getTutorialToDoList();
       debounceTime(1000);
       this.tabIndex = this.toDoLists.length - 1;
     });
@@ -99,6 +106,7 @@ export class TodoPageComponent {
     if (this._newToDoListName.trim() === '') return;
 
     this.todoService.createToDoList(this._newToDoListName);
+
     this.getTodoLists();
 
     this.tabIndex = this.toDoLists.length - 1;
@@ -115,6 +123,13 @@ export class TodoPageComponent {
 
   addToDo(listId: number) {
     if (this._newToDoName.trim() === '') return;
+
+    this.newToDoCounter++;
+
+    if (this.newToDoCounter === 3) {
+      this.todoService.setTutorialToDoTaskToComplete(20);
+      this.tutorialToDoList = this.todoService.getTutorialToDoList();
+    }
 
     this.logEvent('save');
 
@@ -165,6 +180,8 @@ export class TodoPageComponent {
     const toDoListIndex = this.toDoLists.findIndex((tL) => tL.id === listId);
 
     if (toDoListIndex === -1) return;
+
+    this.tutorialToDoList = this.todoService.getTutorialToDoList();
 
     this.toDoLists[toDoListIndex].todos = toDos;
 

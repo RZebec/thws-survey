@@ -25,7 +25,7 @@ export class SignUpPageComponent implements OnInit {
       this.service
         .loginSignInWithEMail(signInEmail)
         .then((user: UserCredential) => {
-          this.databaseService.setUserInformation(user.user.uid, signInEmail);
+          this.databaseService.setUserInformation(user.user.uid);
           this.router.navigateByUrl(routes.TODO);
         });
     }

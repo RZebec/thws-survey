@@ -1,4 +1,5 @@
 import { ToDo, ToDoList } from '../models/todo-model';
+import { TutorialToDoList } from '../models/tutorialToDos';
 
 export class ToDoService {
   private dbPath = 'todosLists';
@@ -11,6 +12,54 @@ export class ToDoService {
     //   this.db,
     //   `users/${userId}/${this.this.dbPath}`
     // ) as CollectionReference<ToDo>;
+  }
+
+  public getTutorialToDoList(): ToDoList {
+    const tutorialToDos = localStorage.getItem('tutorialToDos');
+
+    if (!tutorialToDos) {
+      localStorage.setItem('tutorialToDos', JSON.stringify(TutorialToDoList));
+      return TutorialToDoList;
+    }
+
+    return JSON.parse(tutorialToDos);
+  }
+
+  public updateTutorialToDoList(toDos: ToDo[]) {
+    const tutorialToDos = localStorage.getItem('tutorialToDos');
+
+    if (!tutorialToDos) {
+      localStorage.setItem('tutorialToDos', JSON.stringify(TutorialToDoList));
+      return;
+    }
+
+    const toDoList: ToDoList = JSON.parse(tutorialToDos);
+
+    toDoList.todos = toDos;
+
+    localStorage.setItem('tutorialToDos', JSON.stringify(toDoList));
+  }
+
+  public setTutorialToDoTaskToComplete(id: number) {
+    const tutorialToDos = localStorage.getItem('tutorialToDos');
+
+    if (!tutorialToDos) {
+      localStorage.setItem('tutorialToDos', JSON.stringify(TutorialToDoList));
+      return;
+    }
+
+    const toDoList: ToDoList = JSON.parse(tutorialToDos);
+
+    const toDoIndex = toDoList.todos.findIndex((t) => t.id === id);
+
+    if (toDoIndex === -1) return;
+
+    toDoList.todos[toDoIndex].complete = true;
+
+    if (toDoList.todos.filter((t) => t.complete).length >= 5)
+      toDoList.todos[5].complete = true;
+
+    localStorage.setItem('tutorialToDos', JSON.stringify(toDoList));
   }
 
   public getAllToDoLists(): ToDoList[] {

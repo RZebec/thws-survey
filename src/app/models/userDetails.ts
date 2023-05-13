@@ -1,4 +1,4 @@
 export interface UserDetails {
-  email: string;
-  step: string;
+  step: number;
+  acceptedTerms: boolean;
 }
