@@ -83,7 +83,7 @@ export class DatabaseService {
 
     const endTime = new Date();
     const timeSpendOnSurvey =
-      userDetails.endTime.getTime() - userDetails.startTime.getTime();
+      endTime.getTime() - userDetails.startTime.getTime();
 
     userDetails.endTime = endTime;
     userDetails.timeSpendOnSurvey = timeSpendOnSurvey;

@@ -65,7 +65,7 @@ export class AuthPageComponent implements OnInit {
       .then(async (value: UserCredential) => {
         console.log('Success', value);
         if (!localStorage.getItem('userId')) {
-          await this.databaseService.setUserInformation(value.user.uid);
+          this.databaseService.setUserInformation(value.user.uid);
         }
         this.router.navigateByUrl(this.routers.TERMS);
       })

@@ -36,7 +36,7 @@ export class HeaderComponent {
   }
 
   public async loadUser() {
-    this.user = await this.databaseService.getUserDetails();
+    this.user = this.databaseService.getUserDetails();
   }
 
   public openMenu(): void {
