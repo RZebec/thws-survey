@@ -42,6 +42,9 @@ export class DatabaseService {
     const userDetails: UserDetails = {
       step: 0,
       acceptedTerms: false,
+      startTime: new Date(),
+      endTime: new Date(),
+      timeSpendOnSurvey: 0,
     };
 
     localStorage.setItem('userId', userId);
@@ -70,6 +73,24 @@ export class DatabaseService {
     localStorage.setItem('userDetails', JSON.stringify(userDetails));
 
     return updateDoc(userDocRef, { acceptedTerms });
+  }
+
+  async updateUserSurveyTime() {
+    const userId = this.getUserId();
+    const userDocRef = doc(this.db, `users/${userId}`);
+
+    const userDetails: UserDetails = this.getUserDetails();
+
+    const endTime = new Date();
+    const timeSpendOnSurvey =
+      userDetails.endTime.getTime() - userDetails.startTime.getTime();
+
+    userDetails.endTime = endTime;
+    userDetails.timeSpendOnSurvey = timeSpendOnSurvey;
+
+    localStorage.setItem('userDetails', JSON.stringify(userDetails));
+
+    return updateDoc(userDocRef, { endTime, timeSpendOnSurvey });
   }
 
   async addAnalyticsEvent(
@@ -136,9 +157,12 @@ export class DatabaseService {
 
     if (userDetailsString) return JSON.parse(userDetailsString);
 
-    const userDetails = {
+    const userDetails: UserDetails = {
       step: 0,
       acceptedTerms: false,
+      startTime: new Date(),
+      endTime: new Date(),
+      timeSpendOnSurvey: 0,
     };
 
     localStorage.setItem('userDetails', JSON.stringify(userDetails));
