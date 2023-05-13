@@ -20,6 +20,8 @@ import { LayoutComponent } from './layout/layout.component';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/containers/header/header.component';
 import { UserComponent } from './header/components/user/user.component';
+import { TranslateModule } from '@ngx-translate/core';
+import { MatSelectModule } from '@angular/material/select';
 //import { ShellComponent } from './shell/shell.component';
 
 const modules = [
@@ -35,9 +37,11 @@ const modules = [
   MatCardModule,
   MatFormFieldModule,
   MatInputModule,
+  MatSelectModule,
   MatSnackBarModule,
   RouterModule,
   FormsModule,
+  TranslateModule,
 ];
 
 const components = [

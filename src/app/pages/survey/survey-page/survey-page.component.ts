@@ -15,75 +15,67 @@ export class SurveyPageComponent {
 
   surveyToDo: Survey[] = [
     {
-      question:
-        'On a scale of 1 to 5, please rate the overall usability of the todo app.',
-      hint: '1 - Very difficult to use, 2 - Difficult to use, 3 - Neutral, 4 - Easy to use, 5 - Very easy to use',
+      question: 'overall_usability',
+      hint: 'overall_usability_hint',
       numericValue: 0,
     },
     {
-      question:
-        "How intuitive was the app's interface for adding, managing, and updating tasks?",
-      hint: '1 - Not intuitive at all, 2 - Somewhat unintuitive, 3 - Neutral, 4 - Somewhat intuitive, 5 - Very intuitive',
+      question: 'intuitive_interface',
+      hint: 'intuitive_interface_hint',
       numericValue: 0,
     },
     {
-      question: 'How visually appealing was the design of the app?',
-      hint: '1 - Very unappealing, 2 - Somewhat unappealing, 3 - Neutral, 4 - Somewhat appealing, 5 - Very appealing',
+      question: 'visual_appeal',
+      hint: 'visual_appeal_hint',
       numericValue: 0,
     },
     {
-      question:
-        'How well did the app meet your expectations in terms of fulfilling your task management needs?',
-      hint: '1 - Not at all, 2 - Somewhat, 3 - Neutral, 4 - Mostly, 5 - Completely',
+      question: 'meeting_expectations',
+      hint: 'meeting_expectations_hint',
       numericValue: 0,
     },
     {
-      question:
-        "On a scale of 1 to 5, please rate the app's responsiveness and speed.",
-      hint: '1 - Very slow, 2 - Slow, 3 - Neutral, 4 - Fast, 5 - Very fast',
+      question: 'responsiveness_speed',
+      hint: 'responsiveness_speed_hint',
       numericValue: 0,
     },
     {
-      question: 'How well did the app organize and display your tasks?',
-      hint: '1 - Very poorly, 2 - Poorly, 3 - Neutral, 4 - Well, 5 - Very well',
+      question: 'organize_display_tasks',
+      hint: 'organize_display_tasks_hint',
       numericValue: 0,
     },
     {
-      question:
-        'Were there any features or functionalities that you found particularly useful or impressive?',
+      question: 'useful_features',
       textValue: '',
     },
     {
-      question:
-        'On a scale of 1 to 5, please rate your overall satisfaction with the todo app.',
-      hint: '1 - Very dissatisfied, 2 - Dissatisfied, 3 - Neutral, 4 - Satisfied, 5 - Very satisfied',
+      question: 'overall_satisfaction',
+      hint: 'overall_satisfaction_hint',
       numericValue: 0,
     },
     {
-      question: 'How likely are you to continue using the app in the future?',
-      hint: '1 - Very unlikely, 2 - Unlikely, 3 - Neutral, 4 - Likely, 5 - Very likely',
+      question: 'future_usage_likelihood',
+      hint: 'future_usage_likelihood_hint',
       numericValue: 0,
     },
     {
-      question:
-        'Do you have any additional comments, suggestions, or feedback regarding the todo app and its user experience?',
+      question: 'additional_comments',
       textValue: '',
     },
   ];
-
   surveyDetails: Survey[] = [
     {
-      question: 'Age',
+      question: 'AGE',
       selectValue: '',
       options: Array.from({ length: 70 }, (_, index) => (index + 1).toString()),
     },
     {
-      question: 'Gender',
+      question: 'GENDER',
       selectValue: '',
       options: ['Male', 'Female', 'Other'],
     },
     {
-      question: 'Country of Residency',
+      question: 'COUNTRY',
       selectValue: '',
       options: countryList,
     },
@@ -104,6 +96,7 @@ export class SurveyPageComponent {
     console.log(this.surveyDetails);
 
     if (this.checkSurveys()) {
+      console.log('Check successful');
       this.databaseService.submitToDoSurvey(this.surveyToDo);
       this.databaseService.submitDetailsSurvey(this.surveyDetails);
       this.databaseService.updateUserStep(3);

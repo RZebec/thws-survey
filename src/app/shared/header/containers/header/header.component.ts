@@ -8,6 +8,7 @@ import { authState, User } from '@angular/fire/auth';
 import { routes } from 'src/app/consts/routes';
 import { DatabaseService } from 'src/app/services/database.service';
 import { UserDetails } from 'src/app/models/userDetails';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-main-header',
@@ -23,6 +24,8 @@ export class HeaderComponent {
 
   @Output() isShowSidebar = new EventEmitter<boolean>();
 
+  selectedLang;
+
   public user!: UserDetails;
   public routers: typeof routes = routes;
 
@@ -30,13 +33,20 @@ export class HeaderComponent {
     private loginService: LoginService,
     private authService: AuthService,
     private databaseService: DatabaseService,
-    private router: Router
+    private router: Router,
+    public translate: TranslateService
   ) {
     this.loadUser();
+    this.selectedLang = translate.currentLang;
   }
 
   public async loadUser() {
     this.user = this.databaseService.getUserDetails();
+  }
+
+  switchLang() {
+    this.selectedLang = this.selectedLang === 'en' ? 'de' : 'en';
+    this.translate.use(this.selectedLang);
   }
 
   public openMenu(): void {

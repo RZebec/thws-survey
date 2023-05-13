@@ -8,6 +8,7 @@ import {
   Router,
   RouterState,
 } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 declare let gtag: Function;
 
@@ -17,7 +18,21 @@ declare let gtag: Function;
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  constructor(private afAuth: Auth, private router: Router) {
+  constructor(
+    private afAuth: Auth,
+    private router: Router,
+    private translate: TranslateService
+  ) {
+    translate.setDefaultLang('en');
+    translate.use('en');
+    translate.addLangs(['de']);
+
+    const browserLang = translate.getBrowserLang();
+    if (browserLang !== undefined)
+      translate.use(browserLang.match(/en|de/) ? browserLang : 'en');
+
+    console.log(browserLang);
+
     onAuthStateChanged(this.afAuth, (user) => {
       if (user) {
         // User is signed in, see docs for a list of available properties

@@ -11,6 +11,13 @@ import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { provideAuth, getAuth } from '@angular/fire/auth';
 import { getAnalytics, provideAnalytics } from '@angular/fire/analytics';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 
 @NgModule({
   declarations: [AppComponent],
@@ -19,6 +26,14 @@ import { getAnalytics, provideAnalytics } from '@angular/fire/analytics';
     BrowserAnimationsModule,
     AppRoutingModule,
     SharedModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient],
+      },
+    }),
     provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
     provideAnalytics(() => getAnalytics()),
     provideFirestore(() => getFirestore()),

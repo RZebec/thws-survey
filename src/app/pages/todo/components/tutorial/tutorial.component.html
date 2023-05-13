@@ -15,8 +15,8 @@
       </h2></mat-card-title
     >
     <mat-card-subtitle>
-        <div class="tutorial-hint">
-         <strong>NOTE:</strong> The following list is just an example and will complete the steps automatically based on the actions you make in the app.
+        <div class="tutorial-hint" [innerHTML]="'TUTORIAL.NOTE' | translate">
+
         </div>
     </mat-card-subtitle>
   </mat-card-header>
@@ -38,7 +38,7 @@
                 </div>
 
                 <div>
-                  <h3>{{ toDo.task }}</h3>
+                  <h3>{{ 'TUTORIAL.' + toDo.id | translate }}</h3>
                   <h3 *ngIf="toDo.date" [style.color]="getDateColor(toDo.date)">
                     {{ toDo.date | date : "mediumDate" }}
                   </h3>
@@ -70,7 +70,7 @@
       [disabled]="deleteButtonCondition()"
       (click)="deleteTutorial()"
     >
-      Delete List
+      {{ 'DELETE_TODO_LIST' | translate }}
     </button>
   </mat-card-content>
 </mat-card>

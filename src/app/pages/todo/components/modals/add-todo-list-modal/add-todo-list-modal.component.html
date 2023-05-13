@@ -1,4 +1,4 @@
-<h1 mat-dialog-title>Add new ToDo list!</h1>
+<h1 mat-dialog-title>{{ 'ADD_TODO_LIST' | translate }}</h1>
 
 <div mat-dialog-content>
   <mat-form-field>
@@ -12,9 +12,9 @@
 
 <div mat-dialog-actions>
   <button mat-flat-button color="primary" (click)="addToDoList()">
-    Add <mat-icon>add</mat-icon>
+    {{ 'ADD' | translate }} <mat-icon>add</mat-icon>
   </button>
   <button mat-flat-button (click)="onNoClick()">
-    Close <mat-icon>close</mat-icon>
+    {{ 'CLOSE' | translate }} <mat-icon>close</mat-icon>
   </button>
 </div>

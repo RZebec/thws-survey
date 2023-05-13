@@ -2,12 +2,12 @@
 
 <div class="toDo-edit">
   <mat-form-field appearance="fill">
-    <mat-label>ToDo Task</mat-label>
+    <mat-label>{{ 'TODO_TASK' | translate }}</mat-label>
     <input matInput [(ngModel)]="toDo.task" (keydown.enter)="onSaveToDo()" />
   </mat-form-field>
 
   <mat-form-field appearance="fill">
-    <mat-label>Choose a date</mat-label>
+    <mat-label>{{ 'CHOOSE_A_DATE' | translate }}</mat-label>
 
     <input
       matInput
@@ -28,9 +28,9 @@
 
 <div mat-dialog-actions>
   <button mat-flat-button color="primary" (click)="onSaveToDo()">
-    Save <mat-icon>save</mat-icon>
+    {{ 'SAVE' | translate }} <mat-icon>save</mat-icon>
   </button>
   <button mat-flat-button (click)="onNoClick()">
-    Close <mat-icon>close</mat-icon>
+    {{ 'CLOSE' | translate }} <mat-icon>close</mat-icon>
   </button>
 </div>

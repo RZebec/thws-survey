@@ -26,6 +26,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { TodoListEditModalComponent } from './components/modals/todo-list-edit-modal/todo-list-edit-modal.component';
 import { TutorialComponent } from './components/tutorial/tutorial.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [
@@ -57,6 +58,7 @@ import { TutorialComponent } from './components/tutorial/tutorial.component';
     MatCheckboxModule,
     MatFormFieldModule,
     MatListModule,
+    TranslateModule,
   ],
   providers: [ToDoService],
 })

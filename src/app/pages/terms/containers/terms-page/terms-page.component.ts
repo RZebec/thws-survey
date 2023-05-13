@@ -5,6 +5,7 @@ import { TermsModalComponent } from '../../components/modals/terms-modal/terms-m
 import { DatabaseService } from 'src/app/services/database.service';
 import { Router } from '@angular/router';
 import { routes as constRoutes } from '../../../../consts/routes';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-terms-page',

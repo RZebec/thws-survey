@@ -5,19 +5,26 @@
     mat-flat-button
     color="primary"
   >
-    Add ToDo List <mat-icon>add</mat-icon>
+    {{ "ADD_TODO_LIST" | translate }} <mat-icon>add</mat-icon>
   </button>
   <mat-tab-group [(selectedIndex)]="tabIndex">
     <mat-tab [label]="'Tutorial'" [id]="-2">
-    <app-tutorial [toDoList]="tutorialToDoList"></app-tutorial>
+      <app-tutorial [toDoList]="tutorialToDoList"></app-tutorial>
     </mat-tab>
-    <mat-tab *ngFor="let toDoList of toDoLists" [label]="toDoList.name" [id]="toDoList.id">
+    <mat-tab
+      *ngFor="let toDoList of toDoLists"
+      [label]="toDoList.name"
+      [id]="toDoList.id"
+    >
       <div class="add-todo">
-        <!-- <app-todo-form (toDoChange)="onAddToDoChange($event)"></app-todo-form> -->
-
         <mat-form-field>
-          <mat-label>Add ToDo</mat-label>
-          <input matInput [formControl]="addTodoFormControl" (click)="setMeasureTime()" (keydown.enter)="addToDo(toDoList.id)"/>
+          <mat-label>{{ "ADD_TODO" | translate }}</mat-label>
+          <input
+            matInput
+            [formControl]="addTodoFormControl"
+            (click)="setMeasureTime()"
+            (keydown.enter)="addToDo(toDoList.id)"
+          />
         </mat-form-field>
 
         <button
@@ -32,36 +39,32 @@
 
       <mat-card>
         <mat-card-header>
-          <mat-card-title><h2>ToDos {{ toDoList.todos.length > 0 ? '(' + getCompleteCount(toDoList.todos) + '/' + toDoList.todos.length + ' Done)' : ''}}</h2></mat-card-title>
+          <mat-card-title
+            ><h2>
+              ToDos
+              {{
+                toDoList.todos.length > 0
+                  ? "(" +
+                    getCompleteCount(toDoList.todos) +
+                    "/" +
+                    toDoList.todos.length +
+                    " Done)"
+                  : ""
+              }}
+            </h2></mat-card-title
+          >
         </mat-card-header>
         <mat-card-content>
           <ng-container *ngIf="toDoList.todos; let toDos">
-            <ng-container *ngIf="toDos.length > 0; else allDone">
+            <ng-container *ngIf="toDos.length > 0">
               <app-todo-list
                 [toDos]="toDos"
                 (toDoArrayChange)="updateToDosInList(toDoList.id, $event)"
               ></app-todo-list>
             </ng-container>
-            <ng-template #allDone>
-              <div fxLayout="row" fxLayoutAlign="center center">
-                <h4>All Done!! 🏖</h4>
-              </div>
-            </ng-template>
           </ng-container>
         </mat-card-content>
       </mat-card>
-
-      <!-- <mat-card>
-        <mat-card-header>
-          <mat-card-title><h2>Completed 🎉</h2></mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-          <app-todo-list
-            [toDos]="getTodosByState(toDoList.todos, true)"
-          ></app-todo-list>
-        </mat-card-content>
-      </mat-card> -->
-
       <mat-card>
         <mat-card-content>
           <button
@@ -70,17 +73,10 @@
             color="primary"
             (click)="openEditToDoListDialog(toDoList)"
           >
-            Edit List
+            {{ "EDIT_TODO_LIST" | translate }}
           </button>
         </mat-card-content>
       </mat-card>
     </mat-tab>
-    <!-- <mat-tab class="mat-label-button" disabled>
-      <ng-template mat-tab-label>
-        <button mat-flat-button (click)="openDialog()">
-          <mat-icon>add</mat-icon> List
-        </button>
-      </ng-template>
-    </mat-tab> -->
   </mat-tab-group>
 </app-layout>

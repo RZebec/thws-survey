@@ -5,9 +5,16 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { TermsRoutingModule } from './terms-routing.module';
 import { MatDialogModule } from '@angular/material/dialog';
 import { TermsModalComponent } from './components/modals/terms-modal/terms-modal.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [TermsPageComponent, TermsModalComponent],
-  imports: [CommonModule, TermsRoutingModule, SharedModule, MatDialogModule],
+  imports: [
+    CommonModule,
+    TermsRoutingModule,
+    SharedModule,
+    MatDialogModule,
+    TranslateModule,
+  ],
 })
 export class TermsModule {}

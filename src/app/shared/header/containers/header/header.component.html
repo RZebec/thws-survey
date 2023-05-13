@@ -1,15 +1,30 @@
 <mat-toolbar class="header">
-
   <div class="header__title">
     <!-- <button class="header__title-button" mat-mini-fab (click)="openMenu()">
       <mat-icon *ngIf="!isMenuOpened" class="header__title-button-icon">menu</mat-icon>
       <mat-icon *ngIf="isMenuOpened" class="header__title-button-icon">arrow_back</mat-icon>
     </button> -->
-    <span class="header__title-text">{{title}}</span>
+    <span class="header__title-text">{{ title }}</span>
   </div>
 
-  <!-- <div class="header-toolbar" *ngIf="user">
-    <app-user [user]="user" (signOut)="signOut()"></app-user>
+  <!-- <div class="header__title">
+    <mat-select
+      class="header__title-text"
+      (change)="translate.use(selectedLang)"
+      [(ngModel)]="selectedLang"
+    >
+      <mat-option *ngFor="let lang of translate.getLangs()" [value]="lang">{{
+        lang
+      }}</mat-option>
+    </mat-select>
   </div> -->
 
+  <div class="header-toolbar" *ngIf="user">
+    <button
+      mat-flat-button
+      (click)="switchLang()"
+    >
+      {{ selectedLang === 'en' ? 'DE' : 'EN' }}
+    </button>
+  </div>
 </mat-toolbar>

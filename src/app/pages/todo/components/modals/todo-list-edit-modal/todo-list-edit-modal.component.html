@@ -1,8 +1,8 @@
-<h1 mat-dialog-title>Edit: {{ data.name }}</h1>
+<h1 mat-dialog-title>{{ 'EDIT_TODO_LIST' | translate }}</h1>
 
 <div class="toDo-edit">
   <mat-form-field appearance="fill">
-    <mat-label>ToDo Task</mat-label>
+    <mat-label>{{ 'TODO_LIST_NAME' | translate }}</mat-label>
     <input
       matInput
       [(ngModel)]="toDoList.name"
@@ -16,15 +16,15 @@
     color="warn"
     (click)="removeToDoList()"
   >
-    Delete List
+    {{ 'DELETE_TODO_LIST' | translate }}
   </button>
 </div>
 
 <div mat-dialog-actions>
   <button mat-flat-button color="primary" (click)="onSaveToDo()">
-    Save <mat-icon>save</mat-icon>
+    {{ 'SAVE' | translate }} <mat-icon>save</mat-icon>
   </button>
   <button mat-flat-button (click)="onNoClick()">
-    Close <mat-icon>close</mat-icon>
+    {{ 'CLOSE' | translate }} <mat-icon>close</mat-icon>
   </button>
 </div>
