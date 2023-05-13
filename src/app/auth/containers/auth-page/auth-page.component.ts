@@ -14,6 +14,7 @@ import {
 import { UserCredential } from 'firebase/auth';
 import { SignUpEmailModel } from '../../models/signUpEmailModel';
 import { DatabaseService } from 'src/app/services/database.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-auth-page',
@@ -31,7 +32,8 @@ export class AuthPageComponent implements OnInit {
     private databaseService: DatabaseService,
     private snackBar: MatSnackBar,
     private loginService: LoginService,
-    private db: Firestore
+    private db: Firestore,
+    private translate: TranslateService
   ) {}
 
   ngOnInit(): void {
@@ -57,6 +59,16 @@ export class AuthPageComponent implements OnInit {
         console.log('Something went wrong: ', error);
         this.openSnackBarError(error);
       });
+  }
+
+  signInGerman() {
+    this.translate.use('de');
+    this.signInAnonymously();
+  }
+
+  signInEnglish() {
+    this.translate.use('de');
+    this.signInAnonymously();
   }
 
   public signInAnonymously() {

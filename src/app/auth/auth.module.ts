@@ -12,6 +12,7 @@ import { YearPipe } from './pipes';
 import { LoginFormComponent, SignFormComponent } from './components';
 import { AuthService } from 'src/app/services/auth.service';
 import { SignEmailinkFormComponent } from './components/sign-emailink-form/sign-emailink-form.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { SignEmailinkFormComponent } from './components/sign-emailink-form/sign-
     MatInputModule,
     ReactiveFormsModule,
     FormsModule,
+    TranslateModule,
   ],
   providers: [AuthService],
 })
