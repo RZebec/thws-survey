@@ -36,7 +36,7 @@ export class DatabaseService {
     return userId;
   }
 
-  setUserInformation(userId: string) {
+  async setUserInformation(userId: string) {
     const user = doc(this.db, `users/${userId}`);
 
     const userDetails: UserDetails = {
@@ -45,37 +45,50 @@ export class DatabaseService {
     };
 
     localStorage.setItem('userId', userId);
+    localStorage.setItem('userDetails', JSON.stringify(userDetails));
 
     return setDoc(user, userDetails);
   }
 
-  updateUserStep(step: number) {
+  async updateUserStep(step: number) {
     const userId = this.getUserId();
     const userDocRef = doc(this.db, `users/${userId}`);
+
+    const userDetails: UserDetails = this.getUserDetails();
+    userDetails.step = step;
+    localStorage.setItem('userDetails', JSON.stringify(userDetails));
+
     return updateDoc(userDocRef, { step });
   }
 
-  updateUserAcceptedTerms(acceptedTerms: boolean) {
+  async updateUserAcceptedTerms(acceptedTerms: boolean) {
     const userId = this.getUserId();
     const userDocRef = doc(this.db, `users/${userId}`);
+
+    const userDetails: UserDetails = this.getUserDetails();
+    userDetails.acceptedTerms = acceptedTerms;
+    localStorage.setItem('userDetails', JSON.stringify(userDetails));
+
     return updateDoc(userDocRef, { acceptedTerms });
   }
 
-  addAnalyticsEvent(eventData: AnalyticsEvent): Promise<DocumentReference> {
+  async addAnalyticsEvent(
+    eventData: AnalyticsEvent
+  ): Promise<DocumentReference> {
     const userId = this.getUserId();
     // const userName = this.afAuth.currentUser!.displayName;
 
     return addDoc(collection(this.db, `users/${userId}/events`), eventData);
   }
 
-  submitToDoSurvey(survey: Survey[]) {
+  async submitToDoSurvey(survey: Survey[]) {
     const userId = this.getUserId();
     const userDocRef = collection(this.db, `users/${userId}/surveys`);
 
     return addDoc(userDocRef, { name: 'appSurvey', survey });
   }
 
-  submitDetailsSurvey(survey: Survey[]) {
+  async submitDetailsSurvey(survey: Survey[]) {
     const userId = this.getUserId();
     const userDocRef = collection(this.db, `users/${userId}/surveys`);
     return addDoc(userDocRef, { name: 'userDetailsSurvey', survey });
@@ -113,11 +126,24 @@ export class DatabaseService {
     return user;
   }
 
-  async getUserDetails(): Promise<UserDetails> {
-    const userId = this.getUserId();
-    const userDocRef = doc(this.db, 'users/' + userId);
-    const userDocSnap = await getDoc(userDocRef);
-    return userDocSnap.data() as UserDetails;
+  getUserDetails(): UserDetails {
+    // const userId = this.getUserId();
+    // const userDocRef = doc(this.db, 'users/' + userId);
+    // const userDocSnap = await getDoc(userDocRef);
+    // return userDocSnap.data() as UserDetails;
+
+    const userDetailsString = localStorage.getItem('userDetails');
+
+    if (userDetailsString) return JSON.parse(userDetailsString);
+
+    const userDetails = {
+      step: 0,
+      acceptedTerms: false,
+    };
+
+    localStorage.setItem('userDetails', JSON.stringify(userDetails));
+
+    return userDetails;
   }
 
   // getUserBoards(): Promise<Board[]> {

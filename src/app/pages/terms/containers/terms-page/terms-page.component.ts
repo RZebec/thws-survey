@@ -24,9 +24,9 @@ export class TermsPageComponent {
     dialogRef.afterClosed().subscribe((result) => {});
   }
 
-  acceptPolicy() {
+  async acceptPolicy() {
     this.databaseService.updateUserAcceptedTerms(true);
     this.databaseService.updateUserStep(1);
-    this.router.navigateByUrl(constRoutes.STEPNAVIGATOR);
+    this.router.navigateByUrl(constRoutes.TODO);
   }
 }

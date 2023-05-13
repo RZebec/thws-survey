@@ -49,9 +49,9 @@ export class AuthPageComponent implements OnInit {
         console.log('Success', value);
         this.openSnackBarSuccess('Success');
         if (!(await this.databaseService.getUserDetails())) {
-          this.databaseService.setUserInformation(value.user.uid);
+          await this.databaseService.setUserInformation(value.user.uid);
         }
-        this.router.navigateByUrl(this.routers.STEPNAVIGATOR);
+        this.router.navigateByUrl(this.routers.TERMS);
       })
       .catch((error: any) => {
         console.log('Something went wrong: ', error);
@@ -67,7 +67,7 @@ export class AuthPageComponent implements OnInit {
         if (!localStorage.getItem('userId')) {
           await this.databaseService.setUserInformation(value.user.uid);
         }
-        this.router.navigateByUrl(this.routers.STEPNAVIGATOR);
+        this.router.navigateByUrl(this.routers.TERMS);
       })
       .catch((error: any) => {
         console.log('Something went wrong: ', error);
@@ -98,10 +98,10 @@ export class AuthPageComponent implements OnInit {
   signUp(signUpForm: SignUpModel) {
     this.service
       .signUp(signUpForm.email, signUpForm.password)
-      .then((data) => {
+      .then(async (data) => {
         this.loginService.setUser(data.user);
         this.loginService.setUserId(data.user.uid);
-        this.databaseService.setUserInformation(data.user.uid);
+        await this.databaseService.setUserInformation(data.user.uid);
         this.openSnackBarSuccess('Success');
         this.onSuccessfulSignUp();
       })

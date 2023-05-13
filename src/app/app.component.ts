@@ -1,5 +1,6 @@
 import { DOCUMENT } from '@angular/common';
 import { Component, Inject } from '@angular/core';
+import { Auth, onAuthStateChanged } from '@angular/fire/auth';
 import { Title } from '@angular/platform-browser';
 import {
   ActivatedRoute,
@@ -16,29 +17,20 @@ declare let gtag: Function;
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  constructor(
-    private router: Router,
-    private titleService: Title,
-    @Inject(DOCUMENT) private document: Document
-  ) {
-    this.handleRouteEvents();
-  }
+  constructor(private afAuth: Auth, private router: Router) {
+    onAuthStateChanged(this.afAuth, (user) => {
+      if (user) {
+        // User is signed in, see docs for a list of available properties
+        // https://firebase.google.com/docs/reference/js/firebase.User
+        const uid = user.uid;
+        // localStorage.setItem('userId', uid);
+        // ...
 
-  handleRouteEvents() {
-    // this.router.events.subscribe((event) => {
-    //   if (event instanceof NavigationEnd) {
-    //     const title = this.getTitle(
-    //       this.router.routerState,
-    //       this.router.routerState.root
-    //     ).join('-');
-    //     this.titleService.setTitle(title);
-    //     gtag('event', 'page_view', {
-    //       page_title: title,
-    //       page_path: event.urlAfterRedirects,
-    //       page_location: this.document.location.href,
-    //     });
-    //   }
-    // });
+        console.log('New UID: ' + uid);
+      } else {
+        // localStorage.setItem('userId', '');
+      }
+    });
   }
 
   getTitle(state: RouterState, parent: ActivatedRoute): string[] {

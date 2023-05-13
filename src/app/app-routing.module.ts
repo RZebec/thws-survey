@@ -16,7 +16,7 @@ const redirectLoggedInToDashboard = () =>
 const routes: Routes = [
   {
     path: '',
-    redirectTo: constRoutes.STEPNAVIGATOR.replace('/', ''),
+    redirectTo: constRoutes.LOGIN.replace('/', ''),
     pathMatch: 'full',
   },
   {

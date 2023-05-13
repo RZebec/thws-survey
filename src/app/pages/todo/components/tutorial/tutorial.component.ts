@@ -44,8 +44,8 @@ export class TutorialComponent {
     );
   }
 
-  deleteTutorial() {
-    this.databaseService.updateUserStep(2);
-    this.router.navigateByUrl(constRoutes.STEPNAVIGATOR);
+  async deleteTutorial() {
+    await this.databaseService.updateUserStep(2);
+    this.router.navigateByUrl(constRoutes.SURVEY);
   }
 }

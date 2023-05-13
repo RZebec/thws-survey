@@ -17,14 +17,9 @@ export class StepNavigatorPageComponent {
   ) {}
 
   async ngOnInit() {
-    const user = await this.databaseService.getUserDetails();
+    const user = this.databaseService.getUserDetails();
 
     console.log(user);
-
-    if (!user) {
-      this.router.navigateByUrl(this.routers.LOGIN);
-      return;
-    }
 
     if (!user.acceptedTerms) {
       this.router.navigateByUrl(this.routers.TERMS);

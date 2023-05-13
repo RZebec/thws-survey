@@ -104,8 +104,8 @@ export class SurveyPageComponent {
     console.log(this.surveyDetails);
 
     if (this.checkSurveys()) {
-      await this.databaseService.submitToDoSurvey(this.surveyToDo);
-      await this.databaseService.submitDetailsSurvey(this.surveyDetails);
+      this.databaseService.submitToDoSurvey(this.surveyToDo);
+      this.databaseService.submitDetailsSurvey(this.surveyDetails);
       await this.databaseService.updateUserStep(3);
       this.router.navigateByUrl(constRoutes.DONE);
     }
