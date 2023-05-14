@@ -3,6 +3,7 @@ import { FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
 import { DatabaseService } from 'src/app/services/database.service';
 import { routes as constRoutes } from '../../../consts/routes';
+import { MatStepper } from '@angular/material/stepper';
 
 @Component({
   selector: 'app-survey-page',
@@ -86,9 +87,12 @@ export class SurveyPageComponent {
     private router: Router
   ) {}
 
-  submitToDo() {
+  submitToDo(stepper: MatStepper) {
     this.submittedToDo = true;
     console.log(this.surveyToDo);
+
+    if (this.surveyToDo.filter((q) => q.numericValue === 0).length === 0)
+      stepper.next();
   }
 
   async submitDetails() {
@@ -106,11 +110,6 @@ export class SurveyPageComponent {
 
   checkSurveys(): boolean {
     if (this.surveyToDo.filter((q) => q.numericValue === 0).length > 0)
-      return false;
-    if (this.surveyToDo.filter((q) => q.selectValue === '').length > 0)
-      return false;
-
-    if (this.surveyDetails.filter((q) => q.numericValue === 0).length > 0)
       return false;
     if (this.surveyDetails.filter((q) => q.selectValue === '').length > 0)
       return false;

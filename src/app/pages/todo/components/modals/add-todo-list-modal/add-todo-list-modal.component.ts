@@ -7,6 +7,7 @@ import {
 import { ToDoService } from '../../../services/todo-service';
 import { DatabaseService } from 'src/app/services/database.service';
 import { AnalyticsEvent } from 'src/app/pages/todo/models/analyticsEvent';
+import { ToDoList } from '../../../models/todo-model';
 
 declare let gtag: Function;
 
@@ -56,7 +57,13 @@ export class AddTodoListModalComponent {
 
   addToDoList() {
     if (this._newToDoListName.trim() !== '') {
-      this.toDoService.createToDoList(this._newToDoListName);
+      const newToDoList: ToDoList = {
+        id: Math.random(),
+        todos: [],
+        name: this._newToDoListName,
+      };
+
+      this.toDoService.createToDoList(newToDoList);
       this.toDoService.setTutorialToDoTaskToComplete(10);
     }
     this.logEvent('close');

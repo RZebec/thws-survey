@@ -92,14 +92,14 @@ export class ToDoService {
   //   return todos[index];
   // }
 
-  public createToDoList(name: string) {
+  public createToDoList(newToDoList: ToDoList) {
     const toDoLists = this.getAllToDoLists();
 
-    const newToDoList: ToDoList = {
-      id: Math.random(),
-      name,
-      todos: [],
-    };
+    // const newToDoList: ToDoList = {
+    //   id: Math.random(),
+    //   name,
+    //   todos: [],
+    // };
 
     localStorage.setItem(
       this.dbPath,

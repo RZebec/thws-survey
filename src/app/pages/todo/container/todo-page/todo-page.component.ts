@@ -105,11 +105,19 @@ export class TodoPageComponent {
   addToDoList() {
     if (this._newToDoListName.trim() === '') return;
 
-    this.todoService.createToDoList(this._newToDoListName);
+    const newToDoList: ToDoList = {
+      id: Math.random(),
+      todos: [],
+      name: this._newToDoListName,
+    };
 
-    this.getTodoLists();
+    this.todoService.createToDoList(newToDoList);
 
-    this.tabIndex = this.toDoLists.length - 1;
+    // this.getTodoLists();
+
+    this.toDoLists = [...this.toDoLists, newToDoList];
+
+    this.tabIndex = this.toDoLists.length + 1;
   }
 
   onAddToDoListChange(toDoListName: string) {

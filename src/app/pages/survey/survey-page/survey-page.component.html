@@ -63,10 +63,9 @@
           class="example-full-width submitButton"
           mat-raised-button
           color="primary"
-          (click)="submitToDo()"
-          matStepperNext
+          (click)="submitToDo(stepper)"
         >
-          Next
+          {{ 'NEXT' | translate }}
         </button>
       </div>
     </mat-step>
@@ -142,7 +141,7 @@
           mat-raised-button
           (click)="submitDetails()"
         >
-          Next
+          {{ 'SUBMIT' | translate }}
         </button>
       </div>
     </mat-step>
