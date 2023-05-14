@@ -1,7 +1,6 @@
-import { DOCUMENT } from '@angular/common';
-import { Component, Inject } from '@angular/core';
+import { OverlayContainer } from '@angular/cdk/overlay';
+import { Component } from '@angular/core';
 import { Auth, onAuthStateChanged } from '@angular/fire/auth';
-import { Title } from '@angular/platform-browser';
 import {
   ActivatedRoute,
   NavigationEnd,
@@ -18,10 +17,14 @@ declare let gtag: Function;
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  darkMode = false;
+
   constructor(
     private afAuth: Auth,
     private router: Router,
-    private translate: TranslateService
+    private translate: TranslateService,
+    private route: ActivatedRoute,
+    private overlayContainer: OverlayContainer
   ) {
     translate.setDefaultLang('en');
     translate.use('en');
@@ -44,6 +47,28 @@ export class AppComponent {
         console.log('New UID: ' + uid);
       } else {
         // localStorage.setItem('userId', '');
+      }
+    });
+  }
+
+  ngOnInit() {
+    this.route.queryParams.subscribe((params) => {
+      console.log(params);
+      const t = params['t'];
+
+      if (t) {
+        localStorage.setItem('t', t);
+        this.darkMode = t ? t === 'd' : false;
+      }
+
+      const localStorageID = localStorage.getItem('t');
+
+      if (localStorageID && localStorageID === 'd') {
+        this.darkMode = true;
+      }
+
+      if (this.darkMode) {
+        this.overlayContainer.getContainerElement().classList.add('darkMode');
       }
     });
   }

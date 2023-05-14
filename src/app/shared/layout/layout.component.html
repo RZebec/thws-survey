@@ -2,9 +2,11 @@
   (isShowSidebar)="sidenav.toggle($event)"
   [isMenuOpened]="isShowSidebar"
   [title]="title"
+  [toggleDarkMode]="toggleDark"
+  (toggleDarkLight)="toggleDark = !toggleDark"
 ></app-main-header>
 
-<mat-sidenav-container class="layout">
+<mat-sidenav-container class="layout" [class]="toggleDark ? 'dark' : ''" >
   <mat-sidenav
     #sidenav
     mode="side"

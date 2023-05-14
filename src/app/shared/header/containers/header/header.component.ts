@@ -24,6 +24,13 @@ export class HeaderComponent {
 
   @Output() isShowSidebar = new EventEmitter<boolean>();
 
+  @Input()
+  toggleDarkMode = false;
+
+  @Output()
+  toggleDarkLight = new EventEmitter<boolean>();
+
+  @Output()
   selectedLang;
 
   public user!: UserDetails;

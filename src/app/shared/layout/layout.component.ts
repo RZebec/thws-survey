@@ -20,6 +20,8 @@ export class LayoutComponent implements OnDestroy {
   @Input()
   title: string = '';
 
+  toggleDark = false;
+
   public isShowSidebar: boolean = false;
   public mobileQuery: MediaQueryList;
   private mobileQueryListener: () => void;

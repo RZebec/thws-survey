@@ -15,9 +15,10 @@
       </h2></mat-card-title
     >
     <mat-card-subtitle>
-        <div class="tutorial-hint" [innerHTML]="'TUTORIAL.NOTE' | translate">
-
-        </div>
+      <div
+        class="tutorial-hint"
+        [innerHTML]="'TUTORIAL.NOTE' | translate"
+      ></div>
     </mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
@@ -38,7 +39,7 @@
                 </div>
 
                 <div>
-                  <h3>{{ 'TUTORIAL.' + toDo.id | translate }}</h3>
+                  <h3>{{ "TUTORIAL." + toDo.id | translate }}</h3>
                   <h3 *ngIf="toDo.date" [style.color]="getDateColor(toDo.date)">
                     {{ toDo.date | date : "mediumDate" }}
                   </h3>
@@ -70,7 +71,7 @@
       [disabled]="deleteButtonCondition()"
       (click)="deleteTutorial()"
     >
-      {{ 'DELETE_TODO_LIST' | translate }}
+      {{ "DELETE_TODO_LIST" | translate }}
     </button>
   </mat-card-content>
 </mat-card>

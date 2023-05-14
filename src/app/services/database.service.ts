@@ -39,12 +39,21 @@ export class DatabaseService {
   async setUserInformation(userId: string) {
     const user = doc(this.db, `users/${userId}`);
 
+    let darkMode = false;
+
+    const localStorageID = localStorage.getItem('t');
+
+    if (localStorageID && localStorageID === 'd') {
+      darkMode = true;
+    }
+
     const userDetails: UserDetails = {
       step: 0,
       acceptedTerms: false,
       startTime: new Date(),
       endTime: new Date(),
       timeSpendOnSurvey: 0,
+      darkMode,
     };
 
     localStorage.setItem('userId', userId);
@@ -157,12 +166,22 @@ export class DatabaseService {
 
     if (userDetailsString) return JSON.parse(userDetailsString);
 
+
+    let darkMode = false;
+
+    const localStorageID = localStorage.getItem('t');
+
+    if (localStorageID && localStorageID === 'd') {
+      darkMode = true;
+    }
+
     const userDetails: UserDetails = {
       step: 0,
       acceptedTerms: false,
       startTime: new Date(),
       endTime: new Date(),
       timeSpendOnSurvey: 0,
+      darkMode,
     };
 
     localStorage.setItem('userDetails', JSON.stringify(userDetails));

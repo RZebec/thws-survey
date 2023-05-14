@@ -4,4 +4,5 @@ export interface UserDetails {
   startTime: Date;
   endTime: Date;
   timeSpendOnSurvey: number;
+  darkMode: boolean;
 }
