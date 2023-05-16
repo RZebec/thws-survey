@@ -51,27 +51,7 @@ export class AppComponent {
     });
   }
 
-  ngOnInit() {
-    this.route.queryParams.subscribe((params) => {
-      console.log(params);
-      const t = params['t'];
-
-      if (t) {
-        localStorage.setItem('t', t);
-        this.darkMode = t ? t === 'd' : false;
-      }
-
-      const localStorageID = localStorage.getItem('t');
-
-      if (localStorageID && localStorageID === 'd') {
-        this.darkMode = true;
-      }
-
-      if (this.darkMode) {
-        this.overlayContainer.getContainerElement().classList.add('darkMode');
-      }
-    });
-  }
+  ngOnInit() {}
 
   getTitle(state: RouterState, parent: ActivatedRoute): string[] {
     const data = [];

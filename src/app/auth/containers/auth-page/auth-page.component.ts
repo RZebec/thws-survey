@@ -15,6 +15,7 @@ import { UserCredential } from 'firebase/auth';
 import { SignUpEmailModel } from '../../models/signUpEmailModel';
 import { DatabaseService } from 'src/app/services/database.service';
 import { TranslateService } from '@ngx-translate/core';
+import { routes as constRoutes } from 'src/app/consts';
 
 @Component({
   selector: 'app-auth-page',
@@ -42,6 +43,10 @@ export class AuthPageComponent implements OnInit {
     if (userEmail) {
       this.service.loginSignInWithEMail(userEmail);
     }
+
+    const userDetails = localStorage.getItem('userDetails');
+
+    if (userDetails) this.router.navigateByUrl(constRoutes.DONE);
   }
 
   public signInWithGoogle(): void {
