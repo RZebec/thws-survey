@@ -16,6 +16,7 @@ import { SignUpEmailModel } from '../../models/signUpEmailModel';
 import { DatabaseService } from 'src/app/services/database.service';
 import { TranslateService } from '@ngx-translate/core';
 import { routes as constRoutes } from 'src/app/consts';
+import { UserDetails } from 'src/app/models/userDetails';
 
 @Component({
   selector: 'app-auth-page',
@@ -44,9 +45,34 @@ export class AuthPageComponent implements OnInit {
       this.service.loginSignInWithEMail(userEmail);
     }
 
-    const userDetails = localStorage.getItem('userDetails');
+    const userDetailsJSON = localStorage.getItem('userDetails');
 
-    if (userDetails) this.router.navigateByUrl(constRoutes.DONE);
+    // if (userDetails) this.router.navigateByUrl(constRoutes.DONE);
+    if (userDetailsJSON) {
+      const userDetails: UserDetails = JSON.parse(userDetailsJSON);
+
+      if (!userDetails.acceptedTerms) {
+        this.router.navigateByUrl(this.routers.TERMS);
+        return;
+      }
+
+      switch (userDetails.step) {
+        case 0:
+          this.router.navigateByUrl(this.routers.TERMS);
+          return;
+        case 1:
+          this.router.navigateByUrl(this.routers.TODO);
+          return;
+        case 2:
+          this.router.navigateByUrl(this.routers.SURVEY);
+          return;
+        case 3:
+          this.router.navigateByUrl(this.routers.DONE);
+          return;
+        default:
+          this.router.navigateByUrl(this.routers.TERMS);
+      }
+    }
   }
 
   public signInWithGoogle(): void {
