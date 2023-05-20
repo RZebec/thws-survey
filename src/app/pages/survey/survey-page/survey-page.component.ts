@@ -66,19 +66,19 @@ export class SurveyPageComponent {
   ];
   surveyDetails: Survey[] = [
     {
-      question: 'AGE',
+      question: 'FREQUENCY_APP_USAGE',
       selectValue: '',
-      options: Array.from({ length: 70 }, (_, index) => (index + 1).toString()),
+      options: ['RARELY', 'OCCASIONALLY', 'FREQUENTLY', 'DAILY'],
     },
     {
-      question: 'GENDER',
+      question: 'PREFERRED_DEVICE',
       selectValue: '',
-      options: ['Male', 'Female', 'Other'],
+      options: ['SMARTPHONE', 'TABLET', 'COMPUTER', 'OTHER'],
     },
     {
-      question: 'COUNTRY',
+      question: 'PREVIOUS_EXPERIENCE',
       selectValue: '',
-      options: countryList,
+      options: ['YES', 'NO'],
     },
   ];
 
