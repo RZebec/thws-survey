@@ -27,6 +27,7 @@ export class AuthPageComponent implements OnInit {
   user!: DocumentReference<DocumentData>;
   public todayDate: Date = new Date();
   public routers: typeof routes = routes;
+  public tabIndex = 0;
 
   constructor(
     private service: AuthService,
@@ -39,6 +40,11 @@ export class AuthPageComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    this.tabIndex = this.translate.currentLang
+      ? this.translate.currentLang === 'de'
+        ? 1
+        : 0
+      : 0;
     const userEmail = localStorage.getItem('email');
 
     if (userEmail) {
