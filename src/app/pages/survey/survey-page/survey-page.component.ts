@@ -66,6 +66,11 @@ export class SurveyPageComponent {
   ];
   surveyDetails: Survey[] = [
     {
+      question: 'PREVIOUS_EXPERIENCE',
+      selectValue: '',
+      options: ['YES', 'NO'],
+    },
+    {
       question: 'FREQUENCY_APP_USAGE',
       selectValue: '',
       options: ['RARELY', 'OCCASIONALLY', 'FREQUENTLY', 'DAILY'],
@@ -74,11 +79,6 @@ export class SurveyPageComponent {
       question: 'PREFERRED_DEVICE',
       selectValue: '',
       options: ['SMARTPHONE', 'TABLET', 'COMPUTER', 'OTHER'],
-    },
-    {
-      question: 'PREVIOUS_EXPERIENCE',
-      selectValue: '',
-      options: ['YES', 'NO'],
     },
   ];
 

@@ -121,7 +121,7 @@
                   *ngFor="let option of question.options"
                   [value]="option"
                 >
-                  {{ option }}
+                  {{ option | translate }}
                 </mat-option>
               </mat-select>
             </mat-form-field>
@@ -130,7 +130,7 @@
               class="invalid"
               *ngIf="submittedDetails && question.selectValue === ''"
             >
-              Please select a value
+              {{ 'VALUE_SELECT' | translate }}
             </mat-hint>
           </div>
         </mat-card-content>
