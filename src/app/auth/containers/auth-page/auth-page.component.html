@@ -2,41 +2,33 @@
   <div class="auth-page__content-block">
     <div class="auth-page__content-wrapper">
       <mat-tab-group class="auth-page__group">
-        <!-- <mat-tab label="Login">
-          <h4 class="auth-page__group-title">Hello</h4>
-          <div class="auth-page__google-button-wrapper">
-            <button mat-raised-button class="auth-page__google-button" (click)="signInWithGoogle()">
-              <img class="auth-page__google-button-icon" src="./assets/auth/google.svg" alt="google">Sign in with Google
-            </button>
-          </div>
-
+        <mat-tab label="English">
           <div class="auth-page__border-wrapper">
-            <div class="auth-page__border-line"></div>
-            <p class="auth-page__border-title">or</p>
-            <div class="auth-page__border-line"></div>
+            <h2>
+              Welcome to our Survey!
+            </h2>
+            <p>
+              We are developing a new concept for our task management app by
+              integrating tutorials directly into the app as interactive todo
+              lists.
+            </p>
+            <p>
+              Learning how to use a new app can be overwhelming, which is why
+              we're creating a seamless learning experience. By integrating the
+              tutorial as a todo list itself, we aim to make it easier and more
+              engaging for you to get started.
+            </p>
+            <p>
+              Your feedback is essential as we refine this concept. Rest assured
+              that your responses will be kept confidential and anonymized
+              according to our privacy policy.
+            </p>
+            <p>
+              Thank you for joining us on this journey to explore new
+              possibilities for app tutorials. Let's begin the survey and shape
+              the future of our app together. Click "Next" to get started.
+            </p>
           </div>
-
-          <app-login-form
-            (sendLoginForm)="sendLoginForm($event)"
-          ></app-login-form>
-        </mat-tab>  -->
-        <mat-tab label="THWS Survey">
-          <!-- <h4 class="auth-page__group-title">Welcome</h4> -->
-          <!-- <p class="auth-page__group-sub-title">Create you account</p> -->
-
-          <!-- <app-sign-emailink-form
-            (sendSignForm)="sendSignEmailLinkForm($event)"
-          ></app-sign-emailink-form> -->
-
-          <!-- <div class="auth-page__border-wrapper">
-            <div class="auth-page__border-line"></div>
-            <p class="auth-page__border-title">or</p>
-            <div class="auth-page__border-line"></div>
-          </div>
-
-          <app-sign-form (sendSignForm)="sendSignForm($event)"></app-sign-form>
-
-            -->
 
           <div class="auth-page__google-button-wrapper">
             <button
@@ -48,13 +40,33 @@
               Start Survey in English
             </button>
           </div>
-
+        </mat-tab>
+        <mat-tab label="Deutsch">
           <div class="auth-page__border-wrapper">
-            <div class="auth-page__border-line"></div>
-            <p class="auth-page__border-title">or/oder</p>
-            <div class="auth-page__border-line"></div>
+            <h2>Willkommen bei unserer Umfrage!</h2>
+            <p>
+              Wir entwickeln ein neues Konzept für unsere
+              Aufgabenverwaltungs-App, indem wir Tutorials direkt in die App
+              integrieren, und zwar als interaktive ToDo-Listen.
+            </p>
+            <p>
+              Das Erlernen der Nutzung einer neuen App kann überwältigend sein.
+              Daher schaffen wir ein nahtloses Lernerlebnis. Durch die
+              Integration des Tutorials als ToDo-Liste selbst möchten wir Ihnen
+              den Einstieg erleichtern und gleichzeitig ansprechender gestalten.
+            </p>
+            <p>
+              Ihr Feedback ist für uns von entscheidender Bedeutung, während wir
+              dieses Konzept verfeinern. Ihre Antworten werden gemäß unserer
+              Datenschutzrichtlinie vertraulich behandelt und anonymisiert.
+            </p>
+            <p>
+              Vielen Dank, dass Sie uns auf dieser Reise begleiten, um neue
+              Möglichkeiten für App-Tutorials zu erkunden. Lassen Sie uns mit
+              der Umfrage beginnen und gemeinsam die Zukunft unserer App
+              gestalten. Klicken Sie auf "Weiter", um zu beginnen.
+            </p>
           </div>
-
           <div class="auth-page__google-button-wrapper">
             <button
               mat-raised-button
@@ -65,35 +77,8 @@
               Umfrage auf Deutsch Starten
             </button>
           </div>
-
-          <!--
-          <div class="auth-page__google-button-wrapper">
-            <button
-              mat-raised-button
-              class="auth-page__google-button"
-              (click)="signInWithGoogle()"
-            >
-              <img
-                class="auth-page__google-button-icon"
-                src="./assets/auth/google.svg"
-                alt="google"
-              />Sign in with Google
-            </button>
-          </div> -->
         </mat-tab>
       </mat-tab-group>
-
-      <!-- <p class="auth-page__footer-title">{{todayDate | year}} <a href="https://flatlogic.com/">Flatlogic</a>, LLC. All rights reserved.</p> -->
-    </div>
-  </div>
-  <div class="auth-page__logo">
-    <div class="auth-page__logo-wrapper">
-      <img
-        class="auth-page__logo-img"
-        src="./assets/auth/THWS.svg"
-        alt="logo"
-      />
-      <!-- <h6 class="auth-page__logo-title">Xpenses One</h6> -->
     </div>
   </div>
 </div>
