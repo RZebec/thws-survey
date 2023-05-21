@@ -16,10 +16,10 @@
   "SAVE": "Speichern",
   "CLOSE": "Schließen",
   "TUTORIAL": {
-    "NOTE": "<strong>HINWEIS:</strong> Die folgende Liste ist nur ein Beispiel und vervollständigt die Schritte automatisch basierend auf den Aktionen, die Sie in der App durchführen.",
-    "10": "Fügen Sie eine neue ToDo-Liste mit dem oben stehenden Button hinzu.",
+    "NOTE": "<strong>HINWEIS:</strong> Die folgende Liste ist nur ein Beispiel und vervollständigt die Schritte automatisch basierend auf den Aktionen, die Sie in der App durchführen. Sie können jede neue Liste, die Sie erstellen, verwenden, um das Tutorial abzuschließen.",
+    "10": "Fügen Sie eine neue ToDo-Liste mit dem oben stehenden Button hinzu. Die Liste wird nach dem Hinzufügen unterhalb des Buttons angezeigt.",
     "20": "Fügen Sie drei neue ToDos zu einer Liste hinzu.",
-    "30": "Bearbeiten Sie das Datum eines der ToDos, indem Sie auf die Bearbeiten-Schaltfläche klicken.",
+    "30": "Bearbeiten Sie das Datum eines der ToDos in der neuen Liste, indem Sie auf die Editier-Taste drücken.",
     "40": "Verschieben Sie die Position der ToDos, indem Sie sie verschieben.",
     "50": "Markieren Sie zwei ToDos als erledigt.",
     "60": "Spielen Sie bei Bedarf weiter mit der App herum. Wenn Sie fertig sind, können Sie zum nächsten Schritt übergehen.",
