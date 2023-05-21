@@ -1,5 +1,5 @@
 import { OverlayContainer } from '@angular/cdk/overlay';
-import { Component } from '@angular/core';
+import { Component, HostBinding } from '@angular/core';
 import { Auth, onAuthStateChanged } from '@angular/fire/auth';
 import {
   ActivatedRoute,
@@ -16,6 +16,8 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent {
   darkMode = false;
+
+  @HostBinding('class') className = '';
 
   constructor(
     private afAuth: Auth,
@@ -64,7 +66,12 @@ export class AppComponent {
           this.darkMode = true;
         }
 
+        const darkClassName = 'darkMode';
+        this.className = this.darkMode ? darkClassName : '';
+
         if (this.darkMode) {
+          document.body.className =
+            document.body.className + ' darkModeBackground';
           this.overlayContainer.getContainerElement().classList.add('darkMode');
         }
       }

@@ -6,6 +6,9 @@
   (toggleDarkLight)="toggleDark = !toggleDark"
 ></app-main-header>
 
+<!-- <div [class]="toggleDark ? 'dark' : ''">
+  <ng-content ></ng-content>
+</div> -->
 <mat-sidenav-container class="layout" [class]="toggleDark ? 'dark' : ''" >
   <mat-sidenav
     #sidenav
@@ -21,5 +24,3 @@
     <ng-content></ng-content>
   </mat-sidenav-content>
 </mat-sidenav-container>
-<!--
-<app-footer></app-footer> -->

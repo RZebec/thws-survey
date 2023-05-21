@@ -6,8 +6,6 @@
   //background-color: $header-background-color;
   display: flex;
   justify-content: space-between;
-  position: fixed;
-  z-index: 2;
   height: $header-height;
 
   &__title {
@@ -21,10 +19,6 @@
 
     &:hover {
       background-color: $header-button-background-color-hover;
-    }
-
-    @media (max-width: $small) {
-      margin-top: 0;
     }
   }
 
@@ -55,8 +49,5 @@
     color: white;
 
     letter-spacing: .0892857143em;
-    @media (max-width: $small) {
-      display: none;
-    }
   }
 }

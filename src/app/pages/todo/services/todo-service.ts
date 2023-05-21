@@ -103,7 +103,7 @@ export class ToDoService {
 
     localStorage.setItem(
       this.dbPath,
-      JSON.stringify([...toDoLists, newToDoList])
+      JSON.stringify([newToDoList, ...toDoLists])
     );
   }
 
