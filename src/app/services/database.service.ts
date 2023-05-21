@@ -15,6 +15,8 @@ import { AnalyticsEvent } from '../pages/todo/models/analyticsEvent';
 import { Router } from '@angular/router';
 import { Survey } from '../pages/survey/survey-page/survey-page.component';
 
+declare let gtag: Function;
+
 @Injectable({
   providedIn: 'root',
 })
@@ -108,6 +110,16 @@ export class DatabaseService {
     const userId = this.getUserId();
     // const userName = this.afAuth.currentUser!.displayName;
 
+    const themeLocalStorage = localStorage.getItem('t');
+
+    const mode: string = themeLocalStorage
+      ? themeLocalStorage === 'd'
+        ? 'Dark-Mode'
+        : 'Light-Mode'
+      : 'Light-Mode';
+
+    gtag('event', mode, eventData);
+
     return addDoc(collection(this.db, `users/${userId}/events`), eventData);
   }
 
@@ -165,7 +177,6 @@ export class DatabaseService {
     const userDetailsString = localStorage.getItem('userDetails');
 
     if (userDetailsString) return JSON.parse(userDetailsString);
-
 
     let darkMode = false;
 

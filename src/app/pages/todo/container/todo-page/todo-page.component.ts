@@ -8,8 +8,6 @@ import { FormControl } from '@angular/forms';
 import { TodoListEditModalComponent } from '../../components/modals/todo-list-edit-modal/todo-list-edit-modal.component';
 import { DatabaseService } from 'src/app/services/database.service';
 import { AnalyticsEvent } from 'src/app/pages/todo/models/analyticsEvent';
-
-declare let gtag: Function;
 @Component({
   selector: 'app-todo-page',
   templateUrl: './todo-page.component.html',
@@ -76,8 +74,6 @@ export class TodoPageComponent {
       event_label: eventName,
       event_measured_time: this.measurementTime,
     };
-
-    gtag('event', eventData.event_category, eventData);
 
     this.databaseService.addAnalyticsEvent(eventData);
 

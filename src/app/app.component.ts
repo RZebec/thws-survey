@@ -9,8 +9,6 @@ import {
 } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
-declare let gtag: Function;
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

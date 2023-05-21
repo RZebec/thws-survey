@@ -8,8 +8,6 @@ import { AnalyticsEvent } from 'src/app/pages/todo/models/analyticsEvent';
 import { DatabaseService } from 'src/app/services/database.service';
 import { ToDoService } from '../../services/todo-service';
 
-declare let gtag: Function;
-
 @Component({
   selector: 'app-todo-list',
   templateUrl: './todo-list.component.html',
@@ -64,8 +62,6 @@ export class TodoListComponent implements OnInit {
       event_label: eventName,
       event_measured_time: this.dragMeasurementTime,
     };
-
-    gtag('event', eventData.event_category, eventData);
 
     this.databaseService.addAnalyticsEvent(eventData);
 

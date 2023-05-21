@@ -5,8 +5,6 @@ import { AnalyticsEvent } from 'src/app/pages/todo/models/analyticsEvent';
 import { DatabaseService } from 'src/app/services/database.service';
 import { ToDoService } from '../../../services/todo-service';
 
-declare let gtag: Function;
-
 @Component({
   selector: 'app-todo-edit-modal',
   templateUrl: './todo-edit-modal.component.html',
@@ -57,8 +55,6 @@ export class TodoEditModalComponent implements OnInit {
       event_measured_time: this.dateMeasurementTime,
     };
 
-    gtag('event', eventData.event_category, eventData);
-
     this.databaseService.addAnalyticsEvent(eventData);
 
     console.log(
@@ -74,8 +70,6 @@ export class TodoEditModalComponent implements OnInit {
       event_label: eventName,
       event_measured_time: this.measurementTime,
     };
-
-    gtag('event', eventData.event_category, eventData);
 
     this.databaseService.addAnalyticsEvent(eventData);
 

@@ -9,8 +9,6 @@ import { DatabaseService } from 'src/app/services/database.service';
 import { AnalyticsEvent } from 'src/app/pages/todo/models/analyticsEvent';
 import { ToDoList } from '../../../models/todo-model';
 
-declare let gtag: Function;
-
 @Component({
   selector: 'app-add-todo-list-modal',
   templateUrl: './add-todo-list-modal.component.html',
@@ -40,8 +38,6 @@ export class AddTodoListModalComponent {
       event_label: eventName,
       event_measured_time: this.measurementTime,
     };
-
-    gtag('event', eventData.event_category, eventData);
 
     this.databaseService.addAnalyticsEvent(eventData);
 
