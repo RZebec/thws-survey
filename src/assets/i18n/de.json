@@ -16,14 +16,14 @@
   "SAVE": "Speichern",
   "CLOSE": "Schließen",
   "TUTORIAL": {
-    "NOTE": "<strong>HINWEIS:</strong> Die folgende Liste ist nur ein Beispiel und vervollständigt die Schritte automatisch basierend auf den Aktionen, die Sie in der App durchführen. Sie können jede neue Liste, die Sie erstellen, verwenden, um das Tutorial abzuschließen.",
+    "NOTE": "<strong>HINWEIS!</strong><br>Die folgende Liste ist nur eine Anleitung und nicht interaktiv! Die unten aufgeführten Punkte müssen in der neuen Liste, die Sie erstellen, ausgefüllt werden. Die Kontrollkästchen neben den einzelnen Schritten werden automatisch ausgefüllt.",
     "10": "Fügen Sie eine neue ToDo-Liste mit dem oben stehenden Button hinzu. Die Liste wird nach dem Hinzufügen unterhalb des Buttons angezeigt.",
-    "20": "Fügen Sie drei neue ToDos zu einer Liste hinzu.",
+    "20": "Fügen Sie drei neue ToDos zu der Liste hinzu welche Sie gerade erstellt haben.",
     "30": "Bearbeiten Sie das Datum eines der ToDos in der neuen Liste, indem Sie auf die Editier-Taste drücken.",
     "40": "Verschieben Sie die Position der ToDos, indem Sie sie verschieben.",
-    "50": "Markieren Sie zwei ToDos als erledigt.",
+    "50": "Markieren Sie zwei der ToDos als erledigt.",
     "60": "Spielen Sie bei Bedarf weiter mit der App herum. Wenn Sie fertig sind, können Sie zum nächsten Schritt übergehen.",
-    "70": "Löschen Sie die folgende Tutorial-ToDo-Liste. Damit ist der App-Test abgeschlossen und Sie werden zum Post-Fragebogen weitergeleitet."
+    "70": "Löschen Sie die folgende Tutorial-ToDo-Liste. Damit ist der App-Test abgeschlossen und Sie werden zum Post-Fragebogen weitergeleitet. Der Button für das Löschen befindet sich unter dieser Liste!"
   },
   "overall_usability": "Bitte bewerten Sie auf einer Skala von 1 bis 5 die allgemeine Benutzerfreundlichkeit der ToDo-App.",
   "overall_usability_hint": "1 - Sehr schwierig zu benutzen, 2 - Schwierig zu benutzen, 3 - Neutral, 4 - Einfach zu benutzen, 5 - Sehr einfach zu benutzen",

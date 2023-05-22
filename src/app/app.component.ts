@@ -58,22 +58,26 @@ export class AppComponent {
 
       if (t) {
         localStorage.setItem('t', t);
-        this.darkMode = t ? t === 'd' : false;
+      }
+
+      const localStorageID = localStorage.getItem('t');
+
+      if (localStorageID && localStorageID === 'd') {
+        this.darkMode = true;
+      } else if (localStorageID && localStorageID === 'l') {
+        this.darkMode = false;
       } else {
-        const localStorageID = localStorage.getItem('t');
+        this.darkMode = Math.random() < 0.5;
+      }
 
-        if (localStorageID && localStorageID === 'd') {
-          this.darkMode = true;
-        }
+      localStorage.setItem('t', this.darkMode ? 'd' : 'l');
 
-        const darkClassName = 'darkMode';
-        this.className = this.darkMode ? darkClassName : '';
+      this.className = this.darkMode ? 'darkMode' : '';
 
-        if (this.darkMode) {
-          document.body.className =
-            document.body.className + ' darkModeBackground';
-          this.overlayContainer.getContainerElement().classList.add('darkMode');
-        }
+      if (this.darkMode) {
+        document.body.className =
+          document.body.className + ' darkModeBackground';
+        this.overlayContainer.getContainerElement().classList.add('darkMode');
       }
     });
   }

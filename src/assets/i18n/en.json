@@ -16,14 +16,14 @@
   "SAVE": "Save",
   "CLOSE": "Close",
   "TUTORIAL": {
-    "NOTE": "<strong>NOTE:</strong> The following list is just an example and will complete the steps automatically based on the actions you make in the app. You can use any new list that you create to complete the tutorial.",
+    "NOTE": "<strong>NOTE!</strong><br>The list below is just the Tutorial and is not interactive! The points below need to be completed in the new list you create. The checkboxes next to the steps will automatically be completed.",
     "10": "Add a new ToDo list with the button above. The list will appear below the button after adding it.",
-    "20": "Add three new ToDos to the new list.",
+    "20": "Add three new ToDos to the new list you have just created.",
     "30": "Edit the date of one of the ToDos in the new list by pressing the edit button.",
     "40": "Move the position of the todos by dragging them around.",
-    "50": "Check two ToDos as completed.",
+    "50": "Check two of the ToDos as completed.",
     "60": "Play around with the app more if you like. When you are done you can move on to the next step.",
-    "70": "Delete the following Tutorial ToDo List. This will complete the app testing and you will be redirected to the post-questionnaire."
+    "70": "Delete the following Tutorial ToDo List. This will complete the app testing and you will be redirected to the post-questionnaire. The Delete button is located bellow this list!"
   },
   "overall_usability": "On a scale of 1 to 5, please rate the overall usability of the todo app.",
   "overall_usability_hint": "1 - Very difficult to use, 2 - Difficult to use, 3 - Neutral, 4 - Easy to use, 5 - Very easy to use",
