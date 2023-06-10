@@ -1,0 +1,4262 @@
+[
+  {
+    "userDetails": {
+      "timeSpendOnSurvey": 208250,
+      "darkMode": false,
+      "step": 3,
+      "endTime": {
+        "seconds": 1685016684,
+        "nanoseconds": 381000000
+      },
+      "acceptedTerms": true,
+      "startTime": {
+        "seconds": 1685016476,
+        "nanoseconds": 131000000
+      }
+    },
+    "events": [
+      {
+        "event_measured_time": 669,
+        "event_category": "ToDo-List",
+        "event_label": "todo-dragged"
+      },
+      {
+        "event_category": "ToDo-List-Add",
+        "event_measured_time": 5776,
+        "event_label": "close"
+      },
+      {
+        "event_measured_time": 5848,
+        "event_category": "ToDo-Edit",
+        "event_label": "change_date"
+      },
+      {
+        "event_label": "save",
+        "event_category": "ToDo-Add",
+        "event_measured_time": 1102
+      },
+      {
+        "event_label": "todo-dragged",
+        "event_category": "ToDo-List",
+        "event_measured_time": 584
+      },
+      {
+        "event_category": "ToDo-Add",
+        "event_label": "save",
+        "event_measured_time": 1679
+      },
+      {
+        "event_label": "change_date",
+        "event_measured_time": 862,
+        "event_category": "ToDo-Edit"
+      },
+      {
+        "event_category": "ToDo-Edit",
+        "event_measured_time": 7016,
+        "event_label": "save"
+      },
+      {
+        "event_measured_time": 4098,
+        "event_category": "ToDo-Edit",
+        "event_label": "save"
+      },
+      {
+        "event_measured_time": 2408,
+        "event_category": "ToDo-Add",
+        "event_label": "save"
+      }
+    ],
+    "surveys": [
+      {
+        "survey": [
+          {
+            "question": "On a scale of 1 to 5, please rate the overall usability of the todo app.",
+            "numericValue": "2",
+            "hint": "1 - Very difficult to use, 2 - Difficult to use, 3 - Neutral, 4 - Easy to use, 5 - Very easy to use"
+          },
+          {
+            "hint": "1 - Not intuitive at all, 2 - Somewhat unintuitive, 3 - Neutral, 4 - Somewhat intuitive, 5 - Very intuitive",
+            "question": "How intuitive was the app's interface for adding, managing, and updating tasks?",
+            "numericValue": "4"
+          },
+          {
+            "question": "How visually appealing was the design of the app?",
+            "numericValue": "1",
+            "hint": "1 - Very unappealing, 2 - Somewhat unappealing, 3 - Neutral, 4 - Somewhat appealing, 5 - Very appealing"
+          },
+          {
+            "question": "How well did the app meet your expectations in terms of fulfilling your task management needs?",
+            "numericValue": "2",
+            "hint": "1 - Not at all, 2 - Somewhat, 3 - Neutral, 4 - Mostly, 5 - Completely"
+          },
+          {
+            "question": "On a scale of 1 to 5, please rate the app's responsiveness and speed.",
+            "numericValue": "5",
+            "hint": "1 - Very slow, 2 - Slow, 3 - Neutral, 4 - Fast, 5 - Very fast"
+          },
+          {
+            "numericValue": "4",
+            "question": "How well did the app organize and display your tasks?",
+            "hint": "1 - Very poorly, 2 - Poorly, 3 - Neutral, 4 - Well, 5 - Very well"
+          },
+          {
+            "textValue": "",
+            "question": "Were there any features or functionalities that you found particularly useful or impressive?"
+          },
+          {
+            "hint": "1 - Very dissatisfied, 2 - Dissatisfied, 3 - Neutral, 4 - Satisfied, 5 - Very satisfied",
+            "numericValue": "3",
+            "question": "On a scale of 1 to 5, please rate your overall satisfaction with the todo app."
+          },
+          {
+            "numericValue": "2",
+            "question": "How likely are you to continue using the app in the future?",
+            "hint": "1 - Very unlikely, 2 - Unlikely, 3 - Neutral, 4 - Likely, 5 - Very likely"
+          },
+          {
+            "question": "Do you have any additional comments, suggestions, or feedback regarding the todo app and its user experience?",
+            "textValue": "To-Do Liste Hinzufügen war schwer zu finden"
+          }
+        ],
+        "name": "appSurvey"
+      },
+      {
+        "survey": [
+          {
+            "question": "Have you had any previous experience with these kind of apps?",
+            "selectValue": "YES",
+            "options": ["YES", "NO"]
+          },
+          {
+            "options": ["RARELY", "OCCASIONALLY", "FREQUENTLY", "DAILY"],
+            "selectValue": "RARELY",
+            "question": "How often do you use such kind of apps?"
+          },
+          {
+            "selectValue": "SMARTPHONE",
+            "question": "What is your prefered device to use on a daily basis?",
+            "options": ["SMARTPHONE", "TABLET", "COMPUTER", "OTHER"]
+          }
+        ],
+        "name": "userDetailsSurvey"
+      }
+    ]
+  },
+  {
+    "userDetails": {
+      "endTime": {
+        "seconds": 1685646049,
+        "nanoseconds": 995000000
+      },
+      "acceptedTerms": true,
+      "timeSpendOnSurvey": 0,
+      "startTime": {
+        "seconds": 1685646049,
+        "nanoseconds": 995000000
+      },
+      "step": 1,
+      "darkMode": true
+    },
+    "events": [
+      {
+        "event_category": "ToDo-List-Add",
+        "event_label": "close",
+        "event_measured_time": 11689
+      }
+    ],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "startTime": {
+        "seconds": 1685016917,
+        "nanoseconds": 343000000
+      },
+      "endTime": {
+        "seconds": 1685017149,
+        "nanoseconds": 642000000
+      },
+      "timeSpendOnSurvey": 232299,
+      "acceptedTerms": true,
+      "darkMode": true,
+      "step": 3
+    },
+    "events": [
+      {
+        "event_label": "todo-dragged",
+        "event_category": "ToDo-List",
+        "event_measured_time": 337
+      },
+      {
+        "event_measured_time": 2098,
+        "event_label": "save",
+        "event_category": "ToDo-Add"
+      },
+      {
+        "event_label": "save",
+        "event_measured_time": 1685016959148,
+        "event_category": "ToDo-Add"
+      },
+      {
+        "event_measured_time": 5095,
+        "event_label": "change_date",
+        "event_category": "ToDo-Edit"
+      },
+      {
+        "event_measured_time": 3856,
+        "event_label": "close",
+        "event_category": "ToDo-List-Add"
+      },
+      {
+        "event_category": "ToDo-List",
+        "event_measured_time": 1081,
+        "event_label": "todo-dragged"
+      },
+      {
+        "event_label": "change_date",
+        "event_category": "ToDo-Edit",
+        "event_measured_time": 1366
+      },
+      {
+        "event_label": "save",
+        "event_measured_time": 7364,
+        "event_category": "ToDo-Edit"
+      },
+      {
+        "event_label": "close",
+        "event_category": "ToDo-Edit",
+        "event_measured_time": 1087
+      },
+      {
+        "event_category": "ToDo-List",
+        "event_measured_time": 749,
+        "event_label": "todo-dragged"
+      },
+      {
+        "event_category": "ToDo-Edit",
+        "event_label": "save",
+        "event_measured_time": 3336
+      },
+      {
+        "event_label": "save",
+        "event_measured_time": 1460,
+        "event_category": "ToDo-Add"
+      }
+    ],
+    "surveys": [
+      {
+        "name": "appSurvey",
+        "survey": [
+          {
+            "numericValue": "5",
+            "hint": "1 - Very difficult to use, 2 - Difficult to use, 3 - Neutral, 4 - Easy to use, 5 - Very easy to use",
+            "question": "On a scale of 1 to 5, please rate the overall usability of the todo app."
+          },
+          {
+            "question": "How intuitive was the app's interface for adding, managing, and updating tasks?",
+            "hint": "1 - Not intuitive at all, 2 - Somewhat unintuitive, 3 - Neutral, 4 - Somewhat intuitive, 5 - Very intuitive",
+            "numericValue": "5"
+          },
+          {
+            "hint": "1 - Very unappealing, 2 - Somewhat unappealing, 3 - Neutral, 4 - Somewhat appealing, 5 - Very appealing",
+            "question": "How visually appealing was the design of the app?",
+            "numericValue": "3"
+          },
+          {
+            "numericValue": "4",
+            "hint": "1 - Not at all, 2 - Somewhat, 3 - Neutral, 4 - Mostly, 5 - Completely",
+            "question": "How well did the app meet your expectations in terms of fulfilling your task management needs?"
+          },
+          {
+            "question": "On a scale of 1 to 5, please rate the app's responsiveness and speed.",
+            "hint": "1 - Very slow, 2 - Slow, 3 - Neutral, 4 - Fast, 5 - Very fast",
+            "numericValue": "5"
+          },
+          {
+            "question": "How well did the app organize and display your tasks?",
+            "hint": "1 - Very poorly, 2 - Poorly, 3 - Neutral, 4 - Well, 5 - Very well",
+            "numericValue": "5"
+          },
+          {
+            "textValue": "",
+            "question": "Were there any features or functionalities that you found particularly useful or impressive?"
+          },
+          {
+            "hint": "1 - Very dissatisfied, 2 - Dissatisfied, 3 - Neutral, 4 - Satisfied, 5 - Very satisfied",
+            "question": "On a scale of 1 to 5, please rate your overall satisfaction with the todo app.",
+            "numericValue": "4"
+          },
+          {
+            "question": "How likely are you to continue using the app in the future?",
+            "hint": "1 - Very unlikely, 2 - Unlikely, 3 - Neutral, 4 - Likely, 5 - Very likely",
+            "numericValue": "3"
+          },
+          {
+            "textValue": "",
+            "question": "Do you have any additional comments, suggestions, or feedback regarding the todo app and its user experience?"
+          }
+        ]
+      },
+      {
+        "name": "userDetailsSurvey",
+        "survey": [
+          {
+            "options": ["YES", "NO"],
+            "question": "Have you had any previous experience with these kind of apps?",
+            "selectValue": "YES"
+          },
+          {
+            "question": "How often do you use such kind of apps?",
+            "selectValue": "RARELY",
+            "options": ["RARELY", "OCCASIONALLY", "FREQUENTLY", "DAILY"]
+          },
+          {
+            "options": ["SMARTPHONE", "TABLET", "COMPUTER", "OTHER"],
+            "selectValue": "SMARTPHONE",
+            "question": "What is your prefered device to use on a daily basis?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "userDetails": {
+      "step": 1,
+      "startTime": {
+        "seconds": 1685018165,
+        "nanoseconds": 90000000
+      },
+      "endTime": {
+        "seconds": 1685018165,
+        "nanoseconds": 90000000
+      },
+      "darkMode": true,
+      "acceptedTerms": true,
+      "timeSpendOnSurvey": 0
+    },
+    "events": [],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "darkMode": true,
+      "endTime": {
+        "seconds": 1685650810,
+        "nanoseconds": 498000000
+      },
+      "startTime": {
+        "seconds": 1685650810,
+        "nanoseconds": 498000000
+      },
+      "timeSpendOnSurvey": 0,
+      "step": 1,
+      "acceptedTerms": true
+    },
+    "events": [],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "timeSpendOnSurvey": 0,
+      "darkMode": false,
+      "startTime": {
+        "seconds": 1685018657,
+        "nanoseconds": 307000000
+      },
+      "endTime": {
+        "seconds": 1685018657,
+        "nanoseconds": 307000000
+      },
+      "step": 1,
+      "acceptedTerms": true
+    },
+    "events": [],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "timeSpendOnSurvey": 0,
+      "acceptedTerms": true,
+      "endTime": {
+        "seconds": 1685016293,
+        "nanoseconds": 185000000
+      },
+      "step": 1,
+      "darkMode": false,
+      "startTime": {
+        "seconds": 1685016293,
+        "nanoseconds": 185000000
+      }
+    },
+    "events": [],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "step": 3,
+      "darkMode": false,
+      "endTime": {
+        "seconds": 1685016739,
+        "nanoseconds": 507000000
+      },
+      "startTime": {
+        "seconds": 1685016494,
+        "nanoseconds": 711000000
+      },
+      "timeSpendOnSurvey": 244796,
+      "acceptedTerms": true
+    },
+    "events": [
+      {
+        "event_category": "ToDo-List-Add",
+        "event_measured_time": 5243,
+        "event_label": "close"
+      },
+      {
+        "event_category": "ToDo-Edit",
+        "event_label": "change_date",
+        "event_measured_time": 1211
+      },
+      {
+        "event_label": "save",
+        "event_category": "ToDo-Add",
+        "event_measured_time": 5502
+      },
+      {
+        "event_category": "ToDo-Add",
+        "event_label": "save",
+        "event_measured_time": 2794
+      },
+      {
+        "event_measured_time": 1844,
+        "event_label": "close",
+        "event_category": "ToDo-List-Edit"
+      },
+      {
+        "event_measured_time": 2482,
+        "event_label": "close",
+        "event_category": "ToDo-List-Add"
+      },
+      {
+        "event_label": "save",
+        "event_category": "ToDo-Add",
+        "event_measured_time": 2375
+      },
+      {
+        "event_label": "todo-dragged",
+        "event_category": "ToDo-List",
+        "event_measured_time": 1037
+      },
+      {
+        "event_label": "save",
+        "event_measured_time": 3976,
+        "event_category": "ToDo-Edit"
+      },
+      {
+        "event_measured_time": 1343,
+        "event_category": "ToDo-List-Edit",
+        "event_label": "remove"
+      }
+    ],
+    "surveys": [
+      {
+        "survey": [
+          {
+            "hint": "1 - Very difficult to use, 2 - Difficult to use, 3 - Neutral, 4 - Easy to use, 5 - Very easy to use",
+            "numericValue": "4",
+            "question": "On a scale of 1 to 5, please rate the overall usability of the todo app."
+          },
+          {
+            "question": "How intuitive was the app's interface for adding, managing, and updating tasks?",
+            "hint": "1 - Not intuitive at all, 2 - Somewhat unintuitive, 3 - Neutral, 4 - Somewhat intuitive, 5 - Very intuitive",
+            "numericValue": "5"
+          },
+          {
+            "hint": "1 - Very unappealing, 2 - Somewhat unappealing, 3 - Neutral, 4 - Somewhat appealing, 5 - Very appealing",
+            "question": "How visually appealing was the design of the app?",
+            "numericValue": "4"
+          },
+          {
+            "numericValue": "3",
+            "hint": "1 - Not at all, 2 - Somewhat, 3 - Neutral, 4 - Mostly, 5 - Completely",
+            "question": "How well did the app meet your expectations in terms of fulfilling your task management needs?"
+          },
+          {
+            "question": "On a scale of 1 to 5, please rate the app's responsiveness and speed.",
+            "numericValue": "4",
+            "hint": "1 - Very slow, 2 - Slow, 3 - Neutral, 4 - Fast, 5 - Very fast"
+          },
+          {
+            "question": "How well did the app organize and display your tasks?",
+            "hint": "1 - Very poorly, 2 - Poorly, 3 - Neutral, 4 - Well, 5 - Very well",
+            "numericValue": "5"
+          },
+          {
+            "question": "Were there any features or functionalities that you found particularly useful or impressive?",
+            "textValue": ""
+          },
+          {
+            "hint": "1 - Very dissatisfied, 2 - Dissatisfied, 3 - Neutral, 4 - Satisfied, 5 - Very satisfied",
+            "question": "On a scale of 1 to 5, please rate your overall satisfaction with the todo app.",
+            "numericValue": "4"
+          },
+          {
+            "hint": "1 - Very unlikely, 2 - Unlikely, 3 - Neutral, 4 - Likely, 5 - Very likely",
+            "question": "How likely are you to continue using the app in the future?",
+            "numericValue": "1"
+          },
+          {
+            "question": "Do you have any additional comments, suggestions, or feedback regarding the todo app and its user experience?",
+            "textValue": ""
+          }
+        ],
+        "name": "appSurvey"
+      },
+      {
+        "name": "userDetailsSurvey",
+        "survey": [
+          {
+            "selectValue": "NO",
+            "options": ["YES", "NO"],
+            "question": "Have you had any previous experience with these kind of apps?"
+          },
+          {
+            "options": ["RARELY", "OCCASIONALLY", "FREQUENTLY", "DAILY"],
+            "question": "How often do you use such kind of apps?",
+            "selectValue": "RARELY"
+          },
+          {
+            "selectValue": "SMARTPHONE",
+            "options": ["SMARTPHONE", "TABLET", "COMPUTER", "OTHER"],
+            "question": "What is your prefered device to use on a daily basis?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "userDetails": {
+      "endTime": {
+        "seconds": 1684763558,
+        "nanoseconds": 783000000
+      },
+      "startTime": {
+        "seconds": 1684695685,
+        "nanoseconds": 96000000
+      },
+      "step": 3,
+      "acceptedTerms": true,
+      "darkMode": true,
+      "timeSpendOnSurvey": 67873687
+    },
+    "events": [
+      {
+        "event_label": "save",
+        "event_measured_time": 8384,
+        "event_category": "ToDo-List-Edit"
+      },
+      {
+        "event_category": "ToDo-List",
+        "event_label": "todo-dragged",
+        "event_measured_time": 1020
+      },
+      {
+        "event_label": "close",
+        "event_measured_time": 6357,
+        "event_category": "ToDo-List-Add"
+      },
+      {
+        "event_category": "ToDo-List-Add",
+        "event_label": "close",
+        "event_measured_time": 4315
+      },
+      {
+        "event_label": "remove",
+        "event_measured_time": 862,
+        "event_category": "ToDo-List-Edit"
+      },
+      {
+        "event_measured_time": 3270,
+        "event_label": "save",
+        "event_category": "ToDo-Edit"
+      },
+      {
+        "event_label": "save",
+        "event_measured_time": 32336,
+        "event_category": "ToDo-Add"
+      },
+      {
+        "event_label": "save",
+        "event_measured_time": 2513,
+        "event_category": "ToDo-Add"
+      },
+      {
+        "event_category": "ToDo-Add",
+        "event_measured_time": 3834,
+        "event_label": "save"
+      },
+      {
+        "event_category": "ToDo-Edit",
+        "event_measured_time": 961,
+        "event_label": "change_date"
+      }
+    ],
+    "surveys": [
+      {
+        "survey": [
+          {
+            "selectValue": "NO",
+            "question": "Have you had any previous experience with these kind of apps?",
+            "options": ["YES", "NO"]
+          },
+          {
+            "selectValue": "DAILY",
+            "question": "How often do you use such kind of apps?",
+            "options": ["RARELY", "OCCASIONALLY", "FREQUENTLY", "DAILY"]
+          },
+          {
+            "question": "What is your prefered device to use on a daily basis?",
+            "selectValue": "SMARTPHONE",
+            "options": ["SMARTPHONE", "TABLET", "COMPUTER", "OTHER"]
+          }
+        ],
+        "name": "userDetailsSurvey"
+      },
+      {
+        "survey": [
+          {
+            "hint": "1 - Very difficult to use, 2 - Difficult to use, 3 - Neutral, 4 - Easy to use, 5 - Very easy to use",
+            "question": "On a scale of 1 to 5, please rate the overall usability of the todo app.",
+            "numericValue": "5"
+          },
+          {
+            "hint": "1 - Not intuitive at all, 2 - Somewhat unintuitive, 3 - Neutral, 4 - Somewhat intuitive, 5 - Very intuitive",
+            "numericValue": "5",
+            "question": "How intuitive was the app's interface for adding, managing, and updating tasks?"
+          },
+          {
+            "question": "How visually appealing was the design of the app?",
+            "hint": "1 - Very unappealing, 2 - Somewhat unappealing, 3 - Neutral, 4 - Somewhat appealing, 5 - Very appealing",
+            "numericValue": "5"
+          },
+          {
+            "numericValue": "5",
+            "question": "How well did the app meet your expectations in terms of fulfilling your task management needs?",
+            "hint": "1 - Not at all, 2 - Somewhat, 3 - Neutral, 4 - Mostly, 5 - Completely"
+          },
+          {
+            "question": "On a scale of 1 to 5, please rate the app's responsiveness and speed.",
+            "numericValue": "5",
+            "hint": "1 - Very slow, 2 - Slow, 3 - Neutral, 4 - Fast, 5 - Very fast"
+          },
+          {
+            "question": "How well did the app organize and display your tasks?",
+            "numericValue": "5",
+            "hint": "1 - Very poorly, 2 - Poorly, 3 - Neutral, 4 - Well, 5 - Very well"
+          },
+          {
+            "question": "Were there any features or functionalities that you found particularly useful or impressive?",
+            "textValue": ""
+          },
+          {
+            "question": "On a scale of 1 to 5, please rate your overall satisfaction with the todo app.",
+            "hint": "1 - Very dissatisfied, 2 - Dissatisfied, 3 - Neutral, 4 - Satisfied, 5 - Very satisfied",
+            "numericValue": "5"
+          },
+          {
+            "hint": "1 - Very unlikely, 2 - Unlikely, 3 - Neutral, 4 - Likely, 5 - Very likely",
+            "question": "How likely are you to continue using the app in the future?",
+            "numericValue": "5"
+          },
+          {
+            "textValue": "",
+            "question": "Do you have any additional comments, suggestions, or feedback regarding the todo app and its user experience?"
+          }
+        ],
+        "name": "appSurvey"
+      }
+    ]
+  },
+  {
+    "userDetails": {
+      "step": 1,
+      "startTime": {
+        "seconds": 1685016862,
+        "nanoseconds": 667000000
+      },
+      "darkMode": true,
+      "acceptedTerms": true,
+      "endTime": {
+        "seconds": 1685016862,
+        "nanoseconds": 667000000
+      },
+      "timeSpendOnSurvey": 0
+    },
+    "events": [],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "endTime": {
+        "seconds": 1685695953,
+        "nanoseconds": 140000000
+      },
+      "darkMode": false,
+      "step": 3,
+      "startTime": {
+        "seconds": 1685695791,
+        "nanoseconds": 614000000
+      },
+      "timeSpendOnSurvey": 161526,
+      "acceptedTerms": true
+    },
+    "events": [
+      {
+        "event_category": "ToDo-List",
+        "event_label": "todo-dragged",
+        "event_measured_time": 1189
+      },
+      {
+        "event_measured_time": 4499,
+        "event_category": "ToDo-Edit",
+        "event_label": "change_date"
+      },
+      {
+        "event_measured_time": 5950,
+        "event_category": "ToDo-List-Add",
+        "event_label": "close"
+      },
+      {
+        "event_label": "save",
+        "event_category": "ToDo-Add",
+        "event_measured_time": 8199
+      },
+      {
+        "event_label": "save",
+        "event_measured_time": 3409,
+        "event_category": "ToDo-Add"
+      },
+      {
+        "event_measured_time": 5699,
+        "event_category": "ToDo-Edit",
+        "event_label": "save"
+      },
+      {
+        "event_label": "change_date",
+        "event_measured_time": 1639,
+        "event_category": "ToDo-Edit"
+      },
+      {
+        "event_category": "ToDo-Add",
+        "event_measured_time": 3912,
+        "event_label": "save"
+      },
+      {
+        "event_category": "ToDo-Edit",
+        "event_measured_time": 5743,
+        "event_label": "save"
+      }
+    ],
+    "surveys": [
+      {
+        "survey": [
+          {
+            "options": ["YES", "NO"],
+            "question": "Have you had any previous experience with these kind of apps?",
+            "selectValue": "YES"
+          },
+          {
+            "selectValue": "DAILY",
+            "question": "How often do you use such kind of apps?",
+            "options": ["RARELY", "OCCASIONALLY", "FREQUENTLY", "DAILY"]
+          },
+          {
+            "selectValue": "SMARTPHONE",
+            "options": ["SMARTPHONE", "TABLET", "COMPUTER", "OTHER"],
+            "question": "What is your prefered device to use on a daily basis?"
+          }
+        ],
+        "name": "userDetailsSurvey"
+      },
+      {
+        "name": "appSurvey",
+        "survey": [
+          {
+            "numericValue": "3",
+            "question": "On a scale of 1 to 5, please rate the overall usability of the todo app.",
+            "hint": "1 - Very difficult to use, 2 - Difficult to use, 3 - Neutral, 4 - Easy to use, 5 - Very easy to use"
+          },
+          {
+            "hint": "1 - Not intuitive at all, 2 - Somewhat unintuitive, 3 - Neutral, 4 - Somewhat intuitive, 5 - Very intuitive",
+            "question": "How intuitive was the app's interface for adding, managing, and updating tasks?",
+            "numericValue": "4"
+          },
+          {
+            "question": "How visually appealing was the design of the app?",
+            "numericValue": "2",
+            "hint": "1 - Very unappealing, 2 - Somewhat unappealing, 3 - Neutral, 4 - Somewhat appealing, 5 - Very appealing"
+          },
+          {
+            "question": "How well did the app meet your expectations in terms of fulfilling your task management needs?",
+            "numericValue": "3",
+            "hint": "1 - Not at all, 2 - Somewhat, 3 - Neutral, 4 - Mostly, 5 - Completely"
+          },
+          {
+            "hint": "1 - Very slow, 2 - Slow, 3 - Neutral, 4 - Fast, 5 - Very fast",
+            "numericValue": "3",
+            "question": "On a scale of 1 to 5, please rate the app's responsiveness and speed."
+          },
+          {
+            "question": "How well did the app organize and display your tasks?",
+            "numericValue": "3",
+            "hint": "1 - Very poorly, 2 - Poorly, 3 - Neutral, 4 - Well, 5 - Very well"
+          },
+          {
+            "textValue": "",
+            "question": "Were there any features or functionalities that you found particularly useful or impressive?"
+          },
+          {
+            "question": "On a scale of 1 to 5, please rate your overall satisfaction with the todo app.",
+            "hint": "1 - Very dissatisfied, 2 - Dissatisfied, 3 - Neutral, 4 - Satisfied, 5 - Very satisfied",
+            "numericValue": "3"
+          },
+          {
+            "hint": "1 - Very unlikely, 2 - Unlikely, 3 - Neutral, 4 - Likely, 5 - Very likely",
+            "numericValue": "1",
+            "question": "How likely are you to continue using the app in the future?"
+          },
+          {
+            "textValue": "",
+            "question": "Do you have any additional comments, suggestions, or feedback regarding the todo app and its user experience?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "userDetails": {
+      "startTime": {
+        "seconds": 1685648996,
+        "nanoseconds": 385000000
+      },
+      "acceptedTerms": true,
+      "endTime": {
+        "seconds": 1685648996,
+        "nanoseconds": 385000000
+      },
+      "timeSpendOnSurvey": 0,
+      "darkMode": false,
+      "step": 1
+    },
+    "events": [],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "endTime": {
+        "seconds": 1684762804,
+        "nanoseconds": 836000000
+      },
+      "timeSpendOnSurvey": 65868652,
+      "acceptedTerms": true,
+      "darkMode": true,
+      "startTime": {
+        "seconds": 1684696936,
+        "nanoseconds": 184000000
+      },
+      "step": 3
+    },
+    "events": [
+      {
+        "event_category": "ToDo-Add",
+        "event_measured_time": 3325,
+        "event_label": "save"
+      },
+      {
+        "event_label": "change_date",
+        "event_measured_time": 1176,
+        "event_category": "ToDo-Edit"
+      },
+      {
+        "event_category": "ToDo-Edit",
+        "event_label": "change_date",
+        "event_measured_time": 1134
+      },
+      {
+        "event_measured_time": 4542,
+        "event_category": "ToDo-List-Edit",
+        "event_label": "save"
+      },
+      {
+        "event_category": "ToDo-List-Edit",
+        "event_label": "close",
+        "event_measured_time": 4871
+      },
+      {
+        "event_measured_time": 3150,
+        "event_category": "ToDo-List-Add",
+        "event_label": "close"
+      },
+      {
+        "event_category": "ToDo-List-Add",
+        "event_measured_time": 6635,
+        "event_label": "close"
+      },
+      {
+        "event_measured_time": 5275,
+        "event_label": "save",
+        "event_category": "ToDo-Edit"
+      },
+      {
+        "event_label": "save",
+        "event_measured_time": 3401,
+        "event_category": "ToDo-Add"
+      },
+      {
+        "event_measured_time": 4682,
+        "event_label": "save",
+        "event_category": "ToDo-Edit"
+      },
+      {
+        "event_category": "ToDo-List-Add",
+        "event_measured_time": 2732,
+        "event_label": "close"
+      },
+      {
+        "event_label": "save",
+        "event_measured_time": 8799,
+        "event_category": "ToDo-Edit"
+      },
+      {
+        "event_label": "close",
+        "event_category": "ToDo-List-Edit",
+        "event_measured_time": 3443
+      },
+      {
+        "event_category": "ToDo-List-Edit",
+        "event_label": "remove",
+        "event_measured_time": 2599
+      },
+      {
+        "event_label": "save",
+        "event_category": "ToDo-List-Edit",
+        "event_measured_time": 3120
+      },
+      {
+        "event_measured_time": 4644,
+        "event_label": "save",
+        "event_category": "ToDo-Add"
+      },
+      {
+        "event_measured_time": 5833,
+        "event_label": "close",
+        "event_category": "ToDo-Edit"
+      },
+      {
+        "event_measured_time": 512,
+        "event_label": "todo-dragged",
+        "event_category": "ToDo-List"
+      },
+      {
+        "event_label": "change_date",
+        "event_measured_time": 1185,
+        "event_category": "ToDo-Edit"
+      },
+      {
+        "event_label": "change_date",
+        "event_measured_time": 1279,
+        "event_category": "ToDo-Edit"
+      }
+    ],
+    "surveys": [
+      {
+        "survey": [
+          {
+            "selectValue": "NO",
+            "question": "Have you had any previous experience with these kind of apps?",
+            "options": ["YES", "NO"]
+          },
+          {
+            "selectValue": "RARELY",
+            "options": ["RARELY", "OCCASIONALLY", "FREQUENTLY", "DAILY"],
+            "question": "How often do you use such kind of apps?"
+          },
+          {
+            "question": "What is your prefered device to use on a daily basis?",
+            "options": ["SMARTPHONE", "TABLET", "COMPUTER", "OTHER"],
+            "selectValue": "SMARTPHONE"
+          }
+        ],
+        "name": "userDetailsSurvey"
+      },
+      {
+        "survey": [
+          {
+            "hint": "1 - Very difficult to use, 2 - Difficult to use, 3 - Neutral, 4 - Easy to use, 5 - Very easy to use",
+            "numericValue": "5",
+            "question": "On a scale of 1 to 5, please rate the overall usability of the todo app."
+          },
+          {
+            "question": "How intuitive was the app's interface for adding, managing, and updating tasks?",
+            "hint": "1 - Not intuitive at all, 2 - Somewhat unintuitive, 3 - Neutral, 4 - Somewhat intuitive, 5 - Very intuitive",
+            "numericValue": "5"
+          },
+          {
+            "question": "How visually appealing was the design of the app?",
+            "numericValue": "4",
+            "hint": "1 - Very unappealing, 2 - Somewhat unappealing, 3 - Neutral, 4 - Somewhat appealing, 5 - Very appealing"
+          },
+          {
+            "numericValue": "5",
+            "question": "How well did the app meet your expectations in terms of fulfilling your task management needs?",
+            "hint": "1 - Not at all, 2 - Somewhat, 3 - Neutral, 4 - Mostly, 5 - Completely"
+          },
+          {
+            "question": "On a scale of 1 to 5, please rate the app's responsiveness and speed.",
+            "numericValue": "5",
+            "hint": "1 - Very slow, 2 - Slow, 3 - Neutral, 4 - Fast, 5 - Very fast"
+          },
+          {
+            "hint": "1 - Very poorly, 2 - Poorly, 3 - Neutral, 4 - Well, 5 - Very well",
+            "numericValue": "5",
+            "question": "How well did the app organize and display your tasks?"
+          },
+          {
+            "question": "Were there any features or functionalities that you found particularly useful or impressive?",
+            "textValue": "Datum anklickbar "
+          },
+          {
+            "question": "On a scale of 1 to 5, please rate your overall satisfaction with the todo app.",
+            "numericValue": "5",
+            "hint": "1 - Very dissatisfied, 2 - Dissatisfied, 3 - Neutral, 4 - Satisfied, 5 - Very satisfied"
+          },
+          {
+            "question": "How likely are you to continue using the app in the future?",
+            "hint": "1 - Very unlikely, 2 - Unlikely, 3 - Neutral, 4 - Likely, 5 - Very likely",
+            "numericValue": "3"
+          },
+          {
+            "question": "Do you have any additional comments, suggestions, or feedback regarding the todo app and its user experience?",
+            "textValue": ""
+          }
+        ],
+        "name": "appSurvey"
+      }
+    ]
+  },
+  {
+    "userDetails": {
+      "startTime": {
+        "seconds": 1685641464,
+        "nanoseconds": 779000000
+      },
+      "step": 1,
+      "endTime": {
+        "seconds": 1685641464,
+        "nanoseconds": 779000000
+      },
+      "darkMode": true,
+      "timeSpendOnSurvey": 0,
+      "acceptedTerms": true
+    },
+    "events": [],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "step": 1,
+      "timeSpendOnSurvey": 0,
+      "startTime": {
+        "seconds": 1685651728,
+        "nanoseconds": 375000000
+      },
+      "darkMode": true,
+      "acceptedTerms": true,
+      "endTime": {
+        "seconds": 1685651728,
+        "nanoseconds": 375000000
+      }
+    },
+    "events": [],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "acceptedTerms": true,
+      "startTime": {
+        "seconds": 1685650539,
+        "nanoseconds": 802000000
+      },
+      "darkMode": false,
+      "step": 1,
+      "timeSpendOnSurvey": 0,
+      "endTime": {
+        "seconds": 1685650539,
+        "nanoseconds": 802000000
+      }
+    },
+    "events": [],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "startTime": {
+        "seconds": 1685646976,
+        "nanoseconds": 605000000
+      },
+      "endTime": {
+        "seconds": 1685646976,
+        "nanoseconds": 605000000
+      },
+      "step": 1,
+      "darkMode": true,
+      "acceptedTerms": true,
+      "timeSpendOnSurvey": 0
+    },
+    "events": [],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "startTime": {
+        "seconds": 1685046121,
+        "nanoseconds": 483000000
+      },
+      "timeSpendOnSurvey": 0,
+      "step": 1,
+      "darkMode": false,
+      "endTime": {
+        "seconds": 1685046121,
+        "nanoseconds": 483000000
+      },
+      "acceptedTerms": true
+    },
+    "events": [],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "timeSpendOnSurvey": 0,
+      "endTime": {
+        "seconds": 1685640132,
+        "nanoseconds": 397000000
+      },
+      "darkMode": true,
+      "startTime": {
+        "seconds": 1685640132,
+        "nanoseconds": 397000000
+      },
+      "acceptedTerms": true,
+      "step": 1
+    },
+    "events": [
+      {
+        "event_measured_time": 1534,
+        "event_category": "ToDo-List-Add",
+        "event_label": "close"
+      },
+      {
+        "event_category": "ToDo-List-Add",
+        "event_measured_time": 1912,
+        "event_label": "close"
+      },
+      {
+        "event_measured_time": 1146,
+        "event_category": "ToDo-List-Add",
+        "event_label": "close"
+      }
+    ],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "step": 3,
+      "endTime": {
+        "seconds": 1685642102,
+        "nanoseconds": 681000000
+      },
+      "darkMode": false,
+      "startTime": {
+        "seconds": 1685641898,
+        "nanoseconds": 426000000
+      },
+      "timeSpendOnSurvey": 204255,
+      "acceptedTerms": true
+    },
+    "events": [
+      {
+        "event_label": "save",
+        "event_category": "ToDo-Edit",
+        "event_measured_time": 12599
+      },
+      {
+        "event_label": "todo-dragged",
+        "event_category": "ToDo-List",
+        "event_measured_time": 1520
+      },
+      {
+        "event_label": "save",
+        "event_measured_time": 6169,
+        "event_category": "ToDo-Add"
+      },
+      {
+        "event_label": "change_date",
+        "event_measured_time": 10822,
+        "event_category": "ToDo-Edit"
+      },
+      {
+        "event_measured_time": 7287,
+        "event_label": "save",
+        "event_category": "ToDo-Add"
+      },
+      {
+        "event_label": "close",
+        "event_measured_time": 6740,
+        "event_category": "ToDo-List-Add"
+      },
+      {
+        "event_category": "ToDo-Add",
+        "event_label": "save",
+        "event_measured_time": 2379
+      }
+    ],
+    "surveys": [
+      {
+        "name": "appSurvey",
+        "survey": [
+          {
+            "question": "On a scale of 1 to 5, please rate the overall usability of the todo app.",
+            "numericValue": "5",
+            "hint": "1 - Very difficult to use, 2 - Difficult to use, 3 - Neutral, 4 - Easy to use, 5 - Very easy to use"
+          },
+          {
+            "question": "How intuitive was the app's interface for adding, managing, and updating tasks?",
+            "numericValue": "5",
+            "hint": "1 - Not intuitive at all, 2 - Somewhat unintuitive, 3 - Neutral, 4 - Somewhat intuitive, 5 - Very intuitive"
+          },
+          {
+            "hint": "1 - Very unappealing, 2 - Somewhat unappealing, 3 - Neutral, 4 - Somewhat appealing, 5 - Very appealing",
+            "question": "How visually appealing was the design of the app?",
+            "numericValue": "4"
+          },
+          {
+            "hint": "1 - Not at all, 2 - Somewhat, 3 - Neutral, 4 - Mostly, 5 - Completely",
+            "question": "How well did the app meet your expectations in terms of fulfilling your task management needs?",
+            "numericValue": "5"
+          },
+          {
+            "question": "On a scale of 1 to 5, please rate the app's responsiveness and speed.",
+            "hint": "1 - Very slow, 2 - Slow, 3 - Neutral, 4 - Fast, 5 - Very fast",
+            "numericValue": "5"
+          },
+          {
+            "question": "How well did the app organize and display your tasks?",
+            "numericValue": "5",
+            "hint": "1 - Very poorly, 2 - Poorly, 3 - Neutral, 4 - Well, 5 - Very well"
+          },
+          {
+            "textValue": "",
+            "question": "Were there any features or functionalities that you found particularly useful or impressive?"
+          },
+          {
+            "hint": "1 - Very dissatisfied, 2 - Dissatisfied, 3 - Neutral, 4 - Satisfied, 5 - Very satisfied",
+            "numericValue": "5",
+            "question": "On a scale of 1 to 5, please rate your overall satisfaction with the todo app."
+          },
+          {
+            "hint": "1 - Very unlikely, 2 - Unlikely, 3 - Neutral, 4 - Likely, 5 - Very likely",
+            "numericValue": "5",
+            "question": "How likely are you to continue using the app in the future?"
+          },
+          {
+            "textValue": "",
+            "question": "Do you have any additional comments, suggestions, or feedback regarding the todo app and its user experience?"
+          }
+        ]
+      },
+      {
+        "name": "userDetailsSurvey",
+        "survey": [
+          {
+            "question": "Have you had any previous experience with these kind of apps?",
+            "options": ["YES", "NO"],
+            "selectValue": "NO"
+          },
+          {
+            "question": "How often do you use such kind of apps?",
+            "options": ["RARELY", "OCCASIONALLY", "FREQUENTLY", "DAILY"],
+            "selectValue": "RARELY"
+          },
+          {
+            "selectValue": "SMARTPHONE",
+            "options": ["SMARTPHONE", "TABLET", "COMPUTER", "OTHER"],
+            "question": "What is your prefered device to use on a daily basis?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "userDetails": {
+      "acceptedTerms": true,
+      "step": 1,
+      "timeSpendOnSurvey": 0,
+      "darkMode": false,
+      "startTime": {
+        "seconds": 1685642517,
+        "nanoseconds": 112000000
+      },
+      "endTime": {
+        "seconds": 1685642517,
+        "nanoseconds": 112000000
+      }
+    },
+    "events": [
+      {
+        "event_category": "ToDo-List-Add",
+        "event_measured_time": 14596,
+        "event_label": "close"
+      }
+    ],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "startTime": {
+        "seconds": 1685015950,
+        "nanoseconds": 883000000
+      },
+      "endTime": {
+        "seconds": 1685037271,
+        "nanoseconds": 511000000
+      },
+      "timeSpendOnSurvey": 21320628,
+      "step": 3,
+      "acceptedTerms": true,
+      "darkMode": true
+    },
+    "events": [
+      {
+        "event_measured_time": 744,
+        "event_category": "ToDo-List-Edit",
+        "event_label": "remove"
+      },
+      {
+        "event_label": "close",
+        "event_category": "ToDo-List-Add",
+        "event_measured_time": 7299
+      },
+      {
+        "event_measured_time": 3558,
+        "event_category": "ToDo-Add",
+        "event_label": "save"
+      },
+      {
+        "event_category": "ToDo-Edit",
+        "event_label": "change_date",
+        "event_measured_time": 1223
+      },
+      {
+        "event_label": "todo-dragged",
+        "event_category": "ToDo-List",
+        "event_measured_time": 521
+      },
+      {
+        "event_measured_time": 788,
+        "event_label": "todo-dragged",
+        "event_category": "ToDo-List"
+      },
+      {
+        "event_measured_time": 4402,
+        "event_label": "save",
+        "event_category": "ToDo-Add"
+      },
+      {
+        "event_label": "todo-dragged",
+        "event_category": "ToDo-List",
+        "event_measured_time": 635
+      },
+      {
+        "event_measured_time": 5011,
+        "event_category": "ToDo-Add",
+        "event_label": "save"
+      },
+      {
+        "event_category": "ToDo-List-Edit",
+        "event_measured_time": 4803,
+        "event_label": "close"
+      },
+      {
+        "event_category": "ToDo-Edit",
+        "event_measured_time": 5400,
+        "event_label": "save"
+      }
+    ],
+    "surveys": [
+      {
+        "survey": [
+          {
+            "hint": "1 - Very difficult to use, 2 - Difficult to use, 3 - Neutral, 4 - Easy to use, 5 - Very easy to use",
+            "question": "On a scale of 1 to 5, please rate the overall usability of the todo app.",
+            "numericValue": "4"
+          },
+          {
+            "numericValue": "4",
+            "question": "How intuitive was the app's interface for adding, managing, and updating tasks?",
+            "hint": "1 - Not intuitive at all, 2 - Somewhat unintuitive, 3 - Neutral, 4 - Somewhat intuitive, 5 - Very intuitive"
+          },
+          {
+            "hint": "1 - Very unappealing, 2 - Somewhat unappealing, 3 - Neutral, 4 - Somewhat appealing, 5 - Very appealing",
+            "question": "How visually appealing was the design of the app?",
+            "numericValue": "2"
+          },
+          {
+            "numericValue": "5",
+            "question": "How well did the app meet your expectations in terms of fulfilling your task management needs?",
+            "hint": "1 - Not at all, 2 - Somewhat, 3 - Neutral, 4 - Mostly, 5 - Completely"
+          },
+          {
+            "numericValue": "5",
+            "question": "On a scale of 1 to 5, please rate the app's responsiveness and speed.",
+            "hint": "1 - Very slow, 2 - Slow, 3 - Neutral, 4 - Fast, 5 - Very fast"
+          },
+          {
+            "numericValue": "5",
+            "question": "How well did the app organize and display your tasks?",
+            "hint": "1 - Very poorly, 2 - Poorly, 3 - Neutral, 4 - Well, 5 - Very well"
+          },
+          {
+            "textValue": "Verschieben war sehr einfach (das erste mal jedoch unbewusst) ",
+            "question": "Were there any features or functionalities that you found particularly useful or impressive?"
+          },
+          {
+            "question": "On a scale of 1 to 5, please rate your overall satisfaction with the todo app.",
+            "numericValue": "5",
+            "hint": "1 - Very dissatisfied, 2 - Dissatisfied, 3 - Neutral, 4 - Satisfied, 5 - Very satisfied"
+          },
+          {
+            "hint": "1 - Very unlikely, 2 - Unlikely, 3 - Neutral, 4 - Likely, 5 - Very likely",
+            "numericValue": "2",
+            "question": "How likely are you to continue using the app in the future?"
+          },
+          {
+            "question": "Do you have any additional comments, suggestions, or feedback regarding the todo app and its user experience?",
+            "textValue": ""
+          }
+        ],
+        "name": "appSurvey"
+      },
+      {
+        "name": "userDetailsSurvey",
+        "survey": [
+          {
+            "question": "Have you had any previous experience with these kind of apps?",
+            "options": ["YES", "NO"],
+            "selectValue": "NO"
+          },
+          {
+            "options": ["RARELY", "OCCASIONALLY", "FREQUENTLY", "DAILY"],
+            "question": "How often do you use such kind of apps?",
+            "selectValue": "RARELY"
+          },
+          {
+            "options": ["SMARTPHONE", "TABLET", "COMPUTER", "OTHER"],
+            "selectValue": "SMARTPHONE",
+            "question": "What is your prefered device to use on a daily basis?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "userDetails": {
+      "timeSpendOnSurvey": 0,
+      "startTime": {
+        "seconds": 1685648430,
+        "nanoseconds": 769000000
+      },
+      "darkMode": true,
+      "acceptedTerms": false,
+      "endTime": {
+        "seconds": 1685648430,
+        "nanoseconds": 769000000
+      },
+      "step": 0
+    },
+    "events": [],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "step": 3,
+      "darkMode": false,
+      "startTime": {
+        "seconds": 1685007922,
+        "nanoseconds": 987000000
+      },
+      "timeSpendOnSurvey": 484401,
+      "acceptedTerms": true,
+      "endTime": {
+        "seconds": 1685008407,
+        "nanoseconds": 388000000
+      }
+    },
+    "events": [
+      {
+        "event_measured_time": 6199,
+        "event_category": "ToDo-Edit",
+        "event_label": "save"
+      },
+      {
+        "event_label": "change_date",
+        "event_category": "ToDo-Edit",
+        "event_measured_time": 1670
+      },
+      {
+        "event_label": "save",
+        "event_category": "ToDo-Add",
+        "event_measured_time": 35256
+      },
+      {
+        "event_measured_time": 13812,
+        "event_label": "close",
+        "event_category": "ToDo-List-Add"
+      },
+      {
+        "event_label": "todo-dragged",
+        "event_measured_time": 619,
+        "event_category": "ToDo-List"
+      },
+      {
+        "event_category": "ToDo-List",
+        "event_label": "todo-dragged",
+        "event_measured_time": 830
+      },
+      {
+        "event_measured_time": 12244,
+        "event_category": "ToDo-Add",
+        "event_label": "save"
+      },
+      {
+        "event_category": "ToDo-Add",
+        "event_label": "save",
+        "event_measured_time": 16835
+      }
+    ],
+    "surveys": [
+      {
+        "survey": [
+          {
+            "question": "Have you had any previous experience with these kind of apps?",
+            "selectValue": "YES",
+            "options": ["YES", "NO"]
+          },
+          {
+            "options": ["RARELY", "OCCASIONALLY", "FREQUENTLY", "DAILY"],
+            "question": "How often do you use such kind of apps?",
+            "selectValue": "FREQUENTLY"
+          },
+          {
+            "selectValue": "SMARTPHONE",
+            "options": ["SMARTPHONE", "TABLET", "COMPUTER", "OTHER"],
+            "question": "What is your prefered device to use on a daily basis?"
+          }
+        ],
+        "name": "userDetailsSurvey"
+      },
+      {
+        "name": "appSurvey",
+        "survey": [
+          {
+            "question": "On a scale of 1 to 5, please rate the overall usability of the todo app.",
+            "numericValue": "5",
+            "hint": "1 - Very difficult to use, 2 - Difficult to use, 3 - Neutral, 4 - Easy to use, 5 - Very easy to use"
+          },
+          {
+            "hint": "1 - Not intuitive at all, 2 - Somewhat unintuitive, 3 - Neutral, 4 - Somewhat intuitive, 5 - Very intuitive",
+            "question": "How intuitive was the app's interface for adding, managing, and updating tasks?",
+            "numericValue": "5"
+          },
+          {
+            "question": "How visually appealing was the design of the app?",
+            "hint": "1 - Very unappealing, 2 - Somewhat unappealing, 3 - Neutral, 4 - Somewhat appealing, 5 - Very appealing",
+            "numericValue": "3"
+          },
+          {
+            "question": "How well did the app meet your expectations in terms of fulfilling your task management needs?",
+            "numericValue": "4",
+            "hint": "1 - Not at all, 2 - Somewhat, 3 - Neutral, 4 - Mostly, 5 - Completely"
+          },
+          {
+            "question": "On a scale of 1 to 5, please rate the app's responsiveness and speed.",
+            "numericValue": "5",
+            "hint": "1 - Very slow, 2 - Slow, 3 - Neutral, 4 - Fast, 5 - Very fast"
+          },
+          {
+            "hint": "1 - Very poorly, 2 - Poorly, 3 - Neutral, 4 - Well, 5 - Very well",
+            "numericValue": "4",
+            "question": "How well did the app organize and display your tasks?"
+          },
+          {
+            "question": "Were there any features or functionalities that you found particularly useful or impressive?",
+            "textValue": "Nein. Die Funktionen sind nützlich aber mir schon aus anderen Anwendungen bekannt. Deswegen hat mich keine Funktion besonders beeindruckt"
+          },
+          {
+            "question": "On a scale of 1 to 5, please rate your overall satisfaction with the todo app.",
+            "hint": "1 - Very dissatisfied, 2 - Dissatisfied, 3 - Neutral, 4 - Satisfied, 5 - Very satisfied",
+            "numericValue": "4"
+          },
+          {
+            "hint": "1 - Very unlikely, 2 - Unlikely, 3 - Neutral, 4 - Likely, 5 - Very likely",
+            "question": "How likely are you to continue using the app in the future?",
+            "numericValue": "2"
+          },
+          {
+            "textValue": "Es sollte möglich sein auch Unteraufgaben eines ToDos zu erstellen. Auch Grafiken über offene Punkte und das Ablaufdatum wren interessant.",
+            "question": "Do you have any additional comments, suggestions, or feedback regarding the todo app and its user experience?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "userDetails": {
+      "acceptedTerms": true,
+      "darkMode": true,
+      "step": 3,
+      "startTime": {
+        "seconds": 1685735727,
+        "nanoseconds": 748000000
+      },
+      "timeSpendOnSurvey": 402167,
+      "endTime": {
+        "seconds": 1685736129,
+        "nanoseconds": 915000000
+      }
+    },
+    "events": [
+      {
+        "event_label": "save",
+        "event_category": "ToDo-Add",
+        "event_measured_time": 2504
+      },
+      {
+        "event_category": "ToDo-Add",
+        "event_measured_time": 2613,
+        "event_label": "save"
+      },
+      {
+        "event_measured_time": 513,
+        "event_category": "ToDo-List",
+        "event_label": "todo-dragged"
+      },
+      {
+        "event_label": "close",
+        "event_category": "ToDo-List-Add",
+        "event_measured_time": 1647
+      },
+      {
+        "event_category": "ToDo-List",
+        "event_measured_time": 1530,
+        "event_label": "todo-dragged"
+      },
+      {
+        "event_category": "ToDo-List-Add",
+        "event_measured_time": 6554,
+        "event_label": "close"
+      },
+      {
+        "event_category": "ToDo-List",
+        "event_label": "todo-dragged",
+        "event_measured_time": 1014
+      },
+      {
+        "event_measured_time": 6177,
+        "event_label": "close",
+        "event_category": "ToDo-List-Add"
+      },
+      {
+        "event_label": "remove",
+        "event_measured_time": 1141,
+        "event_category": "ToDo-List-Edit"
+      },
+      {
+        "event_measured_time": 20864,
+        "event_label": "save",
+        "event_category": "ToDo-Edit"
+      },
+      {
+        "event_label": "save",
+        "event_measured_time": 4386,
+        "event_category": "ToDo-Add"
+      },
+      {
+        "event_measured_time": 385,
+        "event_label": "todo-dragged",
+        "event_category": "ToDo-List"
+      },
+      {
+        "event_label": "close",
+        "event_measured_time": 4907,
+        "event_category": "ToDo-List-Edit"
+      },
+      {
+        "event_label": "change_date",
+        "event_category": "ToDo-Edit",
+        "event_measured_time": 19517
+      }
+    ],
+    "surveys": [
+      {
+        "name": "userDetailsSurvey",
+        "survey": [
+          {
+            "options": ["YES", "NO"],
+            "question": "Have you had any previous experience with these kind of apps?",
+            "selectValue": "NO"
+          },
+          {
+            "selectValue": "RARELY",
+            "options": ["RARELY", "OCCASIONALLY", "FREQUENTLY", "DAILY"],
+            "question": "How often do you use such kind of apps?"
+          },
+          {
+            "selectValue": "SMARTPHONE",
+            "options": ["SMARTPHONE", "TABLET", "COMPUTER", "OTHER"],
+            "question": "What is your prefered device to use on a daily basis?"
+          }
+        ]
+      },
+      {
+        "name": "appSurvey",
+        "survey": [
+          {
+            "hint": "1 - Very difficult to use, 2 - Difficult to use, 3 - Neutral, 4 - Easy to use, 5 - Very easy to use",
+            "question": "On a scale of 1 to 5, please rate the overall usability of the todo app.",
+            "numericValue": "3"
+          },
+          {
+            "numericValue": "2",
+            "question": "How intuitive was the app's interface for adding, managing, and updating tasks?",
+            "hint": "1 - Not intuitive at all, 2 - Somewhat unintuitive, 3 - Neutral, 4 - Somewhat intuitive, 5 - Very intuitive"
+          },
+          {
+            "question": "How visually appealing was the design of the app?",
+            "hint": "1 - Very unappealing, 2 - Somewhat unappealing, 3 - Neutral, 4 - Somewhat appealing, 5 - Very appealing",
+            "numericValue": "2"
+          },
+          {
+            "question": "How well did the app meet your expectations in terms of fulfilling your task management needs?",
+            "hint": "1 - Not at all, 2 - Somewhat, 3 - Neutral, 4 - Mostly, 5 - Completely",
+            "numericValue": "5"
+          },
+          {
+            "numericValue": "5",
+            "question": "On a scale of 1 to 5, please rate the app's responsiveness and speed.",
+            "hint": "1 - Very slow, 2 - Slow, 3 - Neutral, 4 - Fast, 5 - Very fast"
+          },
+          {
+            "question": "How well did the app organize and display your tasks?",
+            "hint": "1 - Very poorly, 2 - Poorly, 3 - Neutral, 4 - Well, 5 - Very well",
+            "numericValue": "3"
+          },
+          {
+            "question": "Were there any features or functionalities that you found particularly useful or impressive?",
+            "textValue": ""
+          },
+          {
+            "question": "On a scale of 1 to 5, please rate your overall satisfaction with the todo app.",
+            "numericValue": "3",
+            "hint": "1 - Very dissatisfied, 2 - Dissatisfied, 3 - Neutral, 4 - Satisfied, 5 - Very satisfied"
+          },
+          {
+            "hint": "1 - Very unlikely, 2 - Unlikely, 3 - Neutral, 4 - Likely, 5 - Very likely",
+            "numericValue": "2",
+            "question": "How likely are you to continue using the app in the future?"
+          },
+          {
+            "textValue": "",
+            "question": "Do you have any additional comments, suggestions, or feedback regarding the todo app and its user experience?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "userDetails": {
+      "darkMode": false,
+      "acceptedTerms": true,
+      "startTime": {
+        "seconds": 1685022435,
+        "nanoseconds": 222000000
+      },
+      "step": 1,
+      "timeSpendOnSurvey": 0,
+      "endTime": {
+        "seconds": 1685022435,
+        "nanoseconds": 222000000
+      }
+    },
+    "events": [
+      {
+        "event_measured_time": 1518,
+        "event_category": "ToDo-List-Add",
+        "event_label": "close"
+      }
+    ],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "step": 1,
+      "acceptedTerms": true,
+      "timeSpendOnSurvey": 0,
+      "startTime": {
+        "seconds": 1685009331,
+        "nanoseconds": 434000000
+      },
+      "endTime": {
+        "seconds": 1685009331,
+        "nanoseconds": 434000000
+      },
+      "darkMode": true
+    },
+    "events": [],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "darkMode": false,
+      "endTime": {
+        "seconds": 1685643702,
+        "nanoseconds": 822000000
+      },
+      "step": 1,
+      "acceptedTerms": true,
+      "timeSpendOnSurvey": 0,
+      "startTime": {
+        "seconds": 1685643702,
+        "nanoseconds": 822000000
+      }
+    },
+    "events": [],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "startTime": {
+        "seconds": 1685650964,
+        "nanoseconds": 827000000
+      },
+      "acceptedTerms": true,
+      "endTime": {
+        "seconds": 1685650964,
+        "nanoseconds": 827000000
+      },
+      "timeSpendOnSurvey": 0,
+      "darkMode": false,
+      "step": 1
+    },
+    "events": [],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "step": 1,
+      "timeSpendOnSurvey": 0,
+      "startTime": {
+        "seconds": 1685639554,
+        "nanoseconds": 472000000
+      },
+      "darkMode": true,
+      "endTime": {
+        "seconds": 1685639554,
+        "nanoseconds": 472000000
+      },
+      "acceptedTerms": true
+    },
+    "events": [],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "darkMode": false,
+      "endTime": {
+        "seconds": 1685015680,
+        "nanoseconds": 380000000
+      },
+      "timeSpendOnSurvey": 560151,
+      "step": 3,
+      "acceptedTerms": true,
+      "startTime": {
+        "seconds": 1685015120,
+        "nanoseconds": 229000000
+      }
+    },
+    "events": [
+      {
+        "event_measured_time": 2487,
+        "event_label": "change_date",
+        "event_category": "ToDo-Edit"
+      },
+      {
+        "event_category": "ToDo-Add",
+        "event_label": "save",
+        "event_measured_time": 10517
+      },
+      {
+        "event_category": "ToDo-Edit",
+        "event_label": "change_date",
+        "event_measured_time": 861
+      },
+      {
+        "event_category": "ToDo-List",
+        "event_label": "todo-dragged",
+        "event_measured_time": 795
+      },
+      {
+        "event_category": "ToDo-List-Add",
+        "event_measured_time": 6823,
+        "event_label": "close"
+      },
+      {
+        "event_category": "ToDo-List-Edit",
+        "event_measured_time": 4764,
+        "event_label": "close"
+      },
+      {
+        "event_category": "ToDo-Edit",
+        "event_measured_time": 1201,
+        "event_label": "change_date"
+      },
+      {
+        "event_category": "ToDo-List",
+        "event_measured_time": 1304,
+        "event_label": "todo-dragged"
+      },
+      {
+        "event_measured_time": 7694,
+        "event_label": "save",
+        "event_category": "ToDo-Add"
+      },
+      {
+        "event_category": "ToDo-Edit",
+        "event_measured_time": 15579,
+        "event_label": "save"
+      },
+      {
+        "event_category": "ToDo-Edit",
+        "event_measured_time": 7107,
+        "event_label": "save"
+      },
+      {
+        "event_label": "change_date",
+        "event_measured_time": 1305,
+        "event_category": "ToDo-Edit"
+      },
+      {
+        "event_measured_time": 8588,
+        "event_label": "save",
+        "event_category": "ToDo-Add"
+      },
+      {
+        "event_category": "ToDo-Edit",
+        "event_label": "save",
+        "event_measured_time": 3945
+      },
+      {
+        "event_measured_time": 954,
+        "event_label": "todo-dragged",
+        "event_category": "ToDo-List"
+      }
+    ],
+    "surveys": [
+      {
+        "name": "appSurvey",
+        "survey": [
+          {
+            "question": "On a scale of 1 to 5, please rate the overall usability of the todo app.",
+            "hint": "1 - Very difficult to use, 2 - Difficult to use, 3 - Neutral, 4 - Easy to use, 5 - Very easy to use",
+            "numericValue": "5"
+          },
+          {
+            "hint": "1 - Not intuitive at all, 2 - Somewhat unintuitive, 3 - Neutral, 4 - Somewhat intuitive, 5 - Very intuitive",
+            "question": "How intuitive was the app's interface for adding, managing, and updating tasks?",
+            "numericValue": "5"
+          },
+          {
+            "hint": "1 - Very unappealing, 2 - Somewhat unappealing, 3 - Neutral, 4 - Somewhat appealing, 5 - Very appealing",
+            "numericValue": "3",
+            "question": "How visually appealing was the design of the app?"
+          },
+          {
+            "question": "How well did the app meet your expectations in terms of fulfilling your task management needs?",
+            "numericValue": "4",
+            "hint": "1 - Not at all, 2 - Somewhat, 3 - Neutral, 4 - Mostly, 5 - Completely"
+          },
+          {
+            "numericValue": "5",
+            "question": "On a scale of 1 to 5, please rate the app's responsiveness and speed.",
+            "hint": "1 - Very slow, 2 - Slow, 3 - Neutral, 4 - Fast, 5 - Very fast"
+          },
+          {
+            "question": "How well did the app organize and display your tasks?",
+            "numericValue": "4",
+            "hint": "1 - Very poorly, 2 - Poorly, 3 - Neutral, 4 - Well, 5 - Very well"
+          },
+          {
+            "question": "Were there any features or functionalities that you found particularly useful or impressive?",
+            "textValue": "Verschieben als Priorisieren"
+          },
+          {
+            "hint": "1 - Very dissatisfied, 2 - Dissatisfied, 3 - Neutral, 4 - Satisfied, 5 - Very satisfied",
+            "question": "On a scale of 1 to 5, please rate your overall satisfaction with the todo app.",
+            "numericValue": "4"
+          },
+          {
+            "question": "How likely are you to continue using the app in the future?",
+            "numericValue": "4",
+            "hint": "1 - Very unlikely, 2 - Unlikely, 3 - Neutral, 4 - Likely, 5 - Very likely"
+          },
+          {
+            "textValue": "Datumsangabe ist sinnvoll.\nNe Wochen/Monatsübersicht fehlt noch -> Kalender ",
+            "question": "Do you have any additional comments, suggestions, or feedback regarding the todo app and its user experience?"
+          }
+        ]
+      },
+      {
+        "survey": [
+          {
+            "options": ["YES", "NO"],
+            "question": "Have you had any previous experience with these kind of apps?",
+            "selectValue": "NO"
+          },
+          {
+            "selectValue": "RARELY",
+            "options": ["RARELY", "OCCASIONALLY", "FREQUENTLY", "DAILY"],
+            "question": "How often do you use such kind of apps?"
+          },
+          {
+            "options": ["SMARTPHONE", "TABLET", "COMPUTER", "OTHER"],
+            "selectValue": "SMARTPHONE",
+            "question": "What is your prefered device to use on a daily basis?"
+          }
+        ],
+        "name": "userDetailsSurvey"
+      }
+    ]
+  },
+  {
+    "userDetails": {
+      "acceptedTerms": true,
+      "endTime": {
+        "seconds": 1685021433,
+        "nanoseconds": 638000000
+      },
+      "timeSpendOnSurvey": 302477,
+      "step": 3,
+      "darkMode": false,
+      "startTime": {
+        "seconds": 1685021131,
+        "nanoseconds": 161000000
+      }
+    },
+    "events": [
+      {
+        "event_measured_time": 6449,
+        "event_label": "close",
+        "event_category": "ToDo-List-Add"
+      },
+      {
+        "event_measured_time": 1470,
+        "event_category": "ToDo-List",
+        "event_label": "todo-dragged"
+      },
+      {
+        "event_category": "ToDo-Edit",
+        "event_measured_time": 8682,
+        "event_label": "save"
+      },
+      {
+        "event_label": "change_date",
+        "event_measured_time": 3274,
+        "event_category": "ToDo-Edit"
+      },
+      {
+        "event_label": "close",
+        "event_category": "ToDo-List-Add",
+        "event_measured_time": 9031
+      },
+      {
+        "event_category": "ToDo-Add",
+        "event_measured_time": 10754,
+        "event_label": "save"
+      },
+      {
+        "event_measured_time": 5488,
+        "event_label": "save",
+        "event_category": "ToDo-Add"
+      },
+      {
+        "event_category": "ToDo-Add",
+        "event_label": "save",
+        "event_measured_time": 10830
+      }
+    ],
+    "surveys": [
+      {
+        "survey": [
+          {
+            "options": ["YES", "NO"],
+            "question": "Have you had any previous experience with these kind of apps?",
+            "selectValue": "NO"
+          },
+          {
+            "options": ["RARELY", "OCCASIONALLY", "FREQUENTLY", "DAILY"],
+            "selectValue": "RARELY",
+            "question": "How often do you use such kind of apps?"
+          },
+          {
+            "options": ["SMARTPHONE", "TABLET", "COMPUTER", "OTHER"],
+            "selectValue": "SMARTPHONE",
+            "question": "What is your prefered device to use on a daily basis?"
+          }
+        ],
+        "name": "userDetailsSurvey"
+      },
+      {
+        "name": "appSurvey",
+        "survey": [
+          {
+            "numericValue": "4",
+            "question": "On a scale of 1 to 5, please rate the overall usability of the todo app.",
+            "hint": "1 - Very difficult to use, 2 - Difficult to use, 3 - Neutral, 4 - Easy to use, 5 - Very easy to use"
+          },
+          {
+            "question": "How intuitive was the app's interface for adding, managing, and updating tasks?",
+            "hint": "1 - Not intuitive at all, 2 - Somewhat unintuitive, 3 - Neutral, 4 - Somewhat intuitive, 5 - Very intuitive",
+            "numericValue": "5"
+          },
+          {
+            "numericValue": "4",
+            "question": "How visually appealing was the design of the app?",
+            "hint": "1 - Very unappealing, 2 - Somewhat unappealing, 3 - Neutral, 4 - Somewhat appealing, 5 - Very appealing"
+          },
+          {
+            "question": "How well did the app meet your expectations in terms of fulfilling your task management needs?",
+            "numericValue": "4",
+            "hint": "1 - Not at all, 2 - Somewhat, 3 - Neutral, 4 - Mostly, 5 - Completely"
+          },
+          {
+            "hint": "1 - Very slow, 2 - Slow, 3 - Neutral, 4 - Fast, 5 - Very fast",
+            "numericValue": "4",
+            "question": "On a scale of 1 to 5, please rate the app's responsiveness and speed."
+          },
+          {
+            "numericValue": "5",
+            "hint": "1 - Very poorly, 2 - Poorly, 3 - Neutral, 4 - Well, 5 - Very well",
+            "question": "How well did the app organize and display your tasks?"
+          },
+          {
+            "question": "Were there any features or functionalities that you found particularly useful or impressive?",
+            "textValue": ""
+          },
+          {
+            "hint": "1 - Very dissatisfied, 2 - Dissatisfied, 3 - Neutral, 4 - Satisfied, 5 - Very satisfied",
+            "question": "On a scale of 1 to 5, please rate your overall satisfaction with the todo app.",
+            "numericValue": "4"
+          },
+          {
+            "numericValue": "4",
+            "question": "How likely are you to continue using the app in the future?",
+            "hint": "1 - Very unlikely, 2 - Unlikely, 3 - Neutral, 4 - Likely, 5 - Very likely"
+          },
+          {
+            "textValue": "",
+            "question": "Do you have any additional comments, suggestions, or feedback regarding the todo app and its user experience?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "userDetails": {
+      "startTime": {
+        "seconds": 1685692371,
+        "nanoseconds": 271000000
+      },
+      "darkMode": true,
+      "endTime": {
+        "seconds": 1685692371,
+        "nanoseconds": 271000000
+      },
+      "acceptedTerms": true,
+      "timeSpendOnSurvey": 0,
+      "step": 1
+    },
+    "events": [],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "darkMode": true,
+      "step": 1,
+      "endTime": {
+        "seconds": 1685640341,
+        "nanoseconds": 943000000
+      },
+      "timeSpendOnSurvey": 0,
+      "acceptedTerms": true,
+      "startTime": {
+        "seconds": 1685640341,
+        "nanoseconds": 943000000
+      }
+    },
+    "events": [],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "timeSpendOnSurvey": 0,
+      "step": 1,
+      "acceptedTerms": true,
+      "darkMode": false,
+      "endTime": {
+        "seconds": 1685661250,
+        "nanoseconds": 930000000
+      },
+      "startTime": {
+        "seconds": 1685661250,
+        "nanoseconds": 930000000
+      }
+    },
+    "events": [],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "acceptedTerms": true,
+      "startTime": {
+        "seconds": 1685010532,
+        "nanoseconds": 177000000
+      },
+      "darkMode": false,
+      "step": 1,
+      "timeSpendOnSurvey": 0,
+      "endTime": {
+        "seconds": 1685010532,
+        "nanoseconds": 177000000
+      }
+    },
+    "events": [],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "timeSpendOnSurvey": 314628,
+      "step": 3,
+      "acceptedTerms": true,
+      "startTime": {
+        "seconds": 1685640100,
+        "nanoseconds": 752000000
+      },
+      "endTime": {
+        "seconds": 1685640415,
+        "nanoseconds": 380000000
+      },
+      "darkMode": false
+    },
+    "events": [
+      {
+        "event_label": "change_date",
+        "event_category": "ToDo-Edit",
+        "event_measured_time": 700
+      },
+      {
+        "event_category": "ToDo-Add",
+        "event_measured_time": 2449,
+        "event_label": "save"
+      },
+      {
+        "event_category": "ToDo-List",
+        "event_label": "todo-dragged",
+        "event_measured_time": 769
+      },
+      {
+        "event_category": "ToDo-Edit",
+        "event_measured_time": 2888,
+        "event_label": "save"
+      },
+      {
+        "event_category": "ToDo-Edit",
+        "event_measured_time": 1255,
+        "event_label": "change_date"
+      },
+      {
+        "event_measured_time": 683,
+        "event_label": "change_date",
+        "event_category": "ToDo-Edit"
+      },
+      {
+        "event_category": "ToDo-Add",
+        "event_label": "save",
+        "event_measured_time": 3819
+      },
+      {
+        "event_category": "ToDo-Add",
+        "event_label": "save",
+        "event_measured_time": 2266
+      },
+      {
+        "event_measured_time": 2532,
+        "event_label": "save",
+        "event_category": "ToDo-Edit"
+      },
+      {
+        "event_category": "ToDo-Edit",
+        "event_measured_time": 4488,
+        "event_label": "save"
+      },
+      {
+        "event_measured_time": 5656,
+        "event_label": "close",
+        "event_category": "ToDo-List-Add"
+      }
+    ],
+    "surveys": [
+      {
+        "name": "appSurvey",
+        "survey": [
+          {
+            "numericValue": "4",
+            "hint": "1 - Very difficult to use, 2 - Difficult to use, 3 - Neutral, 4 - Easy to use, 5 - Very easy to use",
+            "question": "On a scale of 1 to 5, please rate the overall usability of the todo app."
+          },
+          {
+            "hint": "1 - Not intuitive at all, 2 - Somewhat unintuitive, 3 - Neutral, 4 - Somewhat intuitive, 5 - Very intuitive",
+            "question": "How intuitive was the app's interface for adding, managing, and updating tasks?",
+            "numericValue": "4"
+          },
+          {
+            "numericValue": "4",
+            "question": "How visually appealing was the design of the app?",
+            "hint": "1 - Very unappealing, 2 - Somewhat unappealing, 3 - Neutral, 4 - Somewhat appealing, 5 - Very appealing"
+          },
+          {
+            "numericValue": "5",
+            "question": "How well did the app meet your expectations in terms of fulfilling your task management needs?",
+            "hint": "1 - Not at all, 2 - Somewhat, 3 - Neutral, 4 - Mostly, 5 - Completely"
+          },
+          {
+            "question": "On a scale of 1 to 5, please rate the app's responsiveness and speed.",
+            "hint": "1 - Very slow, 2 - Slow, 3 - Neutral, 4 - Fast, 5 - Very fast",
+            "numericValue": "5"
+          },
+          {
+            "hint": "1 - Very poorly, 2 - Poorly, 3 - Neutral, 4 - Well, 5 - Very well",
+            "numericValue": "4",
+            "question": "How well did the app organize and display your tasks?"
+          },
+          {
+            "textValue": "",
+            "question": "Were there any features or functionalities that you found particularly useful or impressive?"
+          },
+          {
+            "hint": "1 - Very dissatisfied, 2 - Dissatisfied, 3 - Neutral, 4 - Satisfied, 5 - Very satisfied",
+            "numericValue": "4",
+            "question": "On a scale of 1 to 5, please rate your overall satisfaction with the todo app."
+          },
+          {
+            "hint": "1 - Very unlikely, 2 - Unlikely, 3 - Neutral, 4 - Likely, 5 - Very likely",
+            "numericValue": "2",
+            "question": "How likely are you to continue using the app in the future?"
+          },
+          {
+            "textValue": "Verschieben funktioniert zwar intuitiv, aber beim Verschieben hat er mir die Worte markiert. Ggf. mit einem Extra-Button ausstatten, damit es noch intuitiver wird und keine Fehlfunktionen entstehen.",
+            "question": "Do you have any additional comments, suggestions, or feedback regarding the todo app and its user experience?"
+          }
+        ]
+      },
+      {
+        "survey": [
+          {
+            "selectValue": "NO",
+            "question": "Have you had any previous experience with these kind of apps?",
+            "options": ["YES", "NO"]
+          },
+          {
+            "selectValue": "RARELY",
+            "options": ["RARELY", "OCCASIONALLY", "FREQUENTLY", "DAILY"],
+            "question": "How often do you use such kind of apps?"
+          },
+          {
+            "options": ["SMARTPHONE", "TABLET", "COMPUTER", "OTHER"],
+            "question": "What is your prefered device to use on a daily basis?",
+            "selectValue": "SMARTPHONE"
+          }
+        ],
+        "name": "userDetailsSurvey"
+      }
+    ]
+  },
+  {
+    "userDetails": {
+      "timeSpendOnSurvey": 0,
+      "startTime": {
+        "seconds": 1685640107,
+        "nanoseconds": 463000000
+      },
+      "darkMode": false,
+      "endTime": {
+        "seconds": 1685640107,
+        "nanoseconds": 463000000
+      },
+      "acceptedTerms": true,
+      "step": 1
+    },
+    "events": [],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "startTime": {
+        "seconds": 1685041735,
+        "nanoseconds": 989000000
+      },
+      "endTime": {
+        "seconds": 1685041735,
+        "nanoseconds": 989000000
+      },
+      "step": 1,
+      "timeSpendOnSurvey": 0,
+      "acceptedTerms": true,
+      "darkMode": true
+    },
+    "events": [
+      {
+        "event_measured_time": 2761,
+        "event_label": "save",
+        "event_category": "ToDo-Add"
+      },
+      {
+        "event_category": "ToDo-Edit",
+        "event_label": "save",
+        "event_measured_time": 3507
+      },
+      {
+        "event_category": "ToDo-Edit",
+        "event_label": "save",
+        "event_measured_time": 4985
+      },
+      {
+        "event_measured_time": 3337,
+        "event_label": "save",
+        "event_category": "ToDo-List-Edit"
+      },
+      {
+        "event_label": "save",
+        "event_measured_time": 4733,
+        "event_category": "ToDo-List-Edit"
+      },
+      {
+        "event_category": "ToDo-List-Add",
+        "event_label": "close",
+        "event_measured_time": 6868
+      },
+      {
+        "event_category": "ToDo-Edit",
+        "event_measured_time": 692,
+        "event_label": "change_date"
+      },
+      {
+        "event_measured_time": 2095,
+        "event_category": "ToDo-Add",
+        "event_label": "save"
+      },
+      {
+        "event_category": "ToDo-List-Edit",
+        "event_label": "close",
+        "event_measured_time": 2161
+      },
+      {
+        "event_category": "ToDo-List-Add",
+        "event_measured_time": 7774,
+        "event_label": "close"
+      },
+      {
+        "event_category": "ToDo-List-Add",
+        "event_measured_time": 2805,
+        "event_label": "close"
+      },
+      {
+        "event_measured_time": 3181,
+        "event_label": "close",
+        "event_category": "ToDo-List-Add"
+      },
+      {
+        "event_label": "save",
+        "event_measured_time": 4586,
+        "event_category": "ToDo-Add"
+      }
+    ],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "acceptedTerms": true,
+      "step": 3,
+      "timeSpendOnSurvey": 3363838,
+      "startTime": {
+        "seconds": 1685644202,
+        "nanoseconds": 55000000
+      },
+      "darkMode": true,
+      "endTime": {
+        "seconds": 1685647565,
+        "nanoseconds": 893000000
+      }
+    },
+    "events": [
+      {
+        "event_measured_time": 1883,
+        "event_label": "change_date",
+        "event_category": "ToDo-Edit"
+      },
+      {
+        "event_measured_time": 4229,
+        "event_category": "ToDo-Add",
+        "event_label": "save"
+      },
+      {
+        "event_measured_time": 1959,
+        "event_label": "save",
+        "event_category": "ToDo-Add"
+      },
+      {
+        "event_label": "save",
+        "event_measured_time": 3152,
+        "event_category": "ToDo-Edit"
+      },
+      {
+        "event_category": "ToDo-List",
+        "event_label": "todo-dragged",
+        "event_measured_time": 842
+      },
+      {
+        "event_label": "save",
+        "event_category": "ToDo-Add",
+        "event_measured_time": 2782
+      },
+      {
+        "event_measured_time": 22268,
+        "event_label": "close",
+        "event_category": "ToDo-List-Add"
+      }
+    ],
+    "surveys": [
+      {
+        "name": "appSurvey",
+        "survey": [
+          {
+            "question": "On a scale of 1 to 5, please rate the overall usability of the todo app.",
+            "numericValue": "5",
+            "hint": "1 - Very difficult to use, 2 - Difficult to use, 3 - Neutral, 4 - Easy to use, 5 - Very easy to use"
+          },
+          {
+            "hint": "1 - Not intuitive at all, 2 - Somewhat unintuitive, 3 - Neutral, 4 - Somewhat intuitive, 5 - Very intuitive",
+            "question": "How intuitive was the app's interface for adding, managing, and updating tasks?",
+            "numericValue": "4"
+          },
+          {
+            "numericValue": "4",
+            "hint": "1 - Very unappealing, 2 - Somewhat unappealing, 3 - Neutral, 4 - Somewhat appealing, 5 - Very appealing",
+            "question": "How visually appealing was the design of the app?"
+          },
+          {
+            "question": "How well did the app meet your expectations in terms of fulfilling your task management needs?",
+            "numericValue": "5",
+            "hint": "1 - Not at all, 2 - Somewhat, 3 - Neutral, 4 - Mostly, 5 - Completely"
+          },
+          {
+            "question": "On a scale of 1 to 5, please rate the app's responsiveness and speed.",
+            "numericValue": "5",
+            "hint": "1 - Very slow, 2 - Slow, 3 - Neutral, 4 - Fast, 5 - Very fast"
+          },
+          {
+            "question": "How well did the app organize and display your tasks?",
+            "hint": "1 - Very poorly, 2 - Poorly, 3 - Neutral, 4 - Well, 5 - Very well",
+            "numericValue": "4"
+          },
+          {
+            "textValue": "Ease of use",
+            "question": "Were there any features or functionalities that you found particularly useful or impressive?"
+          },
+          {
+            "numericValue": "5",
+            "hint": "1 - Very dissatisfied, 2 - Dissatisfied, 3 - Neutral, 4 - Satisfied, 5 - Very satisfied",
+            "question": "On a scale of 1 to 5, please rate your overall satisfaction with the todo app."
+          },
+          {
+            "numericValue": "3",
+            "question": "How likely are you to continue using the app in the future?",
+            "hint": "1 - Very unlikely, 2 - Unlikely, 3 - Neutral, 4 - Likely, 5 - Very likely"
+          },
+          {
+            "question": "Do you have any additional comments, suggestions, or feedback regarding the todo app and its user experience?",
+            "textValue": "Bugar"
+          }
+        ]
+      },
+      {
+        "name": "userDetailsSurvey",
+        "survey": [
+          {
+            "question": "Have you had any previous experience with these kind of apps?",
+            "options": ["YES", "NO"],
+            "selectValue": "NO"
+          },
+          {
+            "options": ["RARELY", "OCCASIONALLY", "FREQUENTLY", "DAILY"],
+            "selectValue": "RARELY",
+            "question": "How often do you use such kind of apps?"
+          },
+          {
+            "question": "What is your prefered device to use on a daily basis?",
+            "options": ["SMARTPHONE", "TABLET", "COMPUTER", "OTHER"],
+            "selectValue": "SMARTPHONE"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "userDetails": {
+      "startTime": {
+        "seconds": 1685016313,
+        "nanoseconds": 340000000
+      },
+      "endTime": {
+        "seconds": 1685016313,
+        "nanoseconds": 340000000
+      },
+      "step": 1,
+      "acceptedTerms": true,
+      "timeSpendOnSurvey": 0,
+      "darkMode": true
+    },
+    "events": [],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "acceptedTerms": true,
+      "startTime": {
+        "seconds": 1685016341,
+        "nanoseconds": 24000000
+      },
+      "timeSpendOnSurvey": 128235,
+      "endTime": {
+        "seconds": 1685016469,
+        "nanoseconds": 259000000
+      },
+      "step": 3,
+      "darkMode": false
+    },
+    "events": [
+      {
+        "event_measured_time": 1029,
+        "event_label": "change_date",
+        "event_category": "ToDo-Edit"
+      },
+      {
+        "event_measured_time": 3229,
+        "event_category": "ToDo-Add",
+        "event_label": "save"
+      },
+      {
+        "event_measured_time": 2358,
+        "event_label": "save",
+        "event_category": "ToDo-Add"
+      },
+      {
+        "event_label": "close",
+        "event_category": "ToDo-List-Add",
+        "event_measured_time": 10366
+      },
+      {
+        "event_measured_time": 3947,
+        "event_category": "ToDo-Edit",
+        "event_label": "save"
+      },
+      {
+        "event_category": "ToDo-Add",
+        "event_label": "save",
+        "event_measured_time": 3433
+      },
+      {
+        "event_category": "ToDo-List",
+        "event_label": "todo-dragged",
+        "event_measured_time": 1712
+      }
+    ],
+    "surveys": [
+      {
+        "name": "appSurvey",
+        "survey": [
+          {
+            "question": "On a scale of 1 to 5, please rate the overall usability of the todo app.",
+            "hint": "1 - Very difficult to use, 2 - Difficult to use, 3 - Neutral, 4 - Easy to use, 5 - Very easy to use",
+            "numericValue": "5"
+          },
+          {
+            "numericValue": "5",
+            "hint": "1 - Not intuitive at all, 2 - Somewhat unintuitive, 3 - Neutral, 4 - Somewhat intuitive, 5 - Very intuitive",
+            "question": "How intuitive was the app's interface for adding, managing, and updating tasks?"
+          },
+          {
+            "numericValue": "4",
+            "question": "How visually appealing was the design of the app?",
+            "hint": "1 - Very unappealing, 2 - Somewhat unappealing, 3 - Neutral, 4 - Somewhat appealing, 5 - Very appealing"
+          },
+          {
+            "question": "How well did the app meet your expectations in terms of fulfilling your task management needs?",
+            "hint": "1 - Not at all, 2 - Somewhat, 3 - Neutral, 4 - Mostly, 5 - Completely",
+            "numericValue": "4"
+          },
+          {
+            "hint": "1 - Very slow, 2 - Slow, 3 - Neutral, 4 - Fast, 5 - Very fast",
+            "question": "On a scale of 1 to 5, please rate the app's responsiveness and speed.",
+            "numericValue": "5"
+          },
+          {
+            "numericValue": "4",
+            "question": "How well did the app organize and display your tasks?",
+            "hint": "1 - Very poorly, 2 - Poorly, 3 - Neutral, 4 - Well, 5 - Very well"
+          },
+          {
+            "question": "Were there any features or functionalities that you found particularly useful or impressive?",
+            "textValue": ""
+          },
+          {
+            "question": "On a scale of 1 to 5, please rate your overall satisfaction with the todo app.",
+            "numericValue": "5",
+            "hint": "1 - Very dissatisfied, 2 - Dissatisfied, 3 - Neutral, 4 - Satisfied, 5 - Very satisfied"
+          },
+          {
+            "numericValue": "5",
+            "question": "How likely are you to continue using the app in the future?",
+            "hint": "1 - Very unlikely, 2 - Unlikely, 3 - Neutral, 4 - Likely, 5 - Very likely"
+          },
+          {
+            "textValue": "",
+            "question": "Do you have any additional comments, suggestions, or feedback regarding the todo app and its user experience?"
+          }
+        ]
+      },
+      {
+        "name": "userDetailsSurvey",
+        "survey": [
+          {
+            "options": ["YES", "NO"],
+            "selectValue": "NO",
+            "question": "Have you had any previous experience with these kind of apps?"
+          },
+          {
+            "question": "How often do you use such kind of apps?",
+            "selectValue": "OCCASIONALLY",
+            "options": ["RARELY", "OCCASIONALLY", "FREQUENTLY", "DAILY"]
+          },
+          {
+            "selectValue": "SMARTPHONE",
+            "options": ["SMARTPHONE", "TABLET", "COMPUTER", "OTHER"],
+            "question": "What is your prefered device to use on a daily basis?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "userDetails": {
+      "endTime": {
+        "seconds": 1685642970,
+        "nanoseconds": 672000000
+      },
+      "acceptedTerms": true,
+      "startTime": {
+        "seconds": 1685642810,
+        "nanoseconds": 751000000
+      },
+      "timeSpendOnSurvey": 159921,
+      "darkMode": true,
+      "step": 3
+    },
+    "events": [
+      {
+        "event_category": "ToDo-Edit",
+        "event_label": "change_date",
+        "event_measured_time": 988
+      },
+      {
+        "event_category": "ToDo-Add",
+        "event_measured_time": 1158,
+        "event_label": "save"
+      },
+      {
+        "event_category": "ToDo-Add",
+        "event_label": "save",
+        "event_measured_time": 1298
+      },
+      {
+        "event_measured_time": 4923,
+        "event_label": "save",
+        "event_category": "ToDo-Edit"
+      },
+      {
+        "event_category": "ToDo-List",
+        "event_label": "todo-dragged",
+        "event_measured_time": 766
+      },
+      {
+        "event_measured_time": 1560,
+        "event_category": "ToDo-List-Edit",
+        "event_label": "save"
+      },
+      {
+        "event_category": "ToDo-List-Add",
+        "event_measured_time": 3181,
+        "event_label": "close"
+      },
+      {
+        "event_category": "ToDo-Add",
+        "event_measured_time": 6144,
+        "event_label": "save"
+      }
+    ],
+    "surveys": [
+      {
+        "name": "userDetailsSurvey",
+        "survey": [
+          {
+            "selectValue": "YES",
+            "options": ["YES", "NO"],
+            "question": "Have you had any previous experience with these kind of apps?"
+          },
+          {
+            "selectValue": "DAILY",
+            "options": ["RARELY", "OCCASIONALLY", "FREQUENTLY", "DAILY"],
+            "question": "How often do you use such kind of apps?"
+          },
+          {
+            "question": "What is your prefered device to use on a daily basis?",
+            "selectValue": "SMARTPHONE",
+            "options": ["SMARTPHONE", "TABLET", "COMPUTER", "OTHER"]
+          }
+        ]
+      },
+      {
+        "survey": [
+          {
+            "hint": "1 - Very difficult to use, 2 - Difficult to use, 3 - Neutral, 4 - Easy to use, 5 - Very easy to use",
+            "question": "On a scale of 1 to 5, please rate the overall usability of the todo app.",
+            "numericValue": "4"
+          },
+          {
+            "numericValue": "4",
+            "hint": "1 - Not intuitive at all, 2 - Somewhat unintuitive, 3 - Neutral, 4 - Somewhat intuitive, 5 - Very intuitive",
+            "question": "How intuitive was the app's interface for adding, managing, and updating tasks?"
+          },
+          {
+            "question": "How visually appealing was the design of the app?",
+            "hint": "1 - Very unappealing, 2 - Somewhat unappealing, 3 - Neutral, 4 - Somewhat appealing, 5 - Very appealing",
+            "numericValue": "2"
+          },
+          {
+            "question": "How well did the app meet your expectations in terms of fulfilling your task management needs?",
+            "hint": "1 - Not at all, 2 - Somewhat, 3 - Neutral, 4 - Mostly, 5 - Completely",
+            "numericValue": "4"
+          },
+          {
+            "hint": "1 - Very slow, 2 - Slow, 3 - Neutral, 4 - Fast, 5 - Very fast",
+            "numericValue": "4",
+            "question": "On a scale of 1 to 5, please rate the app's responsiveness and speed."
+          },
+          {
+            "hint": "1 - Very poorly, 2 - Poorly, 3 - Neutral, 4 - Well, 5 - Very well",
+            "numericValue": "3",
+            "question": "How well did the app organize and display your tasks?"
+          },
+          {
+            "textValue": "",
+            "question": "Were there any features or functionalities that you found particularly useful or impressive?"
+          },
+          {
+            "hint": "1 - Very dissatisfied, 2 - Dissatisfied, 3 - Neutral, 4 - Satisfied, 5 - Very satisfied",
+            "numericValue": "4",
+            "question": "On a scale of 1 to 5, please rate your overall satisfaction with the todo app."
+          },
+          {
+            "hint": "1 - Very unlikely, 2 - Unlikely, 3 - Neutral, 4 - Likely, 5 - Very likely",
+            "question": "How likely are you to continue using the app in the future?",
+            "numericValue": "3"
+          },
+          {
+            "question": "Do you have any additional comments, suggestions, or feedback regarding the todo app and its user experience?",
+            "textValue": ""
+          }
+        ],
+        "name": "appSurvey"
+      }
+    ]
+  },
+  {
+    "userDetails": {
+      "acceptedTerms": true,
+      "startTime": {
+        "seconds": 1685640919,
+        "nanoseconds": 296000000
+      },
+      "step": 1,
+      "darkMode": false,
+      "timeSpendOnSurvey": 0,
+      "endTime": {
+        "seconds": 1685640919,
+        "nanoseconds": 296000000
+      }
+    },
+    "events": [],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "darkMode": true,
+      "step": 3,
+      "timeSpendOnSurvey": 212747,
+      "startTime": {
+        "seconds": 1685016751,
+        "nanoseconds": 159000000
+      },
+      "acceptedTerms": true,
+      "endTime": {
+        "seconds": 1685016963,
+        "nanoseconds": 906000000
+      }
+    },
+    "events": [
+      {
+        "event_label": "change_date",
+        "event_category": "ToDo-Edit",
+        "event_measured_time": 1570
+      },
+      {
+        "event_category": "ToDo-Add",
+        "event_measured_time": 1627,
+        "event_label": "save"
+      },
+      {
+        "event_category": "ToDo-Edit",
+        "event_label": "save",
+        "event_measured_time": 4781
+      },
+      {
+        "event_category": "ToDo-List",
+        "event_label": "todo-dragged",
+        "event_measured_time": 1724
+      },
+      {
+        "event_measured_time": 1650,
+        "event_label": "close",
+        "event_category": "ToDo-List-Edit"
+      },
+      {
+        "event_measured_time": 4205,
+        "event_label": "close",
+        "event_category": "ToDo-List-Add"
+      },
+      {
+        "event_measured_time": 1295,
+        "event_category": "ToDo-List",
+        "event_label": "todo-dragged"
+      },
+      {
+        "event_measured_time": 1912,
+        "event_label": "save",
+        "event_category": "ToDo-Add"
+      },
+      {
+        "event_label": "todo-dragged",
+        "event_measured_time": 981,
+        "event_category": "ToDo-List"
+      },
+      {
+        "event_measured_time": 3050,
+        "event_label": "save",
+        "event_category": "ToDo-Add"
+      },
+      {
+        "event_label": "remove",
+        "event_category": "ToDo-List-Edit",
+        "event_measured_time": 923
+      }
+    ],
+    "surveys": [
+      {
+        "name": "userDetailsSurvey",
+        "survey": [
+          {
+            "selectValue": "NO",
+            "options": ["YES", "NO"],
+            "question": "Have you had any previous experience with these kind of apps?"
+          },
+          {
+            "selectValue": "RARELY",
+            "question": "How often do you use such kind of apps?",
+            "options": ["RARELY", "OCCASIONALLY", "FREQUENTLY", "DAILY"]
+          },
+          {
+            "options": ["SMARTPHONE", "TABLET", "COMPUTER", "OTHER"],
+            "question": "What is your prefered device to use on a daily basis?",
+            "selectValue": "TABLET"
+          }
+        ]
+      },
+      {
+        "name": "appSurvey",
+        "survey": [
+          {
+            "hint": "1 - Very difficult to use, 2 - Difficult to use, 3 - Neutral, 4 - Easy to use, 5 - Very easy to use",
+            "question": "On a scale of 1 to 5, please rate the overall usability of the todo app.",
+            "numericValue": "4"
+          },
+          {
+            "numericValue": "5",
+            "question": "How intuitive was the app's interface for adding, managing, and updating tasks?",
+            "hint": "1 - Not intuitive at all, 2 - Somewhat unintuitive, 3 - Neutral, 4 - Somewhat intuitive, 5 - Very intuitive"
+          },
+          {
+            "question": "How visually appealing was the design of the app?",
+            "hint": "1 - Very unappealing, 2 - Somewhat unappealing, 3 - Neutral, 4 - Somewhat appealing, 5 - Very appealing",
+            "numericValue": "4"
+          },
+          {
+            "numericValue": "4",
+            "hint": "1 - Not at all, 2 - Somewhat, 3 - Neutral, 4 - Mostly, 5 - Completely",
+            "question": "How well did the app meet your expectations in terms of fulfilling your task management needs?"
+          },
+          {
+            "hint": "1 - Very slow, 2 - Slow, 3 - Neutral, 4 - Fast, 5 - Very fast",
+            "question": "On a scale of 1 to 5, please rate the app's responsiveness and speed.",
+            "numericValue": "5"
+          },
+          {
+            "hint": "1 - Very poorly, 2 - Poorly, 3 - Neutral, 4 - Well, 5 - Very well",
+            "question": "How well did the app organize and display your tasks?",
+            "numericValue": "5"
+          },
+          {
+            "textValue": "",
+            "question": "Were there any features or functionalities that you found particularly useful or impressive?"
+          },
+          {
+            "hint": "1 - Very dissatisfied, 2 - Dissatisfied, 3 - Neutral, 4 - Satisfied, 5 - Very satisfied",
+            "question": "On a scale of 1 to 5, please rate your overall satisfaction with the todo app.",
+            "numericValue": "5"
+          },
+          {
+            "numericValue": "4",
+            "hint": "1 - Very unlikely, 2 - Unlikely, 3 - Neutral, 4 - Likely, 5 - Very likely",
+            "question": "How likely are you to continue using the app in the future?"
+          },
+          {
+            "question": "Do you have any additional comments, suggestions, or feedback regarding the todo app and its user experience?",
+            "textValue": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "userDetails": {
+      "timeSpendOnSurvey": 208678,
+      "acceptedTerms": true,
+      "step": 3,
+      "endTime": {
+        "seconds": 1685647084,
+        "nanoseconds": 101000000
+      },
+      "darkMode": true,
+      "startTime": {
+        "seconds": 1685646875,
+        "nanoseconds": 423000000
+      }
+    },
+    "events": [
+      {
+        "event_measured_time": 1163,
+        "event_category": "ToDo-Edit",
+        "event_label": "change_date"
+      },
+      {
+        "event_label": "save",
+        "event_category": "ToDo-Edit",
+        "event_measured_time": 4439
+      },
+      {
+        "event_measured_time": 622,
+        "event_label": "todo-dragged",
+        "event_category": "ToDo-List"
+      },
+      {
+        "event_measured_time": 3013,
+        "event_label": "close",
+        "event_category": "ToDo-List-Add"
+      },
+      {
+        "event_measured_time": 4276,
+        "event_label": "close",
+        "event_category": "ToDo-List-Add"
+      },
+      {
+        "event_category": "ToDo-Add",
+        "event_label": "save",
+        "event_measured_time": 3485
+      },
+      {
+        "event_category": "ToDo-Add",
+        "event_measured_time": 2761,
+        "event_label": "save"
+      },
+      {
+        "event_label": "close",
+        "event_measured_time": 2556,
+        "event_category": "ToDo-List-Edit"
+      },
+      {
+        "event_label": "save",
+        "event_measured_time": 4331,
+        "event_category": "ToDo-Add"
+      }
+    ],
+    "surveys": [
+      {
+        "name": "appSurvey",
+        "survey": [
+          {
+            "numericValue": "4",
+            "question": "On a scale of 1 to 5, please rate the overall usability of the todo app.",
+            "hint": "1 - Very difficult to use, 2 - Difficult to use, 3 - Neutral, 4 - Easy to use, 5 - Very easy to use"
+          },
+          {
+            "hint": "1 - Not intuitive at all, 2 - Somewhat unintuitive, 3 - Neutral, 4 - Somewhat intuitive, 5 - Very intuitive",
+            "question": "How intuitive was the app's interface for adding, managing, and updating tasks?",
+            "numericValue": "4"
+          },
+          {
+            "hint": "1 - Very unappealing, 2 - Somewhat unappealing, 3 - Neutral, 4 - Somewhat appealing, 5 - Very appealing",
+            "numericValue": "4",
+            "question": "How visually appealing was the design of the app?"
+          },
+          {
+            "hint": "1 - Not at all, 2 - Somewhat, 3 - Neutral, 4 - Mostly, 5 - Completely",
+            "question": "How well did the app meet your expectations in terms of fulfilling your task management needs?",
+            "numericValue": "3"
+          },
+          {
+            "question": "On a scale of 1 to 5, please rate the app's responsiveness and speed.",
+            "hint": "1 - Very slow, 2 - Slow, 3 - Neutral, 4 - Fast, 5 - Very fast",
+            "numericValue": "5"
+          },
+          {
+            "hint": "1 - Very poorly, 2 - Poorly, 3 - Neutral, 4 - Well, 5 - Very well",
+            "numericValue": "4",
+            "question": "How well did the app organize and display your tasks?"
+          },
+          {
+            "textValue": "",
+            "question": "Were there any features or functionalities that you found particularly useful or impressive?"
+          },
+          {
+            "numericValue": "5",
+            "question": "On a scale of 1 to 5, please rate your overall satisfaction with the todo app.",
+            "hint": "1 - Very dissatisfied, 2 - Dissatisfied, 3 - Neutral, 4 - Satisfied, 5 - Very satisfied"
+          },
+          {
+            "hint": "1 - Very unlikely, 2 - Unlikely, 3 - Neutral, 4 - Likely, 5 - Very likely",
+            "numericValue": "5",
+            "question": "How likely are you to continue using the app in the future?"
+          },
+          {
+            "textValue": "",
+            "question": "Do you have any additional comments, suggestions, or feedback regarding the todo app and its user experience?"
+          }
+        ]
+      },
+      {
+        "survey": [
+          {
+            "question": "Have you had any previous experience with these kind of apps?",
+            "selectValue": "NO",
+            "options": ["YES", "NO"]
+          },
+          {
+            "options": ["RARELY", "OCCASIONALLY", "FREQUENTLY", "DAILY"],
+            "question": "How often do you use such kind of apps?",
+            "selectValue": "RARELY"
+          },
+          {
+            "selectValue": "SMARTPHONE",
+            "options": ["SMARTPHONE", "TABLET", "COMPUTER", "OTHER"],
+            "question": "What is your prefered device to use on a daily basis?"
+          }
+        ],
+        "name": "userDetailsSurvey"
+      }
+    ]
+  },
+  {
+    "userDetails": {
+      "endTime": {
+        "seconds": 1685639315,
+        "nanoseconds": 686000000
+      },
+      "startTime": {
+        "seconds": 1685638238,
+        "nanoseconds": 489000000
+      },
+      "acceptedTerms": true,
+      "step": 3,
+      "darkMode": true,
+      "timeSpendOnSurvey": 1077197
+    },
+    "events": [
+      {
+        "event_label": "save",
+        "event_measured_time": 3653,
+        "event_category": "ToDo-Edit"
+      },
+      {
+        "event_measured_time": 1686,
+        "event_category": "ToDo-Add",
+        "event_label": "save"
+      },
+      {
+        "event_measured_time": 1238,
+        "event_label": "todo-dragged",
+        "event_category": "ToDo-List"
+      },
+      {
+        "event_measured_time": 1685638257080,
+        "event_label": "save",
+        "event_category": "ToDo-Add"
+      },
+      {
+        "event_measured_time": 1044,
+        "event_label": "change_date",
+        "event_category": "ToDo-Edit"
+      },
+      {
+        "event_measured_time": 1452,
+        "event_label": "save",
+        "event_category": "ToDo-Add"
+      },
+      {
+        "event_category": "ToDo-List",
+        "event_label": "todo-dragged",
+        "event_measured_time": 802
+      },
+      {
+        "event_measured_time": 3877,
+        "event_label": "close",
+        "event_category": "ToDo-List-Add"
+      }
+    ],
+    "surveys": [
+      {
+        "survey": [
+          {
+            "numericValue": "3",
+            "hint": "1 - Very difficult to use, 2 - Difficult to use, 3 - Neutral, 4 - Easy to use, 5 - Very easy to use",
+            "question": "On a scale of 1 to 5, please rate the overall usability of the todo app."
+          },
+          {
+            "hint": "1 - Not intuitive at all, 2 - Somewhat unintuitive, 3 - Neutral, 4 - Somewhat intuitive, 5 - Very intuitive",
+            "numericValue": "4",
+            "question": "How intuitive was the app's interface for adding, managing, and updating tasks?"
+          },
+          {
+            "question": "How visually appealing was the design of the app?",
+            "hint": "1 - Very unappealing, 2 - Somewhat unappealing, 3 - Neutral, 4 - Somewhat appealing, 5 - Very appealing",
+            "numericValue": "4"
+          },
+          {
+            "hint": "1 - Not at all, 2 - Somewhat, 3 - Neutral, 4 - Mostly, 5 - Completely",
+            "numericValue": "4",
+            "question": "How well did the app meet your expectations in terms of fulfilling your task management needs?"
+          },
+          {
+            "numericValue": "5",
+            "hint": "1 - Very slow, 2 - Slow, 3 - Neutral, 4 - Fast, 5 - Very fast",
+            "question": "On a scale of 1 to 5, please rate the app's responsiveness and speed."
+          },
+          {
+            "numericValue": "3",
+            "hint": "1 - Very poorly, 2 - Poorly, 3 - Neutral, 4 - Well, 5 - Very well",
+            "question": "How well did the app organize and display your tasks?"
+          },
+          {
+            "textValue": "",
+            "question": "Were there any features or functionalities that you found particularly useful or impressive?"
+          },
+          {
+            "question": "On a scale of 1 to 5, please rate your overall satisfaction with the todo app.",
+            "hint": "1 - Very dissatisfied, 2 - Dissatisfied, 3 - Neutral, 4 - Satisfied, 5 - Very satisfied",
+            "numericValue": "5"
+          },
+          {
+            "question": "How likely are you to continue using the app in the future?",
+            "numericValue": "4",
+            "hint": "1 - Very unlikely, 2 - Unlikely, 3 - Neutral, 4 - Likely, 5 - Very likely"
+          },
+          {
+            "question": "Do you have any additional comments, suggestions, or feedback regarding the todo app and its user experience?",
+            "textValue": ""
+          }
+        ],
+        "name": "appSurvey"
+      },
+      {
+        "name": "userDetailsSurvey",
+        "survey": [
+          {
+            "question": "Have you had any previous experience with these kind of apps?",
+            "options": ["YES", "NO"],
+            "selectValue": "YES"
+          },
+          {
+            "question": "How often do you use such kind of apps?",
+            "options": ["RARELY", "OCCASIONALLY", "FREQUENTLY", "DAILY"],
+            "selectValue": "FREQUENTLY"
+          },
+          {
+            "question": "What is your prefered device to use on a daily basis?",
+            "options": ["SMARTPHONE", "TABLET", "COMPUTER", "OTHER"],
+            "selectValue": "SMARTPHONE"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "userDetails": {
+      "endTime": {
+        "seconds": 1685640526,
+        "nanoseconds": 54000000
+      },
+      "darkMode": true,
+      "startTime": {
+        "seconds": 1685640526,
+        "nanoseconds": 54000000
+      },
+      "step": 1,
+      "timeSpendOnSurvey": 0,
+      "acceptedTerms": true
+    },
+    "events": [],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "acceptedTerms": true,
+      "endTime": {
+        "seconds": 1685641984,
+        "nanoseconds": 158000000
+      },
+      "timeSpendOnSurvey": 256472,
+      "step": 3,
+      "darkMode": true,
+      "startTime": {
+        "seconds": 1685641727,
+        "nanoseconds": 686000000
+      }
+    },
+    "events": [
+      {
+        "event_category": "ToDo-Add",
+        "event_label": "save",
+        "event_measured_time": 3699
+      },
+      {
+        "event_category": "ToDo-Edit",
+        "event_label": "change_date",
+        "event_measured_time": 2335
+      },
+      {
+        "event_label": "close",
+        "event_measured_time": 5893,
+        "event_category": "ToDo-List-Add"
+      },
+      {
+        "event_category": "ToDo-Add",
+        "event_measured_time": 4533,
+        "event_label": "save"
+      },
+      {
+        "event_measured_time": 5726,
+        "event_label": "save",
+        "event_category": "ToDo-Edit"
+      },
+      {
+        "event_measured_time": 1685641791717,
+        "event_category": "ToDo-Add",
+        "event_label": "save"
+      },
+      {
+        "event_measured_time": 1012,
+        "event_label": "close",
+        "event_category": "ToDo-List-Add"
+      },
+      {
+        "event_category": "ToDo-List",
+        "event_label": "todo-dragged",
+        "event_measured_time": 371
+      }
+    ],
+    "surveys": [
+      {
+        "name": "appSurvey",
+        "survey": [
+          {
+            "hint": "1 - Very difficult to use, 2 - Difficult to use, 3 - Neutral, 4 - Easy to use, 5 - Very easy to use",
+            "question": "On a scale of 1 to 5, please rate the overall usability of the todo app.",
+            "numericValue": "5"
+          },
+          {
+            "numericValue": "4",
+            "hint": "1 - Not intuitive at all, 2 - Somewhat unintuitive, 3 - Neutral, 4 - Somewhat intuitive, 5 - Very intuitive",
+            "question": "How intuitive was the app's interface for adding, managing, and updating tasks?"
+          },
+          {
+            "question": "How visually appealing was the design of the app?",
+            "hint": "1 - Very unappealing, 2 - Somewhat unappealing, 3 - Neutral, 4 - Somewhat appealing, 5 - Very appealing",
+            "numericValue": "3"
+          },
+          {
+            "numericValue": "5",
+            "hint": "1 - Not at all, 2 - Somewhat, 3 - Neutral, 4 - Mostly, 5 - Completely",
+            "question": "How well did the app meet your expectations in terms of fulfilling your task management needs?"
+          },
+          {
+            "numericValue": "5",
+            "hint": "1 - Very slow, 2 - Slow, 3 - Neutral, 4 - Fast, 5 - Very fast",
+            "question": "On a scale of 1 to 5, please rate the app's responsiveness and speed."
+          },
+          {
+            "hint": "1 - Very poorly, 2 - Poorly, 3 - Neutral, 4 - Well, 5 - Very well",
+            "numericValue": "3",
+            "question": "How well did the app organize and display your tasks?"
+          },
+          {
+            "textValue": "Hitboxen waren gut platziert ",
+            "question": "Were there any features or functionalities that you found particularly useful or impressive?"
+          },
+          {
+            "numericValue": "4",
+            "question": "On a scale of 1 to 5, please rate your overall satisfaction with the todo app.",
+            "hint": "1 - Very dissatisfied, 2 - Dissatisfied, 3 - Neutral, 4 - Satisfied, 5 - Very satisfied"
+          },
+          {
+            "numericValue": "3",
+            "question": "How likely are you to continue using the app in the future?",
+            "hint": "1 - Very unlikely, 2 - Unlikely, 3 - Neutral, 4 - Likely, 5 - Very likely"
+          },
+          {
+            "textValue": "",
+            "question": "Do you have any additional comments, suggestions, or feedback regarding the todo app and its user experience?"
+          }
+        ]
+      },
+      {
+        "name": "userDetailsSurvey",
+        "survey": [
+          {
+            "selectValue": "YES",
+            "options": ["YES", "NO"],
+            "question": "Have you had any previous experience with these kind of apps?"
+          },
+          {
+            "question": "How often do you use such kind of apps?",
+            "options": ["RARELY", "OCCASIONALLY", "FREQUENTLY", "DAILY"],
+            "selectValue": "DAILY"
+          },
+          {
+            "options": ["SMARTPHONE", "TABLET", "COMPUTER", "OTHER"],
+            "question": "What is your prefered device to use on a daily basis?",
+            "selectValue": "COMPUTER"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "userDetails": {
+      "darkMode": true,
+      "step": 3,
+      "endTime": {
+        "seconds": 1685651800,
+        "nanoseconds": 650000000
+      },
+      "startTime": {
+        "seconds": 1685650614,
+        "nanoseconds": 606000000
+      },
+      "timeSpendOnSurvey": 1186044,
+      "acceptedTerms": true
+    },
+    "events": [
+      {
+        "event_category": "ToDo-Add",
+        "event_measured_time": 20669,
+        "event_label": "save"
+      },
+      {
+        "event_label": "close",
+        "event_measured_time": 4672,
+        "event_category": "ToDo-List-Edit"
+      },
+      {
+        "event_measured_time": 11452,
+        "event_label": "save",
+        "event_category": "ToDo-List-Edit"
+      },
+      {
+        "event_category": "ToDo-Add",
+        "event_measured_time": 40926,
+        "event_label": "save"
+      },
+      {
+        "event_measured_time": 5322,
+        "event_label": "save",
+        "event_category": "ToDo-Edit"
+      },
+      {
+        "event_measured_time": 392,
+        "event_category": "ToDo-List",
+        "event_label": "todo-dragged"
+      },
+      {
+        "event_category": "ToDo-Add",
+        "event_measured_time": 6594,
+        "event_label": "save"
+      },
+      {
+        "event_label": "close",
+        "event_measured_time": 10717,
+        "event_category": "ToDo-List-Add"
+      },
+      {
+        "event_label": "todo-dragged",
+        "event_measured_time": 610,
+        "event_category": "ToDo-List"
+      },
+      {
+        "event_category": "ToDo-Edit",
+        "event_measured_time": 1075,
+        "event_label": "change_date"
+      }
+    ],
+    "surveys": [
+      {
+        "name": "appSurvey",
+        "survey": [
+          {
+            "hint": "1 - Very difficult to use, 2 - Difficult to use, 3 - Neutral, 4 - Easy to use, 5 - Very easy to use",
+            "question": "On a scale of 1 to 5, please rate the overall usability of the todo app.",
+            "numericValue": "4"
+          },
+          {
+            "question": "How intuitive was the app's interface for adding, managing, and updating tasks?",
+            "numericValue": "3",
+            "hint": "1 - Not intuitive at all, 2 - Somewhat unintuitive, 3 - Neutral, 4 - Somewhat intuitive, 5 - Very intuitive"
+          },
+          {
+            "question": "How visually appealing was the design of the app?",
+            "numericValue": "2",
+            "hint": "1 - Very unappealing, 2 - Somewhat unappealing, 3 - Neutral, 4 - Somewhat appealing, 5 - Very appealing"
+          },
+          {
+            "hint": "1 - Not at all, 2 - Somewhat, 3 - Neutral, 4 - Mostly, 5 - Completely",
+            "numericValue": "4",
+            "question": "How well did the app meet your expectations in terms of fulfilling your task management needs?"
+          },
+          {
+            "hint": "1 - Very slow, 2 - Slow, 3 - Neutral, 4 - Fast, 5 - Very fast",
+            "numericValue": "5",
+            "question": "On a scale of 1 to 5, please rate the app's responsiveness and speed."
+          },
+          {
+            "hint": "1 - Very poorly, 2 - Poorly, 3 - Neutral, 4 - Well, 5 - Very well",
+            "numericValue": "3",
+            "question": "How well did the app organize and display your tasks?"
+          },
+          {
+            "question": "Were there any features or functionalities that you found particularly useful or impressive?",
+            "textValue": "Easily adding task"
+          },
+          {
+            "numericValue": "4",
+            "hint": "1 - Very dissatisfied, 2 - Dissatisfied, 3 - Neutral, 4 - Satisfied, 5 - Very satisfied",
+            "question": "On a scale of 1 to 5, please rate your overall satisfaction with the todo app."
+          },
+          {
+            "numericValue": "4",
+            "question": "How likely are you to continue using the app in the future?",
+            "hint": "1 - Very unlikely, 2 - Unlikely, 3 - Neutral, 4 - Likely, 5 - Very likely"
+          },
+          {
+            "textValue": "The edit button next to the task is not very intuitive for changing the date ",
+            "question": "Do you have any additional comments, suggestions, or feedback regarding the todo app and its user experience?"
+          }
+        ]
+      },
+      {
+        "survey": [
+          {
+            "question": "Have you had any previous experience with these kind of apps?",
+            "selectValue": "YES",
+            "options": ["YES", "NO"]
+          },
+          {
+            "question": "How often do you use such kind of apps?",
+            "options": ["RARELY", "OCCASIONALLY", "FREQUENTLY", "DAILY"],
+            "selectValue": "DAILY"
+          },
+          {
+            "selectValue": "SMARTPHONE",
+            "options": ["SMARTPHONE", "TABLET", "COMPUTER", "OTHER"],
+            "question": "What is your prefered device to use on a daily basis?"
+          }
+        ],
+        "name": "userDetailsSurvey"
+      }
+    ]
+  },
+  {
+    "userDetails": {
+      "darkMode": false,
+      "timeSpendOnSurvey": 0,
+      "acceptedTerms": true,
+      "startTime": {
+        "seconds": 1685639897,
+        "nanoseconds": 572000000
+      },
+      "step": 1,
+      "endTime": {
+        "seconds": 1685639897,
+        "nanoseconds": 572000000
+      }
+    },
+    "events": [],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "startTime": {
+        "seconds": 1685640861,
+        "nanoseconds": 70000000
+      },
+      "endTime": {
+        "seconds": 1685640861,
+        "nanoseconds": 70000000
+      },
+      "step": 1,
+      "acceptedTerms": true,
+      "darkMode": false,
+      "timeSpendOnSurvey": 0
+    },
+    "events": [],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "endTime": {
+        "seconds": 1685707719,
+        "nanoseconds": 576000000
+      },
+      "timeSpendOnSurvey": 201949,
+      "step": 3,
+      "darkMode": false,
+      "acceptedTerms": true,
+      "startTime": {
+        "seconds": 1685707517,
+        "nanoseconds": 627000000
+      }
+    },
+    "events": [
+      {
+        "event_category": "ToDo-Add",
+        "event_measured_time": 3360,
+        "event_label": "save"
+      },
+      {
+        "event_measured_time": 807,
+        "event_label": "change_date",
+        "event_category": "ToDo-Edit"
+      },
+      {
+        "event_measured_time": 3843,
+        "event_category": "ToDo-Edit",
+        "event_label": "save"
+      },
+      {
+        "event_measured_time": 3634,
+        "event_category": "ToDo-Edit",
+        "event_label": "save"
+      },
+      {
+        "event_label": "change_date",
+        "event_category": "ToDo-Edit",
+        "event_measured_time": 795
+      },
+      {
+        "event_measured_time": 700,
+        "event_label": "todo-dragged",
+        "event_category": "ToDo-List"
+      },
+      {
+        "event_label": "todo-dragged",
+        "event_category": "ToDo-List",
+        "event_measured_time": 1309
+      },
+      {
+        "event_category": "ToDo-List-Add",
+        "event_measured_time": 4445,
+        "event_label": "close"
+      },
+      {
+        "event_measured_time": 8576,
+        "event_label": "save",
+        "event_category": "ToDo-List-Edit"
+      },
+      {
+        "event_measured_time": 434,
+        "event_label": "todo-dragged",
+        "event_category": "ToDo-List"
+      },
+      {
+        "event_category": "ToDo-List-Edit",
+        "event_label": "remove",
+        "event_measured_time": 710
+      },
+      {
+        "event_label": "save",
+        "event_category": "ToDo-Add",
+        "event_measured_time": 7646
+      },
+      {
+        "event_label": "save",
+        "event_category": "ToDo-Add",
+        "event_measured_time": 8833
+      },
+      {
+        "event_category": "ToDo-List",
+        "event_label": "todo-dragged",
+        "event_measured_time": 715
+      }
+    ],
+    "surveys": [
+      {
+        "name": "userDetailsSurvey",
+        "survey": [
+          {
+            "options": ["YES", "NO"],
+            "selectValue": "YES",
+            "question": "Have you had any previous experience with these kind of apps?"
+          },
+          {
+            "options": ["RARELY", "OCCASIONALLY", "FREQUENTLY", "DAILY"],
+            "question": "How often do you use such kind of apps?",
+            "selectValue": "OCCASIONALLY"
+          },
+          {
+            "options": ["SMARTPHONE", "TABLET", "COMPUTER", "OTHER"],
+            "question": "What is your prefered device to use on a daily basis?",
+            "selectValue": "SMARTPHONE"
+          }
+        ]
+      },
+      {
+        "name": "appSurvey",
+        "survey": [
+          {
+            "hint": "1 - Very difficult to use, 2 - Difficult to use, 3 - Neutral, 4 - Easy to use, 5 - Very easy to use",
+            "question": "On a scale of 1 to 5, please rate the overall usability of the todo app.",
+            "numericValue": "4"
+          },
+          {
+            "question": "How intuitive was the app's interface for adding, managing, and updating tasks?",
+            "numericValue": "5",
+            "hint": "1 - Not intuitive at all, 2 - Somewhat unintuitive, 3 - Neutral, 4 - Somewhat intuitive, 5 - Very intuitive"
+          },
+          {
+            "numericValue": "3",
+            "hint": "1 - Very unappealing, 2 - Somewhat unappealing, 3 - Neutral, 4 - Somewhat appealing, 5 - Very appealing",
+            "question": "How visually appealing was the design of the app?"
+          },
+          {
+            "hint": "1 - Not at all, 2 - Somewhat, 3 - Neutral, 4 - Mostly, 5 - Completely",
+            "question": "How well did the app meet your expectations in terms of fulfilling your task management needs?",
+            "numericValue": "4"
+          },
+          {
+            "numericValue": "5",
+            "question": "On a scale of 1 to 5, please rate the app's responsiveness and speed.",
+            "hint": "1 - Very slow, 2 - Slow, 3 - Neutral, 4 - Fast, 5 - Very fast"
+          },
+          {
+            "numericValue": "4",
+            "hint": "1 - Very poorly, 2 - Poorly, 3 - Neutral, 4 - Well, 5 - Very well",
+            "question": "How well did the app organize and display your tasks?"
+          },
+          {
+            "textValue": "",
+            "question": "Were there any features or functionalities that you found particularly useful or impressive?"
+          },
+          {
+            "numericValue": "4",
+            "hint": "1 - Very dissatisfied, 2 - Dissatisfied, 3 - Neutral, 4 - Satisfied, 5 - Very satisfied",
+            "question": "On a scale of 1 to 5, please rate your overall satisfaction with the todo app."
+          },
+          {
+            "question": "How likely are you to continue using the app in the future?",
+            "numericValue": "3",
+            "hint": "1 - Very unlikely, 2 - Unlikely, 3 - Neutral, 4 - Likely, 5 - Very likely"
+          },
+          {
+            "question": "Do you have any additional comments, suggestions, or feedback regarding the todo app and its user experience?",
+            "textValue": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "userDetails": {
+      "timeSpendOnSurvey": 0,
+      "darkMode": true,
+      "startTime": {
+        "seconds": 1685640716,
+        "nanoseconds": 699000000
+      },
+      "acceptedTerms": true,
+      "step": 1,
+      "endTime": {
+        "seconds": 1685640716,
+        "nanoseconds": 699000000
+      }
+    },
+    "events": [
+      {
+        "event_label": "close",
+        "event_measured_time": 2083,
+        "event_category": "ToDo-List-Add"
+      }
+    ],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "startTime": {
+        "seconds": 1685689490,
+        "nanoseconds": 783000000
+      },
+      "timeSpendOnSurvey": 264760,
+      "acceptedTerms": true,
+      "darkMode": false,
+      "step": 3,
+      "endTime": {
+        "seconds": 1685689755,
+        "nanoseconds": 543000000
+      }
+    },
+    "events": [
+      {
+        "event_label": "todo-dragged",
+        "event_category": "ToDo-List",
+        "event_measured_time": 1266
+      },
+      {
+        "event_label": "close",
+        "event_measured_time": 3013,
+        "event_category": "ToDo-List-Edit"
+      },
+      {
+        "event_category": "ToDo-List",
+        "event_label": "todo-dragged",
+        "event_measured_time": 1066
+      },
+      {
+        "event_measured_time": 5373,
+        "event_label": "save",
+        "event_category": "ToDo-Edit"
+      },
+      {
+        "event_category": "ToDo-List",
+        "event_label": "todo-dragged",
+        "event_measured_time": 650
+      },
+      {
+        "event_label": "close",
+        "event_measured_time": 2976,
+        "event_category": "ToDo-List-Add"
+      },
+      {
+        "event_measured_time": 1414,
+        "event_label": "change_date",
+        "event_category": "ToDo-Edit"
+      },
+      {
+        "event_measured_time": 4815,
+        "event_label": "save",
+        "event_category": "ToDo-Add"
+      },
+      {
+        "event_label": "save",
+        "event_measured_time": 1186,
+        "event_category": "ToDo-Add"
+      },
+      {
+        "event_measured_time": 15024,
+        "event_category": "ToDo-List-Add",
+        "event_label": "close"
+      },
+      {
+        "event_measured_time": 1946,
+        "event_category": "ToDo-Add",
+        "event_label": "save"
+      }
+    ],
+    "surveys": [
+      {
+        "name": "userDetailsSurvey",
+        "survey": [
+          {
+            "question": "Have you had any previous experience with these kind of apps?",
+            "selectValue": "YES",
+            "options": ["YES", "NO"]
+          },
+          {
+            "selectValue": "FREQUENTLY",
+            "question": "How often do you use such kind of apps?",
+            "options": ["RARELY", "OCCASIONALLY", "FREQUENTLY", "DAILY"]
+          },
+          {
+            "selectValue": "SMARTPHONE",
+            "question": "What is your prefered device to use on a daily basis?",
+            "options": ["SMARTPHONE", "TABLET", "COMPUTER", "OTHER"]
+          }
+        ]
+      },
+      {
+        "survey": [
+          {
+            "numericValue": "4",
+            "hint": "1 - Very difficult to use, 2 - Difficult to use, 3 - Neutral, 4 - Easy to use, 5 - Very easy to use",
+            "question": "On a scale of 1 to 5, please rate the overall usability of the todo app."
+          },
+          {
+            "question": "How intuitive was the app's interface for adding, managing, and updating tasks?",
+            "numericValue": "5",
+            "hint": "1 - Not intuitive at all, 2 - Somewhat unintuitive, 3 - Neutral, 4 - Somewhat intuitive, 5 - Very intuitive"
+          },
+          {
+            "hint": "1 - Very unappealing, 2 - Somewhat unappealing, 3 - Neutral, 4 - Somewhat appealing, 5 - Very appealing",
+            "numericValue": "4",
+            "question": "How visually appealing was the design of the app?"
+          },
+          {
+            "hint": "1 - Not at all, 2 - Somewhat, 3 - Neutral, 4 - Mostly, 5 - Completely",
+            "question": "How well did the app meet your expectations in terms of fulfilling your task management needs?",
+            "numericValue": "3"
+          },
+          {
+            "numericValue": "5",
+            "hint": "1 - Very slow, 2 - Slow, 3 - Neutral, 4 - Fast, 5 - Very fast",
+            "question": "On a scale of 1 to 5, please rate the app's responsiveness and speed."
+          },
+          {
+            "question": "How well did the app organize and display your tasks?",
+            "hint": "1 - Very poorly, 2 - Poorly, 3 - Neutral, 4 - Well, 5 - Very well",
+            "numericValue": "5"
+          },
+          {
+            "textValue": "",
+            "question": "Were there any features or functionalities that you found particularly useful or impressive?"
+          },
+          {
+            "hint": "1 - Very dissatisfied, 2 - Dissatisfied, 3 - Neutral, 4 - Satisfied, 5 - Very satisfied",
+            "question": "On a scale of 1 to 5, please rate your overall satisfaction with the todo app.",
+            "numericValue": "4"
+          },
+          {
+            "numericValue": "3",
+            "question": "How likely are you to continue using the app in the future?",
+            "hint": "1 - Very unlikely, 2 - Unlikely, 3 - Neutral, 4 - Likely, 5 - Very likely"
+          },
+          {
+            "textValue": "",
+            "question": "Do you have any additional comments, suggestions, or feedback regarding the todo app and its user experience?"
+          }
+        ],
+        "name": "appSurvey"
+      }
+    ]
+  },
+  {
+    "userDetails": {
+      "step": 1,
+      "startTime": {
+        "seconds": 1685019745,
+        "nanoseconds": 678000000
+      },
+      "timeSpendOnSurvey": 0,
+      "darkMode": true,
+      "acceptedTerms": true,
+      "endTime": {
+        "seconds": 1685019745,
+        "nanoseconds": 678000000
+      }
+    },
+    "events": [],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "startTime": {
+        "seconds": 1685014376,
+        "nanoseconds": 751000000
+      },
+      "timeSpendOnSurvey": 0,
+      "step": 1,
+      "endTime": {
+        "seconds": 1685014376,
+        "nanoseconds": 751000000
+      },
+      "acceptedTerms": true,
+      "darkMode": false
+    },
+    "events": [],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "startTime": {
+        "seconds": 1684580008,
+        "nanoseconds": 411000000
+      },
+      "endTime": {
+        "seconds": 1684580561,
+        "nanoseconds": 190000000
+      },
+      "step": 3,
+      "darkMode": true,
+      "acceptedTerms": true,
+      "timeSpendOnSurvey": 552779
+    },
+    "events": [
+      {
+        "event_measured_time": 603,
+        "event_category": "ToDo-List",
+        "event_label": "todo-dragged"
+      },
+      {
+        "event_measured_time": 3325,
+        "event_label": "close",
+        "event_category": "ToDo-List-Add"
+      },
+      {
+        "event_label": "close",
+        "event_category": "ToDo-List-Add",
+        "event_measured_time": 3837
+      },
+      {
+        "event_label": "save",
+        "event_category": "ToDo-Add",
+        "event_measured_time": 2148
+      },
+      {
+        "event_measured_time": 785,
+        "event_label": "todo-dragged",
+        "event_category": "ToDo-List"
+      },
+      {
+        "event_measured_time": 4174,
+        "event_label": "save",
+        "event_category": "ToDo-Edit"
+      },
+      {
+        "event_measured_time": 1476,
+        "event_label": "save",
+        "event_category": "ToDo-Add"
+      },
+      {
+        "event_label": "close",
+        "event_measured_time": 1804,
+        "event_category": "ToDo-List-Add"
+      },
+      {
+        "event_category": "ToDo-Add",
+        "event_measured_time": 2613,
+        "event_label": "save"
+      },
+      {
+        "event_category": "ToDo-Edit",
+        "event_measured_time": 1719,
+        "event_label": "change_date"
+      },
+      {
+        "event_label": "todo-dragged",
+        "event_category": "ToDo-List",
+        "event_measured_time": 301
+      }
+    ],
+    "surveys": [
+      {
+        "survey": [
+          {
+            "question": "On a scale of 1 to 5, please rate the overall usability of the todo app.",
+            "numericValue": "5",
+            "hint": "1 - Very difficult to use, 2 - Difficult to use, 3 - Neutral, 4 - Easy to use, 5 - Very easy to use"
+          },
+          {
+            "hint": "1 - Not intuitive at all, 2 - Somewhat unintuitive, 3 - Neutral, 4 - Somewhat intuitive, 5 - Very intuitive",
+            "question": "How intuitive was the app's interface for adding, managing, and updating tasks?",
+            "numericValue": "4"
+          },
+          {
+            "question": "How visually appealing was the design of the app?",
+            "numericValue": "5",
+            "hint": "1 - Very unappealing, 2 - Somewhat unappealing, 3 - Neutral, 4 - Somewhat appealing, 5 - Very appealing"
+          },
+          {
+            "hint": "1 - Not at all, 2 - Somewhat, 3 - Neutral, 4 - Mostly, 5 - Completely",
+            "numericValue": "5",
+            "question": "How well did the app meet your expectations in terms of fulfilling your task management needs?"
+          },
+          {
+            "question": "On a scale of 1 to 5, please rate the app's responsiveness and speed.",
+            "hint": "1 - Very slow, 2 - Slow, 3 - Neutral, 4 - Fast, 5 - Very fast",
+            "numericValue": "5"
+          },
+          {
+            "numericValue": "4",
+            "hint": "1 - Very poorly, 2 - Poorly, 3 - Neutral, 4 - Well, 5 - Very well",
+            "question": "How well did the app organize and display your tasks?"
+          },
+          {
+            "textValue": "",
+            "question": "Were there any features or functionalities that you found particularly useful or impressive?"
+          },
+          {
+            "hint": "1 - Very dissatisfied, 2 - Dissatisfied, 3 - Neutral, 4 - Satisfied, 5 - Very satisfied",
+            "numericValue": "5",
+            "question": "On a scale of 1 to 5, please rate your overall satisfaction with the todo app."
+          },
+          {
+            "numericValue": "5",
+            "question": "How likely are you to continue using the app in the future?",
+            "hint": "1 - Very unlikely, 2 - Unlikely, 3 - Neutral, 4 - Likely, 5 - Very likely"
+          },
+          {
+            "textValue": "Ich habe am Anfang bei der Erstellung der Liste nicht verstanden, wo sie liegt und wie ich auf die Liste zugreifen kann. Dass sie rechts in einem neuen Tab liegt, habe ich erst gesehen, nachdem ich versucht habe, eine neue Task hinzuzufügen, weil ich dachte, dass der + für neue task steht und dass die Liste schon im Hintergrund hinterlegt wurde.",
+            "question": "Do you have any additional comments, suggestions, or feedback regarding the todo app and its user experience?"
+          }
+        ],
+        "name": "appSurvey"
+      },
+      {
+        "name": "userDetailsSurvey",
+        "survey": [
+          {
+            "selectValue": "FREQUENTLY",
+            "options": ["RARELY", "OCCASIONALLY", "FREQUENTLY", "DAILY"],
+            "question": "How often do you use such kind of apps?"
+          },
+          {
+            "question": "What is your prefered device to use on a daily basis?",
+            "selectValue": "SMARTPHONE",
+            "options": ["SMARTPHONE", "TABLET", "COMPUTER", "OTHER"]
+          },
+          {
+            "selectValue": "YES",
+            "options": ["YES", "NO"],
+            "question": "Have you had any previous experience with these kind of apps?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "userDetails": {
+      "darkMode": true,
+      "endTime": {
+        "seconds": 1685016381,
+        "nanoseconds": 755000000
+      },
+      "startTime": {
+        "seconds": 1685016381,
+        "nanoseconds": 755000000
+      },
+      "timeSpendOnSurvey": 0,
+      "acceptedTerms": true,
+      "step": 1
+    },
+    "events": [],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "startTime": {
+        "seconds": 1685643266,
+        "nanoseconds": 739000000
+      },
+      "step": 1,
+      "timeSpendOnSurvey": 0,
+      "endTime": {
+        "seconds": 1685643266,
+        "nanoseconds": 739000000
+      },
+      "acceptedTerms": true,
+      "darkMode": true
+    },
+    "events": [
+      {
+        "event_category": "ToDo-List-Add",
+        "event_measured_time": 116432,
+        "event_label": "close"
+      },
+      {
+        "event_category": "ToDo-List-Add",
+        "event_measured_time": 2240,
+        "event_label": "close"
+      }
+    ],
+    "surveys": []
+  },
+  {
+    "userDetails": {
+      "step": 1,
+      "startTime": {
+        "seconds": 1685639637,
+        "nanoseconds": 22000000
+      },
+      "endTime": {
+        "seconds": 1685639637,
+        "nanoseconds": 22000000
+      },
+      "acceptedTerms": true,
+      "timeSpendOnSurvey": 0,
+      "darkMode": true
+    },
+    "events": [],
+    "surveys": []
+  }
+]
